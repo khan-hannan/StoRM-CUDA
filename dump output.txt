@@ -1,0 +1,165 @@
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism herman3.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 15:57:28 2021
+Command line arguments: --prism herman3.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.026s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 82136us 
+Matrix of size 8 x 8
+Non zero values = 28
+Sparsity = 0
+GPU time took 2775us 
+CPU time took 13187us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism herman5.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 15:57:34 2021
+Command line arguments: --prism herman5.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.000s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 2245us 
+Matrix of size 32 x 32
+Non zero values = 244
+Sparsity = 0
+GPU time took 1466us 
+CPU time took 174us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism herman7.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 15:57:44 2021
+Command line arguments: --prism herman7.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.001s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 4230us 
+Matrix of size 128 x 128
+Non zero values = 2188
+Sparsity = 0
+GPU time took 901us 
+CPU time took 239us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism herman9.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 15:57:55 2021
+Command line arguments: --prism herman9.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.001s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 27385us 
+Matrix of size 512 x 512
+Non zero values = 19684
+Sparsity = 0
+GPU time took 1396us 
+CPU time took 5164us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism herman11.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 15:58:00 2021
+Command line arguments: --prism herman11.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.001s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 266645us 
+Matrix of size 2048 x 2048
+Non zero values = 177148
+Sparsity = 0
+GPU time took 2406us 
+CPU time took 20659us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism herman13.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 15:58:10 2021
+Command line arguments: --prism herman13.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.001s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 2691347us 
+Matrix of size 8192 x 8192
+Non zero values = 1594324
+Sparsity = 0
+GPU time took 12271us 
+CPU time took 180663us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism herman15.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 15:58:20 2021
+Command line arguments: --prism herman15.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.001s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 27424562us 
+Matrix of size 32768 x 32768
+Non zero values = 14348908
+Sparsity = 0
+GPU time took 95805us 
+CPU time took 1676557us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ^C
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ ./Debug/P3_Comb_libtracker --prism /home/hannan/Thesis/prism-benchmarks/models/dtmcs/nand/nand.pm 
+Device : GeForce GTX 1080
+Calculated ltimes = 100
+Storm-cuda 1.4.2 (dev)
+
+Date: Mon May 17 16:00:41 2021
+Command line arguments: --prism /home/hannan/Thesis/prism-benchmarks/models/dtmcs/nand/nand.pm
+Current working directory: /home/hannan/eclipse-workspace/P3_Comb_libtracker
+
+Time for model input parsing: 0.001s.
+
+ Error Code invalid argument.
+ Error Code invalid argument.
+Exploration time took 45361841us 
+Matrix of size 18826082 x 18826082
+Non zero values = 29772212
+Sparsity = 0
+GPU time took 415040us 
+CPU time took 11646638us 
+MATCHED 
+hannan@hannansystem:~/eclipse-workspace/P3_Comb_libtracker$ 
+
+
