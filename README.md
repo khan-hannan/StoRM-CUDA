@@ -9,7 +9,7 @@ For Complete CUDA:
 
 to RUN copy 
 
-SparseMatrix files into storm/src/storm/storage/
+SparseMatrix files into storm/src/storm/storage/, 
 ExplicitModelbuilder file into storm/src/storm/builder/
 
 rebuild the Storm source 
