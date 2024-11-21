@@ -198,30 +198,7 @@ int main(const int argc,const char **argv)
 		boost::chrono::microseconds ms = boost::chrono::duration_cast<boost::chrono::microseconds> (boost::chrono::high_resolution_clock::now() - start);
 		std::cout << "CPU 2: time took " << ms.count() << "us " << "\n";
     }
-    {
-		boost::chrono::high_resolution_clock::time_point start = boost::chrono::high_resolution_clock::now();
-		multiplier->repeatedMultiply(mpi.env, x, nullptr, 50);
-		boost::chrono::microseconds ms = boost::chrono::duration_cast<boost::chrono::microseconds> (boost::chrono::high_resolution_clock::now() - start);
-		std::cout << "CPU 50: time took " << ms.count() << "us " << "\n";
-    }
-    {
-		boost::chrono::high_resolution_clock::time_point start = boost::chrono::high_resolution_clock::now();
-		multiplier->repeatedMultiply(mpi.env, x, nullptr, 100);
-		boost::chrono::microseconds ms = boost::chrono::duration_cast<boost::chrono::microseconds> (boost::chrono::high_resolution_clock::now() - start);
-		std::cout << "CPU 100: time took " << ms.count() << "us " << "\n";
-    }
-    {
-		boost::chrono::high_resolution_clock::time_point start = boost::chrono::high_resolution_clock::now();
-		multiplier->repeatedMultiply(mpi.env, x, nullptr, 500);
-		boost::chrono::microseconds ms = boost::chrono::duration_cast<boost::chrono::microseconds> (boost::chrono::high_resolution_clock::now() - start);
-		std::cout << "CPU 500: time took " << ms.count() << "us " << "\n";
-    }
-    {
-		boost::chrono::high_resolution_clock::time_point start = boost::chrono::high_resolution_clock::now();
-		multiplier->repeatedMultiply(mpi.env, x, nullptr, 1000);
-		boost::chrono::microseconds ms = boost::chrono::duration_cast<boost::chrono::microseconds> (boost::chrono::high_resolution_clock::now() - start);
-		std::cout << "CPU 1000: time took " << ms.count() << "us " << "\n";
-    }
+
     bool result = true;
     int Hold =0 ;
 
