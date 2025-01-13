@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" metaid="_000000" level="2" version="1">
+  <model id="nacl" name="Na+Cl">
+
+    <listOfCompartments>
+      <compartment id="compartment"/>
+    </listOfCompartments>
+
+    <listOfSpecies>
+      <species id="na" initialAmount="100" hasOnlySubstanceUnits="true"/>
+      <species id="cl" initialAmount="100" hasOnlySubstanceUnits="true"/>
+      <species id="na_plus" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="cl_minus" initialAmount="0" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+
+    <listOfReactions>
+      <reaction id="forwards" reversible="false">
+        <listOfReactants>
+          <speciesReference species="na"/>
+          <speciesReference species="cl"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="na_plus"/>
+          <speciesReference species="cl_minus"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply><times/><ci>forwards_rate</ci>
+              <apply><times/><ci>na</ci><ci>cl</ci></apply></apply>
+          </math>
+          <listOfParameters>
+            <parameter id="forwards_rate" value="100"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+
+      <reaction id="backwards" reversible="false">
+        <listOfReactants>
+          <speciesReference species="na_plus"/>
+          <speciesReference species="cl_minus"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="na"/>
+          <speciesReference species="cl"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply><times/><ci>backwards_rate</ci>
+              <apply><times/><ci>na_plus</ci><ci>cl_minus</ci></apply></apply>
+          </math>
+          <listOfParameters>
+            <parameter id="backwards_rate" value="10"/>
+          </listOfParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+
+  </model>
+</sbml>

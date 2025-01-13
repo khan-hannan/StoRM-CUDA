@@ -1,0 +1,2 @@
+prism poll2.sm -ss -exportss poll2-ss.txt
+prism poll2.sm -tr 2.0 -exporttr poll2-tr2.txt

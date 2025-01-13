@@ -1,0 +1,5 @@
+rewards
+    [] true : 1;
+    [a] true : x;
+    [b] true : 2*x;
+endrewards

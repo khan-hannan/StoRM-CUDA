@@ -1,0 +1,1 @@
+sbml2prism sbml_file.xml > prism_file.sm

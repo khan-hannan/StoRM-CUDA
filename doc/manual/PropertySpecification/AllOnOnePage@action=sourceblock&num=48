@@ -1,0 +1,1 @@
+filter(forall, P>=1 [ F "done" ])

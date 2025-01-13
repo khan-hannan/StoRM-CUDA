@@ -1,0 +1,1 @@
+[serve] q>0 -> lambda:(q'=q-1);

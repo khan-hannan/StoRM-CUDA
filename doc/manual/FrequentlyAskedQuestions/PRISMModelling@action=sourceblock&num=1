@@ -1,0 +1,21 @@
+ctmc
+
+const int k;
+const double mean = 10;
+
+module trigger
+
+	i : [1..k+1];
+
+	[]   i < k -> k/mean : (i'=i+1);
+	[go] i = k -> k/mean : (i'=i+1);
+
+endmodule
+
+module main
+
+	x : [0..1];
+
+	[go] x=0 -> (x'=1);
+
+endmodule

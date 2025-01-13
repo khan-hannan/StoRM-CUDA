@@ -1,0 +1,5 @@
+"N1000": P=? [ F<=1000 "elected" ];
+"N500": P=? [ F<=500 "elected" ];
+"N100": P=? [ F<=100 "elected" ];
+"N50": P=? [ F<=50 "elected" ];
+"N2": P=? [ F<=2 "elected" ];

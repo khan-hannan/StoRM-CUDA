@@ -1,0 +1,10 @@
+## 
+## An unexpected error has been detected by HotSpot Virtual Machine: 
+## 
+## EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0b1c7da3, pid=2884, tid=2544 
+## 
+## Java VM: Java HotSpot(TM) Client VM (1.5.0_06-b05 mixed mode) 
+## Problematic frame: 
+## C [dd.dll+0x7da3] 
+##
+#...

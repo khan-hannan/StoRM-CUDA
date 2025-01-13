@@ -1,0 +1,6 @@
+cd cudd/
+rmdir lib/ 
+./setup.sh
+cd ..
+make OSTYPE=cygwin 
+./install.sh

@@ -1,0 +1,2 @@
+cd "c:\Program Files\prism-3.0.beta1-win\bin"
+prism ..\examples\dice\dice.pm

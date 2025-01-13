@@ -1,0 +1,4 @@
+gunzip prism-3.2-linux.tar.gz
+tar xf prism-3.2-linux.tar
+cd prism-3.2-linux
+./install.sh

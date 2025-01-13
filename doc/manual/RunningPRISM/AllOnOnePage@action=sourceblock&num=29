@@ -1,0 +1,2 @@
+cd prism
+java -cp classes prism.SBML2Prism sbml_file.xml > prism_file.sm

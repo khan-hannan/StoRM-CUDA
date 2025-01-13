@@ -1,0 +1,2 @@
+label "safe" = temp<=100 | alarm=true;
+label "fail" = temp>100 & alarm=false;

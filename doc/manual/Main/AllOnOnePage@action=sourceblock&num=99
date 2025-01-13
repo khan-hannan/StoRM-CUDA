@@ -1,0 +1,4 @@
+P=? [ pathprop {states} ]
+P=? [ pathprop {states}{min} ]
+P=? [ pathprop {states}{max} ]
+P=? [ pathprop {states}{min}{max} ]

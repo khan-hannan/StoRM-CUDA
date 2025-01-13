@@ -1,0 +1,15 @@
+##
+## An unexpected error has been detected by Java Runtime Environment:
+##
+##  SIGSEGV (0xb) at pc=0xb5249323, pid=19298, tid=3086363536
+##
+## Java VM: Java HotSpot(TM) Client VM (1.6.0-b105 mixed mode, sharing)
+## Problematic frame:
+## C  [libdd.so+0x39323]  Cudd_Ref+0xf
+##
+## An error report file with more information is saved as hs_err_pid19298.log
+##
+## If you would like to submit a bug report, please visit:
+##   http://java.sun.com/webapps/bugreport/crash.jsp
+##
+#/home/dxp/bin/prism: line 50: 19298 Aborted                 "$PRISM_JAVA" #$PRISM_JAVAMAXMEM -Djava.awt.headless=$PRISM_HEADLESS -Djava.library.path=$PRISM_DIR/lib -classpath "$PRISM_CLASSPATH" $PRISM_MAINCLASS "$@"

@@ -1,0 +1,2 @@
+filter(forall, "ready" => P>=1 [ F "done" ])
+filter(forall, P>=1 [ F "done" ], "ready")

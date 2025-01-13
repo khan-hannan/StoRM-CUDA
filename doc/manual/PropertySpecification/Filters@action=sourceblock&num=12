@@ -1,0 +1,4 @@
+filter(state, P=? [ pathprop ], states)
+filter(min, P=? [ pathprop ], states)
+filter(max, P=? [ pathprop ], states)
+filter(range, P=? [ pathprop ], states)

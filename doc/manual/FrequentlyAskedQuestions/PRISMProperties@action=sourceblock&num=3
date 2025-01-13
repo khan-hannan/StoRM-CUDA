@@ -1,0 +1,2 @@
+filter(forall, P<0.01 [ F "error" ], true)
+filter(forall, P<0.01 [ F "error" ])

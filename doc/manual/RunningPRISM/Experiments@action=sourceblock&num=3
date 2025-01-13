@@ -1,0 +1,1 @@
+prism cluster.sm cluster.csl -const N=4:6,T=60:10:100

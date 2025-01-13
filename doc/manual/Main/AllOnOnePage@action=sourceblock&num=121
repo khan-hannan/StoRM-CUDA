@@ -1,0 +1,1 @@
+prism model.sm -simpath deadlock stdout -simpathlen 100

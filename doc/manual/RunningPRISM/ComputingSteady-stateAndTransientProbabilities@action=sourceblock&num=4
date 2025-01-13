@@ -1,0 +1,2 @@
+prism poll2.sm -tr 1.0 -exporttr poll2-tr1.txt
+prism poll2.sm -tr 1.0 -importinitdist poll2-tr1.txt -exporttr poll2-tr2.txt

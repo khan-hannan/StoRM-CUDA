@@ -1,0 +1,11 @@
+prism dice.pm -simpath 10 stdout
+#...
+#Warning: Deterministic loop detected after 6 steps (use loopcheck=false option to extend path).
+#step s d state_reward transition_reward
+#0 0 0 0.0 1.0
+#1 1 0 0.0 1.0
+#2 3 0 0.0 1.0
+#3 1 0 0.0 1.0
+#4 4 0 0.0 1.0
+#5 7 3 0.0 0.0
+#6 7 3 0.0 0.0

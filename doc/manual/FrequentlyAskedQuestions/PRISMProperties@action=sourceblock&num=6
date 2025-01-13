@@ -1,0 +1,8 @@
+module checker
+
+    q : [0..1] init 0;
+
+    [b] q=0 -> (q'=1);
+    [b] q=1 -> (q'=1);
+
+endmodule

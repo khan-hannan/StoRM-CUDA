@@ -1,0 +1,2 @@
+filter(avg, P=? [ F "error" ], "init")
+filter(sum, P=? [ F "error" ], "init") / filter(count, "init")

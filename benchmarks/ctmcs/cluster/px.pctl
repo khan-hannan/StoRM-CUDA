@@ -1,0 +1,5 @@
+"N1000": P=? [ F<=1000 "premium" ];
+"N500": P=? [ F<=500 "premium" ];
+"N100": P=? [ F<=100 "premium" ];
+"N50": P=? [ F<=50 "premium" ];
+"N2": P=? [ F<=2 "premium" ];

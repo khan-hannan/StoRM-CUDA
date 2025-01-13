@@ -1,0 +1,5 @@
+"N1000": P=? [ F<=(1000) "deadlock" ];
+"N500": P=? [ F<=(500) "deadlock" ];
+"N100": P=? [ F<=(100) "deadlock" ];
+"N50": P=? [ F<=(50) "deadlock" ];
+"N2": P=? [ F<=(2) "deadlock" ];

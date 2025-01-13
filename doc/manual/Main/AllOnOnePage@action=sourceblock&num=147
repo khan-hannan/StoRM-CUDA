@@ -1,0 +1,2 @@
+prism poll2.sm -exporttrans poll2.tra -exportstates poll2.sta
+prism -importtrans poll2.tra -importstates poll2.sta -ctmc

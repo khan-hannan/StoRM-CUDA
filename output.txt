@@ -1,0 +1,818 @@
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 22:11:31 PKT 2025
+Hostname: khan-ubuntu22
+Command line: prism benchmarks/dtmcs/nand/nand.pm -const 'N=40,K=4' benchmarks/dtmcs/nand/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/nand/nand.pm"...
+
+Parsing properties file "benchmarks/dtmcs/nand/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 z/N<0.1 ]
+(2) P=? [ F<=500 z/N<0.1 ]
+(3) P=? [ F<=100 z/N<0.1 ]
+(4) P=? [ F<=50 z/N<0.1 ]
+(5) P=? [ F<=2 z/N<0.1 ]
+
+Model constants: N=40,K=4
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 1442 iterations in 1.90 seconds (average 0.001317, setup 0.00)
+
+Time for model construction: 1.975 seconds.
+
+Type:        DTMC
+Modules:     multiplex 
+Variables:   u c s z zx zy x y 
+
+States:      3999522 (1 initial)
+Transitions: 6288542
+
+Transition matrix: 49483 nodes (898 terminal), 6288542 minterms, vars: 33r/33c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 z/N<0.1 ]
+Model constants: N=40,K=4
+
+Prob0: 146 iterations in 0.22 seconds (average 0.001507, setup 0.00)
+
+yes = 992312, no = 375263, maybe = 2631947
+
+Building sparse matrix... [n=3999522, nnz=4132670, compact] [19.6 MB]
+Creating vector for yes... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [88.2 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7999044
+allocated 16
+row starts:
+allocated 15998092
+dist_dev:
+allocated 8184
+cols_dev:
+allocated 16530680
+soln_dev:
+allocated 31996176
+soln2_dev:
+allocated 31996176
+copied 102078 KB to GPU 
+copied 99 MB to GPU 
+datacpy_pbu execution time: 0.055529 seconds
+mv_pbu execution time: 0.275236 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.69 seconds (average 0.000237, setup 0.46)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.106 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 z/N<0.1 ]
+Model constants: N=40,K=4
+
+Prob0: 146 iterations in 0.17 seconds (average 0.001137, setup 0.00)
+
+yes = 992312, no = 375263, maybe = 2631947
+
+Building sparse matrix... [n=3999522, nnz=4132670, compact] [19.6 MB]
+Creating vector for yes... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [88.2 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7999044
+allocated 16
+row starts:
+allocated 15998092
+dist_dev:
+allocated 8184
+cols_dev:
+allocated 16530680
+soln_dev:
+allocated 31996176
+soln2_dev:
+allocated 31996176
+copied 204156 KB to GPU 
+copied 199 MB to GPU 
+datacpy_pbu execution time: 0.005989 seconds
+mv_pbu execution time: 0.140125 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.62 seconds (average 0.000288, setup 0.47)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.838 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 z/N<0.1 ]
+Model constants: N=40,K=4
+
+Prob0: 146 iterations in 0.16 seconds (average 0.001089, setup 0.00)
+
+yes = 992312, no = 375263, maybe = 2631947
+
+Building sparse matrix... [n=3999522, nnz=4132670, compact] [19.6 MB]
+Creating vector for yes... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [88.2 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7999044
+allocated 16
+row starts:
+allocated 15998092
+dist_dev:
+allocated 8184
+cols_dev:
+allocated 16530680
+soln_dev:
+allocated 31996176
+soln2_dev:
+allocated 31996176
+copied 306235 KB to GPU 
+copied 299 MB to GPU 
+datacpy_pbu execution time: 0.006293 seconds
+mv_pbu execution time: 0.031131 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.51 seconds (average 0.000390, setup 0.47)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.688 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 z/N<0.1 ]
+Model constants: N=40,K=4
+
+Prob0: 146 iterations in 0.15 seconds (average 0.001055,#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fea081d6468, pid=5713, tid=0x00007fea275ff640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/khan/Paper/gpuprism/prism-4.0.2-src_gpu/hs_err_pid5713.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+ setup 0.00)
+
+yes = 992312, no = 375263, maybe = 2631947
+
+Building sparse matrix... [n=3999522, nnz=4132670, compact] [19.6 MB]
+Creating vector for yes... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [88.2 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7999044
+allocated 16
+row starts:
+allocated 15998092
+dist_dev:
+allocated 8184
+cols_dev:
+allocated 16530680
+soln_dev:
+allocated 31996176
+soln2_dev:
+allocated 31996176
+copied 408313 KB to GPU 
+copied 398 MB to GPU 
+datacpy_pbu execution time: 0.006174 seconds
+mv_pbu execution time: 0.015905 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.48 seconds (average 0.000400, setup 0.46)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.65 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 z/N<0.1 ]
+Model constants: N=40,K=4
+
+Prob0: 146 iterations in 0.15 seconds (average 0.001048, setup 0.00)
+
+yes = 992312, no = 375263, maybe = 2631947
+
+Building sparse matrix... [n=3999522, nnz=4132670, compact] [19.6 MB]
+Creating vector for yes... [dist=2, compact] [7.6 MB]
+Allocating iteration vectors... [2 x 30.5 MB]
+TOTAL: [88.2 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7999044
+allocated 16
+row starts:
+allocated 15998092
+dist_dev:
+allocated 8184
+cols_dev:
+allocated 16530680
+soln_dev:
+allocated 31996176
+soln2_dev:
+allocated 31996176
+copied 510392 KB to GPU 
+copied 498 MB to GPU 
+datacpy_pbu execution time: 0.005922 seconds
+mv_pbu execution time: 0.003298 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.46 seconds (average 0.005500, setup 0.45)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.634 seconds.
+
+Result: 1.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 22:11:45 PKT 2025
+Hostname: khan-ubuntu22
+Command line: prism benchmarks/dtmcs/nand/nand.pm -const 'N=50,K=5' benchmarks/dtmcs/nand/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/nand/nand.pm"...
+
+Parsing properties file "benchmarks/dtmcs/nand/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 z/N<0.1 ]
+(2) P=? [ F<=500 z/N<0.1 ]
+(3) P=? [ F<=100 z/N<0.1 ]
+(4) P=? [ F<=50 z/N<0.1 ]
+(5) P=? [ F<=2 z/N<0.1 ]
+
+Model constants: N=50,K=5
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 2202 iterations in 4.13 seconds (average 0.001876, setup 0.00)
+
+Time for model construction: 4.191 seconds.
+
+Type:        DTMC
+Modules:     multiplex 
+Variables:   u c s z zx zy x y 
+
+States:      11683552 (1 initial)
+Transitions: 18433227
+
+Transition matrix: 73585 nodes (1593 terminal), 18433227 minterms, vars: 33r/33c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 z/N<0.1 ]
+Model constants: N=50,K=5
+
+Prob0: 182 iterations in 0.38 seconds (average 0.002082, setup 0.00)
+
+yes = 2929270, no = 874637, maybe = 7879645
+
+Building sparse matrix... [n=11683552, nnz=12417850] [153.3 MB]
+Creating vector for yes... [dist=2, compact] [22.3 MB]
+Allocating iteration vectors... [2 x 89.1 MB]
+TOTAL: [353.8 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 23367104
+allocated 16
+row starts:
+allocated 46734212
+non_zeros:
+allocated 99342800
+cols_dev:
+allocated 49671400
+soln_dev:
+allocated 93468416
+soln2_dev:
+allocated 93468416
+copied 396535 KB to GPU 
+copied 387 MB to GPU 
+datacpy_pbu execution time: 0.070716 seconds
+mv_pbu execution time: 1.063453 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 1.86 seconds (average 0.000865, setup 1.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 2.725 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 z/N<0.1 ]
+Model constants: N=50,K=5
+
+Prob0: 182 iterations in 0.35 seconds (average 0.001951, setup 0.00)
+
+yes = 2929270, no = 874637, maybe = 7879645
+
+Building sparse matrix... [n=11683552, nnz=12417850] [153.3 MB]
+Creating vector for yes... [dist=2, compact] [22.3 MB]
+Allocating iteration vectors... [2 x 89.1 MB]
+TOTAL: [353.8 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 23367104
+allocated 16
+row starts:
+allocated 46734212
+non_zeros:
+allocated 99342800
+cols_dev:
+allocated 49671400
+soln_dev:
+allocated 93468416
+soln2_dev:
+allocated 93468416
+copied 793071 KB to GPU 
+copied 774 MB to GPU 
+datacpy_pbu execution time: 0.024736 seconds
+mv_pbu execution time: 0.561543 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 1.60 seconds (average 0.001176, setup 1.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 2.142 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 z/N<0.1 ]
+Model constants: N=50,K=5
+
+Prob0: 182 iterations in 0.39 seconds (average 0.002165, setup 0.00)
+
+yes = 2929270, no = 874637, maybe = 7879645
+
+Building sparse matrix... [n=11683552, nnz=12417850] [153.3 MB]
+Creating vector for yes... [dist=2, compact] [22.3 MB]
+Allocating iteration vectors... [2 x 89.1 MB]
+TOTAL: [353.8 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 23367104
+allocated 16
+row starts:
+allocated 46734212
+non_zeros:
+allocated 99342800
+cols_dev:
+allocated 49671400
+soln_dev:
+allocated 93468416
+soln2_dev:
+allocated 93468416
+copied 1189606 KB to GPU 
+copied 1161 MB to GPU 
+datacpy_pbu execution time: 0.024738 seconds
+mv_pbu execution time: 0.119402 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 1.20 seconds (average 0.001430, setup 1.05)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.79 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 z/N<0.1 ]
+Model constants: N=50,K=5
+
+Prob0: 182 iterations in 0.38 seconds (average 0.002071, setup 0.00)
+
+yes = 2929270, no = 874637, maybe = 7879645
+
+Building sparse matrix... [n=11683552, nnz=12417850] [153.3 MB]
+Creating vector for yes... [dist=2, compact] [22.3 MB]
+Allocating iteration vectors... [2 x 89.1 MB]
+TOTAL: [353.8 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 23367104
+allocated 16
+row starts:
+allocated 46734212
+non_zeros:
+allocated 99342800
+cols_dev:
+allocated 49671400
+soln_dev:
+allocated 93468416
+soln2_dev:
+allocated 93468416
+copied 1586142 KB to GPU 
+copied 1548 MB to GPU 
+datacpy_pbu execution time: 0.024172 seconds
+mv_pbu execution time: 0.062940 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 1.09 seconds (average 0.001700, setup 1.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.649 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 z/N<0.1 ]
+Model constants: N=50,K=5
+
+Prob0: 182 iterations in 0.39 seconds (average 0.002115, setup 0.00)
+
+yes = 2929270, no = 874637, maybe = 7879645
+
+Building sparse matrix... [n=11683552, nnz=12417850] [153.3 MB]
+Creating vector for yes... [dist=2, compact] [22.3 MB]
+Allocating iteration vectors... [2 x 89.1 MB]
+TOTAL: [353.8 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 23367104
+allocated 16
+row starts:
+allocated 46734212
+non_zeros:
+allocated 99342800
+cols_dev:
+allocated 49671400
+soln_dev:
+allocated 93468416
+soln2_dev:
+allocated 93468416
+copied 1982677 KB to GPU 
+copied 1936 MB to GPU 
+datacpy_pbu execution time: 0.023732 seconds
+mv_pbu execution time: 0.008951 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 1.09 seconds (average 0.017000, setup 1.05)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.646 seconds.
+
+Result: 1.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 22:11:59 PKT 2025
+Hostname: khan-ubuntu22
+Command line: prism benchmarks/dtmcs/nand/nand.pm -const 'N=60,K=6' benchmarks/dtmcs/nand/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/nand/nand.pm"...
+
+Parsing properties file "benchmarks/dtmcs/nand/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 z/N<0.1 ]
+(2) P=? [ F<=500 z/N<0.1 ]
+(3) P=? [ F<=100 z/N<0.1 ]
+(4) P=? [ F<=50 z/N<0.1 ]
+(5) P=? [ F<=2 z/N<0.1 ]
+
+Model constants: N=60,K=6
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 3122 iterations in 7.47 seconds (average 0.002394, setup 0.00)
+
+Time for model construction: 7.639 seconds.
+
+Type:        DTMC
+Modules:     multiplex 
+Variables:   u c s z zx zy x y 
+
+States:      28231742 (1 initial)
+Transitions: 44644532
+
+Transition matrix: 101999 nodes (2421 terminal), 44644532 minterms, vars: 33r/33c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 z/N<0.1 ]
+Model constants: N=60,K=6
+
+Prob0: 218 iterations in 0.55 seconds (average 0.002541, setup 0.00)
+
+yes = 7128072, no = 1757695, maybe = 19345975
+
+Building sparse matrix... [n=28231742, nnz=30563885] [376.7 MB]
+Creating vector for yes... [dist=2, compact] [53.8 MB]
+Allocating iteration vectors... [2 x 215.4 MB]
+TOTAL: [861.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 56463484
+allocated 16
+row starts:
+allocated 112926972
+non_zeros:
+allocated 244511080
+cols_dev:
+allocated 122255540
+soln_dev:
+allocated 225853936
+soln2_dev:
+allocated 225853936
+copied 964711 KB to GPU 
+copied 942 MB to GPU 
+datacpy_pbu execution time: 0.107192 seconds
+mv_pbu execution time: 2.805213 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 4.51 seconds (average 0.002087, setup 2.41)
+
+Value in the initial state: 1.0
+
+Time for model checking: 6.325 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 z/N<0.1 ]
+Model constants: N=60,K=6
+
+Prob0: 218 iterations in 0.49 seconds (average 0.002252, setup 0.00)
+
+yes = 7128072, no = 1757695, maybe = 19345975
+
+Building sparse matrix... [n=28231742, nnz=30563885] [376.7 MB]
+Creating vector for yes... [dist=2, compact] [53.8 MB]
+Allocating iteration vectors... [2 x 215.4 MB]
+TOTAL: [861.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 56463484
+allocated 16
+row starts:
+allocated 112926972
+non_zeros:
+allocated 244511080
+cols_dev:
+allocated 122255540
+soln_dev:
+allocated 225853936
+soln2_dev:
+allocated 225853936
+copied 1929423 KB to GPU 
+copied 1884 MB to GPU 
+datacpy_pbu execution time: 0.057555 seconds
+mv_pbu execution time: 1.428643 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 3.97 seconds (average 0.002972, setup 2.47)
+
+Value in the initial state: 1.0
+
+Time for model checking: 4.921 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 z/N<0.1 ]
+Model constants: N=60,K=6
+
+Prob0: 218 iterations in 0.47 seconds (average 0.002138, setup 0.00)
+
+yes = 7128072, no = 1757695, maybe = 19345975
+
+Building sparse matrix... [n=28231742, nnz=30563885] [376.7 MB]
+Creating vector for yes... [dist=2, compact] [53.8 MB]
+Allocating iteration vectors... [2 x 215.4 MB]
+TOTAL: [861.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 56463484
+allocated 16
+row starts:
+allocated 112926972
+non_zeros:
+allocated 244511080
+cols_dev:
+allocated 122255540
+soln_dev:
+allocated 225853936
+soln2_dev:
+allocated 225853936
+copied -1300168 KB to GPU 
+copied -1269 MB to GPU 
+datacpy_pbu execution time: 0.056996 seconds
+mv_pbu execution time: 0.285436 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 2.85 seconds (average 0.003430, setup 2.50)
+
+Value in the initial state: 1.0
+
+Time for model checking: 3.722 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 z/N<0.1 ]
+Model constants: N=60,K=6
+
+Prob0: 218 #
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f2ff424d468, pid=5802, tid=0x00007f30117ff640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# An error report file with more information is saved as:
+# /home/khan/Paper/gpuprism/prism-4.0.2-src_gpu/hs_err_pid5802.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+iterations in 0.43 seconds (average 0.001972, setup 0.00)
+
+yes = 7128072, no = 1757695, maybe = 19345975
+
+Building sparse matrix... [n=28231742, nnz=30563885] [376.7 MB]
+Creating vector for yes... [dist=2, compact] [53.8 MB]
+Allocating iteration vectors... [2 x 215.4 MB]
+TOTAL: [861.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 56463484
+allocated 16
+row starts:
+allocated 112926972
+non_zeros:
+allocated 244511080
+cols_dev:
+allocated 122255540
+soln_dev:
+allocated 225853936
+soln2_dev:
+allocated 225853936
+copied -335456 KB to GPU 
+copied -327 MB to GPU 
+datacpy_pbu execution time: 0.059117 seconds
+mv_pbu execution time: 0.152885 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 2.65 seconds (average 0.004240, setup 2.43)
+
+Value in the initial state: 1.0
+
+Time for model checking: 3.327 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 z/N<0.1 ]
+Model constants: N=60,K=6
+
+Prob0: 218 iterations in 0.44 seconds (average 0.002028, setup 0.00)
+
+yes = 7128072, no = 1757695, maybe = 19345975
+
+Building sparse matrix... [n=28231742, nnz=30563885] [376.7 MB]
+Creating vector for yes... [dist=2, compact] [53.8 MB]
+Allocating iteration vectors... [2 x 215.4 MB]
+TOTAL: [861.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 56463484
+allocated 16
+row starts:
+allocated 112926972
+non_zeros:
+allocated 244511080
+cols_dev:
+allocated 122255540
+soln_dev:
+allocated 225853936
+soln2_dev:
+allocated 225853936
+copied 629255 KB to GPU 
+copied 614 MB to GPU 
+datacpy_pbu execution time: 0.057948 seconds
+mv_pbu execution time: 0.022040 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 2.56 seconds (average 0.040000, setup 2.46)
+
+Value in the initial state: 1.0
+
+Time for model checking: 3.246 seconds.
+
+Result: 1.0 (value in the initial state)

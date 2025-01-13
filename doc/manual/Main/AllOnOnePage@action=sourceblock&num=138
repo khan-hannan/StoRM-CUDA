@@ -1,0 +1,1 @@
+prism mdp.nm -pctl 'Pmax=? [ F "error" ]' -exportadv adv.tra -s

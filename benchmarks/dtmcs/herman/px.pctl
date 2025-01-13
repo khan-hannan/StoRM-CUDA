@@ -1,0 +1,5 @@
+"N1000": P=? [ F<=1000 "stable" ];
+"N500": P=? [ F<=500 "stable" ];
+"N100": P=? [ F<=100 "stable" ];
+"N50": P=? [ F<=50 "stable" ];
+"N2": P=? [ F<=2 "stable" ];

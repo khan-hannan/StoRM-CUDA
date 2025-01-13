@@ -1,0 +1,4 @@
+Pmin=? [ F target ]
+Pmax=? [ F target ]
+Pmin=? [ F<=T target ]
+Pmax=? [ F<=T target ]
