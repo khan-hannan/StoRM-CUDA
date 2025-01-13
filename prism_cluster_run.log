@@ -2,8 +2,8 @@ PRISM
 =====
 
 Version: 4.0.2
-Date: Mon Jan 13 22:27:15 PKT 2025
-Hostname: khan-ubuntu22
+Date: Mon Jan 13 20:10:18 GMT 2025
+Hostname: 58867d1590a7
 Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=2 benchmarks/ctmcs/cluster/px.pctl -gpu
 
 Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
@@ -25,9 +25,9 @@ Building model...
 
 Computing reachable states...
 
-Reachability: 9 iterations in 0.00 seconds (average 0.000111, setup 0.00)
+Reachability: 9 iterations in 0.00 seconds (average 0.000222, setup 0.00)
 
-Time for model construction: 0.006 seconds.
+Time for model construction: 0.01 seconds.
 
 Type:        CTMC
 Modules:     Left Right Repairman Line ToLeft ToRight 
@@ -67,22 +67,22 @@ done:
 allocated 1
 copied 12 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.048563 seconds
+datacpy execution time: 0.286808 seconds
 TOTAL: [11.1 KB]
 
 Uniformisation: q.t = 51.004080 x 1000.000000 = 51004.080000
 Fox-Glynn: left = 49420, right = 52922
 
 Starting GPU iterations...
-mv_stbu execution time: 0.022934 seconds
+mv_stbu execution time: 0.026797 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 1000 iterations in 0.03 seconds (average 0.000023, setup 0.01)
+Iterative method: 1000 iterations in 0.04 seconds (average 0.000027, setup 0.01)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.073 seconds.
+Time for model checking: 0.314 seconds.
 
 Result: 1.0 (value in the initial state)
 
@@ -115,22 +115,22 @@ done:
 allocated 1
 copied 24 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000121 seconds
+datacpy execution time: 0.000243 seconds
 TOTAL: [11.1 KB]
 
 Uniformisation: q.t = 51.004080 x 500.000000 = 25502.040000
 Fox-Glynn: left = 24381, right = 26859
 
 Starting GPU iterations...
-mv_stbu execution time: 0.010438 seconds
+mv_stbu execution time: 0.013414 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 500 iterations in 0.01 seconds (average 0.000022, setup 0.00)
+Iterative method: 500 iterations in 0.01 seconds (average 0.000028, setup 0.00)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.011 seconds.
+Time for model checking: 0.014 seconds.
 
 Result: 1.0 (value in the initial state)
 
@@ -163,44 +163,44 @@ done:
 allocated 1
 copied 36 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000088 seconds
+datacpy execution time: 0.001166 seconds
 TOTAL: [11.1 KB]
 
 Uniformisation: q.t = 51.004080 x 100.000000 = 5100.408000
 Fox-Glynn: left = 4597, right = 5708
 
 Starting GPU iterations...
-mv_stbu execution time: 0.003098 seconds
+mv_stbu execution time: 0.004844 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 100 iterations in 0.00 seconds (average 0.000030, setup 0.00)
+Iterative method: 100 iterations in 0.01 seconds (average 0.000050, setup 0.00)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.004 seconds.
+Time for model checking: 0.003 seconds.
 
-Result: 1.0 (value in the initi#
+Result: 1.0 (value in the initial#
 # A fatal error has been detected by the Java Runtime Environment:
 #
-#  SIGSEGV (0xb) at pc=0x00007f6cc187e468, pid=7002, tid=0x00007f6ce0d18640
+#  SIGSEGV (0xb) at pc=0x00007db92a5a4468, pid=10288, tid=0x00007db94e587640
 #
 # JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
 # Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
 # Problematic frame:
 # C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
 #
-# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10288
 #
 # An error report file with more information is saved as:
-# /home/khan/Paper/gpuprism/prism-4.0.2-src_gpu/hs_err_pid7002.log
+# /root/StoRM-CUDA/hs_err_pid10288.log
 #
 # If you would like to submit a bug report, please visit:
 #   http://bugreport.java.com/bugreport/crash.jsp
 # The crash happened outside the Java Virtual Machine in native code.
 # See problematic frame for where to report the bug.
 #
-al state)
+ state)
 
 -------------------------------------------
 
@@ -231,22 +231,22 @@ done:
 allocated 1
 copied 48 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000098 seconds
+datacpy execution time: 0.000338 seconds
 TOTAL: [11.1 KB]
 
 Uniformisation: q.t = 51.004080 x 50.000000 = 2550.204000
 Fox-Glynn: left = 2194, right = 2981
 
 Starting GPU iterations...
-mv_stbu execution time: 0.001481 seconds
+mv_stbu execution time: 0.004036 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 50 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+Iterative method: 50 iterations in 0.01 seconds (average 0.000080, setup 0.00)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.001 seconds.
+Time for model checking: 0.002 seconds.
 
 Result: 1.0 (value in the initial state)
 
@@ -279,14 +279,14 @@ done:
 allocated 1
 copied 60 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000081 seconds
+datacpy execution time: 0.000148 seconds
 TOTAL: [11.1 KB]
 
 Uniformisation: q.t = 51.004080 x 2.000000 = 102.008160
 Fox-Glynn: left = 0, right = 160
 
 Starting GPU iterations...
-mv_stbu execution time: 0.000075 seconds
+mv_stbu execution time: 0.000087 seconds
 freeing memory 
 GPU memory freed
 
@@ -301,8 +301,8 @@ PRISM
 =====
 
 Version: 4.0.2
-Date: Mon Jan 13 22:27:16 PKT 2025
-Hostname: khan-ubuntu22
+Date: Mon Jan 13 20:10:19 GMT 2025
+Hostname: 58867d1590a7
 Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=4 benchmarks/ctmcs/cluster/px.pctl -gpu
 
 Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
@@ -326,7 +326,7 @@ Computing reachable states...
 
 Reachability: 13 iterations in 0.00 seconds (average 0.000077, setup 0.00)
 
-Time for model construction: 0.006 seconds.
+Time for model construction: 0.011 seconds.
 
 Type:        CTMC
 Modules:     Left Right Repairman Line ToLeft ToRight 
@@ -366,22 +366,22 @@ done:
 allocated 1
 copied 36 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.036403 seconds
+datacpy execution time: 0.192549 seconds
 TOTAL: [34.5 KB]
 
 Uniformisation: q.t = 51.012240 x 1000.000000 = 51012.240000
 Fox-Glynn: left = 49428, right = 52930
 
 Starting GPU iterations...
-mv_stbu execution time: 0.021967 seconds
+mv_stbu execution time: 0.028807 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 1000 iterations in 0.03 seconds (average 0.000022, setup 0.01)
+Iterative method: 1000 iterations in 0.04 seconds (average 0.000028, setup 0.02)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.06 seconds.
+Time for model checking: 0.223 seconds.
 
 Result: 1.0 (value in the initial state)
 
@@ -414,22 +414,22 @@ done:
 allocated 1
 copied 73 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000128 seconds
+datacpy execution time: 0.000162 seconds
 TOTAL: [34.5 KB]
 
 Uniformisation: q.t = 51.012240 x 500.000000 = 25506.120000
 Fox-Glynn: left = 24385, right = 26863
 
 Starting GPU iterations...
-mv_stbu execution time: 0.011096 seconds
+mv_stbu execution time: 0.014399 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 500 iterations in 0.01 seconds (average 0.000022, setup 0.00)
+Iterative method: 500 iterations in 0.02 seconds (average 0.000030, setup 0.00)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.012 seconds.
+Time for model checking: 0.016 seconds.
 
 Result: 1.0 (value in the initial state)
 
@@ -462,44 +462,24 @@ done:
 allocated 1
 copied 110 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000084 seconds
+datacpy execution time: 0.000197 seconds
 TOTAL: [34.5 KB]
 
 Uniformisation: q.t = 51.012240 x 100.000000 = 5101.224000
 Fox-Glynn: left = 4598, right = 5709
 
 Starting GPU iterations...
-mv_stbu execution time: 0.002166 seconds
+mv_stbu execution time: 0.006434 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 100 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+Iterative method: 100 iterations in 0.01 seconds (average 0.000060, setup 0.00)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.003 seconds.
+Time for model checking: 0.004 seconds.
 
-Result: 1.0#
-# A fatal error has been detected by the Java Runtime Environment:
-#
-#  SIGSEGV (0xb) at pc=0x00007fcb003f6468, pid=7043, tid=0x00007fcb1f7ff640
-#
-# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
-# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
-# Problematic frame:
-# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
-#
-# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
-#
-# An error report file with more information is saved as:
-# /home/khan/Paper/gpuprism/prism-4.0.2-src_gpu/hs_err_pid7043.log
-#
-# If you would like to submit a bug report, please visit:
-#   http://bugreport.java.com/bugreport/crash.jsp
-# The crash happened outside the Java Virtual Machine in native code.
-# See problematic frame for where to report the bug.
-#
- (value in the initial state)
+Result: 1.0 (value in the initial state)
 
 -------------------------------------------
 
@@ -530,22 +510,22 @@ done:
 allocated 1
 copied 147 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000279 seconds
+datacpy execution time: 0.000496 seconds
 TOTAL: [34.5 KB]
 
 Uniformisation: q.t = 51.012240 x 50.000000 = 2550.612000
 Fox-Glynn: left = 2194, right = 2981
 
 Starting GPU iterations...
-mv_stbu execution time: 0.001091 seconds
+mv_stbu execution time: 0.001898 seconds
 freeing memory 
 GPU memory freed
 
-Iterative method: 50 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+Iterative method: 50 iterations in 0.00 seconds (average 0.000040, setup 0.00)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.002 seconds.
+Time for model checking: 0.003 seconds.
 
 Result: 1.0 (value in the initial state)
 
@@ -578,14 +558,14 @@ done:
 allocated 1
 copied 184 KB to GPU 
 copied 0 MB to GPU 
-datacpy execution time: 0.000084 seconds
+datacpy execution time: 0.000147 seconds
 TOTAL: [34.5 KB]
 
 Uniformisation: q.t = 51.012240 x 2.000000 = 102.024480
 Fox-Glynn: left = 0, right = 160
 
 Starting GPU iterations...
-mv_stbu execution time: 0.000070 seconds
+mv_stbu execution time: 0.000113 seconds
 freeing memory 
 GPU memory freed
 
@@ -593,6 +573,2043 @@ Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
 
 Value in the initial state: 1.0
 
-Time for model checking: 0.0 seconds.
+Time for model checking: 0.001 seconds.
+
+Result: 1.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:10:20 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=8 benchmarks/ctmcs/cluster/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
+
+Parsing properties file "benchmarks/ctmcs/cluster/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "premium" ]
+(2) P=? [ F<=500 "premium" ]
+(3) P=? [ F<=100 "premium" ]
+(4) P=? [ F<=50 "premium" ]
+(5) P=? [ F<=2 "premium" ]
+
+Model constants: N=8
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 21 iterations in 0.00 seconds (average 0.000143, setup 0.00)
+
+Time for model construction: 0.012 seconds.
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight 
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n 
+
+States:      2772 (1 initial)
+Transitions: 12832
+
+Rate matrix: 968 nodes (15 terminal), 12832 minterms, vars: 17r/17c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "premium" ]
+Model constants: N=8
+
+Number of non-absorbing states: 2483 of 2772 (89.6%)
+
+Building sparse matrix... [n=2772, nnz=11271, compact] [46.8 KB]
+Creating vector for diagonals... [dist=319, compact] [7.9 KB]
+Allocating iteration vectors... [3 x 21.7 KB]
+copying data 
+row starts:
+allocated 11092
+dist_dev:
+allocated 120
+cols_dev:
+allocated 45084
+soln_dev:
+allocated 22176
+soln2_dev:
+allocated 22176
+d:
+allocated 5544
+allocated 2552
+allocated 22176
+done:
+allocated 1
+copied 127 KB to GPU 
+copied 0 MB to GPU 
+datacpy execution time: 0.192617 seconds
+TOTAL: [119.7 KB]
+
+Uniformisation: q.t = 51.028560 x 1000.000000 = 51028.560000
+Fox-Glynn: left = 49444, right = 52947
+
+Starting GPU iterations...
+mv_stbu execution time: 0.049361 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.06 seconds (average 0.000050, setup 0.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.247 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "premium" ]
+Model constants: N=8
+
+Number of non-absorbing states: 2483 of 2772 (89.6%)
+
+Building sparse matrix... [n=2772, nnz=11271, compact] [46.8 KB]
+Creating vector for diagonals... [dist=319, compact] [7.9 KB]
+Allocating iteration vectors... [3 x 21.7 KB]
+copying data 
+row starts:
+allocated 11092
+dist_dev:
+allocated 120
+cols_dev:
+allocated 45084
+soln_dev:
+allocated 22176
+soln2_dev:
+allocated 22176
+d:
+allocated 5544
+allocated 2552
+allocated 22176
+done:
+allocated 1
+copied 255 KB to GPU 
+copied 0 MB to GPU 
+datacpy execution time: 0.000174 seconds
+TOTAL: [119.7 KB]
+
+Uniformisation: q.t = 51.028560 x 500.000000 = 25514.280000
+Fox-Glynn: left = 24393, right = 26871
+
+Starting GPU iterations...
+mv_stbu execution time: 0.024757 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.03 seconds (average 0.000050, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.027 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "premium" ]
+Model constants: N=8
+
+Number of non-absorbing states: 2483 of 2772 (89.6%)
+
+Building sparse matrix... [n=2772, nnz=11271, compact] [46.8 KB]
+Creating vector for diagonals... [dist=319, compact] [7.9 KB]
+Allocating iteration vectors... [3 x 21.7 KB]
+copying data 
+row starts:
+allocated 11092
+dist_dev:
+allocated 120
+cols_dev:
+allocated 45084
+soln_dev:
+allocated 22176
+soln2_dev:
+allocated 22176
+d:
+allocated 5544
+allocated 2552
+allocated 22176
+done:
+allocated 1
+copied 383 KB to GPU 
+copied 0 MB to GPU 
+datacpy execution time: 0.000173 seconds
+TOTAL: [119.7 KB]
+
+Uniformisation: q.t = 51.028560 x 100.000000 = 5102.856000
+Fox-Glynn: left = 4599, right = 5710
+
+Starting GPU iterations...
+mv_stbu execution time: 0.007651 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.01 seconds (average 0.000070, setup 0.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.007 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "premium" ]
+Model constants: N=8
+
+Number of non-absorbing states: 2483 of 2772 (89.6%)
+
+Building sparse matrix... [n=2772, nnz=11271, compact] [46.8 KB]
+Creating vector for diagonals... [dist=319, compact] [7.9 KB]
+Allocating iteration vectors... [3 x 21.7 KB]
+copying data 
+row starts:
+allocated 11092
+dist_dev:
+allocated 120
+cols_dev:
+allocated 45084
+soln_dev:
+allocated 22176
+soln2_dev:
+allocated 22176
+d:
+allocated 5544
+allocated 2552
+allocated 22176
+done:
+allocated 1
+copied 511 KB to GPU 
+copied 0 MB to GPU 
+datacpy execution time: 0.000179 seconds
+TOTAL: [119.7 KB]
+
+Uniformisation: q.t = 51.028560 x 50.000000 = 2551.428000
+Fox-Glynn: left = 2195, right = 2982
+
+Starting GPU iterations...
+mv_stbu execution time: 0.002546 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.01 seconds (average 0.000060, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.006 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "premium" ]
+Model constants: N=8
+
+Number of non-absorbing states: 2483 of 2772 (89.6%)
+
+Building sparse matrix... [n=2772, nnz=11271, compact] [46.8 KB]
+Creating vector for diagonals... [dist=319, compact] [7.9 KB]
+Allocating iteration vectors... [3 x 21.7 KB]
+copying data 
+row starts:
+allocated 11092
+dist_dev:
+allocated 120
+cols_dev:
+allocated 45084
+soln_dev:
+allocated 22176
+soln2_dev:
+allocated 22176
+d:
+allocated 5544
+allocated 2552
+allocated 22176
+done:
+allocated 1
+copied 639 KB to GPU 
+copied 0 MB to GPU 
+datacpy execution time: 0.000185 seconds
+TOTAL: [119.7 KB]
+
+Uniformisation: q.t = 51.028560 x 2.000000 = 102.057120
+Fox-Glynn: left = 0, right = 160
+
+Starting GPU iterations...
+mv_stbu execution time: 0.000148 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.002 seconds.
+
+Result: 1.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:10:22 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=16 benchmarks/ctmcs/cluster/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
+
+Parsing properties file "benchmarks/ctmcs/cluster/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "premium" ]
+(2) P=? [ F<=500 "premium" ]
+(3) P=? [ F<=100 "premium" ]
+(4) P=? [ F<=50 "premium" ]
+(5) P=? [ F<=2 "premium" ]
+
+Model constants: N=16
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 37 iterations in 0.01 seconds (average 0.000135, setup 0.00)
+
+Time for model construction: 0.015 seconds.
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight 
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n 
+
+States:      10132 (1 initial)
+Transitions: 48160
+
+Rate matrix: 1899 nodes (23 terminal), 48160 minterms, vars: 19r/19c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "premium" ]
+Model constants: N=16
+
+Number of non-absorbing states: 9375 of 10132 (92.5%)
+
+Building sparse matrix... [n=10132, nnz=43859, compact] [181.4 KB]
+Creating vector for diagonals... [dist=658, compact] [24.9 KB]
+Allocating iteration vectors... [3 x 79.2 KB]
+copying data 
+row starts:
+allocated 40532
+dist_dev:
+allocated 248
+cols_dev:
+allocated 175436
+soln_dev:
+allocated 81056
+soln2_dev:
+allocated 81056
+d:
+allocated 20264
+allocated 5264
+allocated 81056
+done:
+allocated 1
+copied 473 KB to GPU 
+copied 0 MB to GPU 
+datacpy execution time: 0.191954 seconds
+TOTAL: [443.8 KB]
+
+Uniformisation: q.t = 51.061200 x 1000.000000 = 51061.200000
+Fox-Glynn: left = 49477, right = 52980
+
+Starting GPU iterations...
+mv_stbu execution time: 0.062224 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.08 seconds (average 0.000062, setup 0.02)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.266 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "premium" ]
+Model constants: N=16
+
+Number of non-absorbing states: 9375 of 10132 (92.5%)
+
+Building sparse matrix... [n=10132, nnz=43859, compact] [181.4 KB]
+Creating vector for diagonals... [dist=658, compact] [24.9 KB]
+Allocating iteration vectors... [3 x 79.2 KB]
+copying data 
+row starts:
+allocated 40532
+dist_dev:
+allocated 248
+cols_dev:
+allocated 175436
+soln_dev:
+allocated 81056
+soln2_dev:
+allocated 81056
+d:
+allocated 20264
+allocated 5264
+allocated 81056
+done:
+allocated 1
+copied 947 KB to GPU 
+copied 0 MB to GPU 
+datacpy execution time: 0.000262 seconds
+TOTAL: [443.8 KB]
+
+Uniformisation: q.t = 51.061200 x 500.000000 = 25530.600000
+Fox-Glynn: left = 24409, right = 26888
+
+Starting GPU iterations...
+mv_stbu execution time: 0.031091 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.04 seconds (average 0.000062, setup 0.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.04 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "premium" ]
+Model constants: N=16
+
+Number of non-absorbing states: 9375 of 10132 (92.5%)
+
+Building sparse matrix... [n=10132, nnz=43859, compact] [181.4 KB]
+Creating vector for diagonals... [dist=658, compact] [24.9 KB]
+Allocating iteration vectors... [3 x 79.2 KB]
+copying data 
+row starts:
+allocated 40532
+dist_dev:
+allocated 248
+cols_dev:
+allocated 175436
+soln_dev:
+allocated 81056
+soln2_dev:
+allocated 81056
+d:
+allocated 20264
+allocated 5264
+allocated 81056
+done:
+allocated 1
+copied 1420 KB to GPU 
+copied 1 MB to GPU 
+datacpy execution time: 0.000251 seconds
+TOTAL: [443.8 KB]
+
+Uniformisation: q.t = 51.061200 x 100.000000 = 5106.120000
+Fox-Glynn: left = 4603, right = 5714
+
+Starting GPU iterations...
+mv_stbu execution time: 0.006235 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.02 seconds (average 0.000070, setup 0.01)
+
+Value in the initial stat#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000073d178e69468, pid=10432, tid=0x000073d198b34640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10432
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10432.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+e: 1.0
+
+Time for model checking: 0.016 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "premium" ]
+Model constants: N=16
+
+Number of non-absorbing states: 9375 of 10132 (92.5%)
+
+Building sparse matrix... [n=10132, nnz=43859, compact] [181.4 KB]
+Creating vector for diagonals... [dist=658, compact] [24.9 KB]
+Allocating iteration vectors... [3 x 79.2 KB]
+copying data 
+row starts:
+allocated 40532
+dist_dev:
+allocated 248
+cols_dev:
+allocated 175436
+soln_dev:
+allocated 81056
+soln2_dev:
+allocated 81056
+d:
+allocated 20264
+allocated 5264
+allocated 81056
+done:
+allocated 1
+copied 1894 KB to GPU 
+copied 1 MB to GPU 
+datacpy execution time: 0.000246 seconds
+TOTAL: [443.8 KB]
+
+Uniformisation: q.t = 51.061200 x 50.000000 = 2553.060000
+Fox-Glynn: left = 2197, right = 2984
+
+Starting GPU iterations...
+mv_stbu execution time: 0.003163 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.01 seconds (average 0.000060, setup 0.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.012 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "premium" ]
+Model constants: N=16
+
+Number of non-absorbing states: 9375 of 10132 (92.5%)
+
+Building sparse matrix... [n=10132, nnz=43859, compact] [181.4 KB]
+Creating vector for diagonals... [dist=658, compact] [24.9 KB]
+Allocating iteration vectors... [3 x 79.2 KB]
+copying data 
+row starts:
+allocated 40532
+dist_dev:
+allocated 248
+cols_dev:
+allocated 175436
+soln_dev:
+allocated 81056
+soln2_dev:
+allocated 81056
+d:
+allocated 20264
+allocated 5264
+allocated 81056
+done:
+allocated 1
+copied 2367 KB to GPU 
+copied 2 MB to GPU 
+datacpy execution time: 0.000248 seconds
+TOTAL: [443.8 KB]
+
+Uniformisation: q.t = 51.061200 x 2.000000 = 102.122400
+Fox-Glynn: left = 0, right = 160
+
+Starting GPU iterations...
+mv_stbu execution time: 0.000189 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.01 seconds (average 0.000000, setup 0.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.009 seconds.
+
+Result: 1.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:10:23 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=32 benchmarks/ctmcs/cluster/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
+
+Parsing properties file "benchmarks/ctmcs/cluster/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "premium" ]
+(2) P=? [ F<=500 "premium" ]
+(3) P=? [ F<=100 "premium" ]
+(4) P=? [ F<=50 "premium" ]
+(5) P=? [ F<=2 "premium" ]
+
+Model constants: N=32
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 69 iterations in 0.01 seconds (average 0.000130, setup 0.00)
+
+Time for model construction: 0.024 seconds.
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight 
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n 
+
+States:      38676 (1 initial)
+Transitions: 186400
+
+Rate matrix: 3906 nodes (39 terminal), 186400 minterms, vars: 21r/21c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "premium" ]
+Model constants: N=32
+
+Number of non-absorbing states: 36407 of 38676 (94.1%)
+
+Building sparse matrix... [n=38676, nnz=172971, compact] [713.7 KB]
+Creating vector for diagonals... [dist=1347, compact] [86.1 KB]
+Allocating iteration vectors... [3 x 302.2 KB]
+copying data 
+row starts:
+allocated 154708
+dist_dev:
+allocated 504
+cols_dev:
+allocated 691884
+soln_dev:
+allocated 309408
+soln2_dev:
+allocated 309408
+d:
+allocated 77352
+allocated 10776
+allocated 309408
+done:
+allocated 1
+copied 1819 KB to GPU 
+copied 1 MB to GPU 
+datacpy execution time: 0.195822 seconds
+TOTAL: [1.7 MB]
+
+Uniformisation: q.t = 51.126480 x 1000.000000 = 51126.480000
+Fox-Glynn: left = 49541, right = 53047
+
+Starting GPU iterations...
+mv_stbu execution time: 0.062279 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.12 seconds (average 0.000063, setup 0.05)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.302 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "premium" ]
+Model constants: N=32
+
+Number of non-absorbing states: 36407 of 38676 (94.1%)
+
+Building sparse matrix... [n=38676, nnz=172971, compact] [713.7 KB]
+Creating vector for diagonals... [dist=1347, compact] [86.1 KB]
+Allocating iteration vectors... [3 x 302.2 KB]
+copying data 
+row starts:
+allocated 154708
+dist_dev:
+allocated 504
+cols_dev:
+allocated 691884
+soln_dev:
+allocated 309408
+soln2_dev:
+allocated 309408
+d:
+allocated 77352
+allocated 10776
+allocated 309408
+done:
+allocated 1
+copied 3639 KB to GPU 
+copied 3 MB to GPU 
+datacpy execution time: 0.000550 seconds
+TOTAL: [1.7 MB]
+
+Uniformisation: q.t = 51.126480 x 500.000000 = 25563.240000
+Fox-Glynn: left = 24441, right = 26922
+
+Starting GPU iterations...
+mv_stbu execution time: 0.031209 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.07 seconds (average 0.000062, setup 0.04)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.07 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "premium" ]
+Model constants: N=32
+
+Number of non-absorbing states: 36407 of 38676 (94.1%)
+
+Building sparse matrix... [n=38676, nnz=172971, compact] [713.7 KB]
+Creating vector for diagonals... [dist=1347, compact] [86.1 KB]
+Allocating iteration vectors... [3 x 302.2 KB]
+copying data 
+row starts:
+allocated 154708
+dist_dev:
+allocated 504
+cols_dev:
+allocated 691884
+soln_dev:
+allocated 309408
+soln2_dev:
+allocated 309408
+d:
+allocated 77352
+allocated 10776
+allocated 309408
+done:
+allocated 1
+copied 5459 KB to GPU 
+copied 5 MB to GPU 
+datacpy execution time: 0.000551 seconds
+TOTAL: [1.7 MB]
+
+Uniformisation: q.t = 51.126480 x 100.000000 = 5112.648000
+Fox-Glynn: left = 4609, right = 5721
+
+Starting GPU iterations...
+mv_stbu execution time: 0.006313 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.05 seconds (average 0.000070, setup 0.04)
+
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000076711b469468, pid=10480, tid=0x000076713f130640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10480
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10480.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+Value in the initial state: 1.0
+
+Time for model checking: 0.045 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "premium" ]
+Model constants: N=32
+
+Number of non-absorbing states: 36407 of 38676 (94.1%)
+
+Building sparse matrix... [n=38676, nnz=172971, compact] [713.7 KB]
+Creating vector for diagonals... [dist=1347, compact] [86.1 KB]
+Allocating iteration vectors... [3 x 302.2 KB]
+copying data 
+row starts:
+allocated 154708
+dist_dev:
+allocated 504
+cols_dev:
+allocated 691884
+soln_dev:
+allocated 309408
+soln2_dev:
+allocated 309408
+d:
+allocated 77352
+allocated 10776
+allocated 309408
+done:
+allocated 1
+copied 7279 KB to GPU 
+copied 7 MB to GPU 
+datacpy execution time: 0.000547 seconds
+TOTAL: [1.7 MB]
+
+Uniformisation: q.t = 51.126480 x 50.000000 = 2556.324000
+Fox-Glynn: left = 2199, right = 2987
+
+Starting GPU iterations...
+mv_stbu execution time: 0.003181 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.04 seconds (average 0.000080, setup 0.04)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.043 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "premium" ]
+Model constants: N=32
+
+Number of non-absorbing states: 36407 of 38676 (94.1%)
+
+Building sparse matrix... [n=38676, nnz=172971, compact] [713.7 KB]
+Creating vector for diagonals... [dist=1347, compact] [86.1 KB]
+Allocating iteration vectors... [3 x 302.2 KB]
+copying data 
+row starts:
+allocated 154708
+dist_dev:
+allocated 504
+cols_dev:
+allocated 691884
+soln_dev:
+allocated 309408
+soln2_dev:
+allocated 309408
+d:
+allocated 77352
+allocated 10776
+allocated 309408
+done:
+allocated 1
+copied 9098 KB to GPU 
+copied 8 MB to GPU 
+datacpy execution time: 0.000537 seconds
+TOTAL: [1.7 MB]
+
+Uniformisation: q.t = 51.126480 x 2.000000 = 102.252960
+Fox-Glynn: left = 0, right = 160
+
+Starting GPU iterations...
+mv_stbu execution time: 0.000249 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.04 seconds (average 0.000500, setup 0.04)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.039 seconds.
+
+Result: 1.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:10:24 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=64 benchmarks/ctmcs/cluster/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
+
+Parsing properties file "benchmarks/ctmcs/cluster/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "premium" ]
+(2) P=? [ F<=500 "premium" ]
+(3) P=? [ F<=100 "premium" ]
+(4) P=? [ F<=50 "premium" ]
+(5) P=? [ F<=2 "premium" ]
+
+Model constants: N=64
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 133 iterations in 0.02 seconds (average 0.000165, setup 0.00)
+
+Time for model construction: 0.046 seconds.
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight 
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n 
+
+States:      151060 (1 initial)
+Transitions: 733216
+
+Rate matrix: 8225 nodes (71 terminal), 733216 minterms, vars: 23r/23c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "premium" ]
+Model constants: N=64
+
+Number of non-absorbing states: 143463 of 151060 (95.0%)
+
+Building sparse matrix... [n=151060, nnz=686939, compact] [2.8 MB]
+Creating vector for diagonals... [dist=2785, compact] [316.8 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+copying data 
+row starts:
+allocated 604244
+dist_dev:
+allocated 1016
+cols_dev:
+allocated 2747756
+soln_dev:
+allocated 1208480
+soln2_dev:
+allocated 1208480
+d:
+allocated 302120
+allocated 22280
+allocated 1208480
+done:
+allocated 1
+copied 7131 KB to GPU 
+copied 6 MB to GPU 
+datacpy execution time: 0.193682 seconds
+TOTAL: [6.5 MB]
+
+Uniformisation: q.t = 51.257040 x 1000.000000 = 51257.040000
+Fox-Glynn: left = 49669, right = 53180
+
+Starting GPU iterations...
+mv_stbu execution time: 0.065624 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.28 seconds (average 0.000066, setup 0.22)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.479 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "premium" ]
+Model constants: N=64
+
+Number of non-absorbing states: 143463 of 151060 (95.0%)
+
+Building sparse matrix... [n=151060, nnz=686939, compact] [2.8 MB]
+Creating vector for diagonals... [dist=2785, compact] [316.8 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+copying data 
+row starts:
+allocated 604244
+dist_dev:
+allocated 1016
+cols_dev:
+allocated 2747756
+soln_dev:
+allocated 1208480
+soln2_dev:
+allocated 1208480
+d:
+allocated 302120
+allocated 22280
+allocated 1208480
+done:
+allocated 1
+copied 14263 KB to GPU 
+copied 13 MB to GPU 
+datacpy execution time: 0.001612 seconds
+TOTAL: [6.5 MB]
+
+Uniformisation: q.t = 51.257040 x 500.000000 = 25628.520000
+Fox-Glynn: left = 24505, right = 26988
+
+Starting GPU iterations...
+mv_stbu execution time: 0.033563 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.24 seconds (average 0.000066, setup 0.20)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.242 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "premium" ]
+Model constants: N=64
+
+Number of non-absorbing states: 143463 of 151060 (95.0%)
+
+Building sparse matrix... [n=151060, nnz=686939, compact] [2.8 MB]
+Creating vector for diagonals... [dist=2785, compact] [316.8 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+copying data 
+row starts:
+allocated 604244
+dist_dev:
+allocated 1016
+cols_dev:
+allocated 2747756
+soln_dev:
+allocated 1208480
+soln2_dev:
+allocated 1208480
+d:
+allocated 302120
+allocated 22280
+allocated 1208480
+done:
+allocated 1
+copied 21395 KB to GPU 
+copied 20 MB to GPU 
+datacpy execution time: 0.001571 seconds
+TOTAL: [6.5 MB]
+
+Uniformisation: q.t = 51.257040 x 100.000000 = 5125.704000
+Fox-Glynn: left = 4621, right = 5735
+
+Starting GPU iterations...
+mv_stbu execution time: 0.006926 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.22 seconds (averag#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f3eee8a4468, pid=10528, tid=0x00007f3f12882640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10528
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10528.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+e 0.000070, setup 0.21)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.216 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "premium" ]
+Model constants: N=64
+
+Number of non-absorbing states: 143463 of 151060 (95.0%)
+
+Building sparse matrix... [n=151060, nnz=686939, compact] [2.8 MB]
+Creating vector for diagonals... [dist=2785, compact] [316.8 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+copying data 
+row starts:
+allocated 604244
+dist_dev:
+allocated 1016
+cols_dev:
+allocated 2747756
+soln_dev:
+allocated 1208480
+soln2_dev:
+allocated 1208480
+d:
+allocated 302120
+allocated 22280
+allocated 1208480
+done:
+allocated 1
+copied 28526 KB to GPU 
+copied 27 MB to GPU 
+datacpy execution time: 0.001568 seconds
+TOTAL: [6.5 MB]
+
+Uniformisation: q.t = 51.257040 x 50.000000 = 2562.852000
+Fox-Glynn: left = 2205, right = 2994
+
+Starting GPU iterations...
+mv_stbu execution time: 0.003656 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.21 seconds (average 0.000080, setup 0.20)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.209 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "premium" ]
+Model constants: N=64
+
+Number of non-absorbing states: 143463 of 151060 (95.0%)
+
+Building sparse matrix... [n=151060, nnz=686939, compact] [2.8 MB]
+Creating vector for diagonals... [dist=2785, compact] [316.8 KB]
+Allocating iteration vectors... [3 x 1.2 MB]
+copying data 
+row starts:
+allocated 604244
+dist_dev:
+allocated 1016
+cols_dev:
+allocated 2747756
+soln_dev:
+allocated 1208480
+soln2_dev:
+allocated 1208480
+d:
+allocated 302120
+allocated 22280
+allocated 1208480
+done:
+allocated 1
+copied 35658 KB to GPU 
+copied 34 MB to GPU 
+datacpy execution time: 0.001529 seconds
+TOTAL: [6.5 MB]
+
+Uniformisation: q.t = 51.257040 x 2.000000 = 102.514080
+Fox-Glynn: left = 0, right = 160
+
+Starting GPU iterations...
+mv_stbu execution time: 0.000550 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.20 seconds (average 0.000000, setup 0.20)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.206 seconds.
+
+Result: 1.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:10:26 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=128 benchmarks/ctmcs/cluster/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
+
+Parsing properties file "benchmarks/ctmcs/cluster/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "premium" ]
+(2) P=? [ F<=500 "premium" ]
+(3) P=? [ F<=100 "premium" ]
+(4) P=? [ F<=50 "premium" ]
+(5) P=? [ F<=2 "premium" ]
+
+Model constants: N=128
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 261 iterations in 0.07 seconds (average 0.000249, setup 0.00)
+
+Time for model construction: 0.111 seconds.
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight 
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n 
+
+States:      597012 (1 initial)
+Transitions: 2908192
+
+Rate matrix: 17481 nodes (134 terminal), 2908192 minterms, vars: 25r/25c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "premium" ]
+Model constants: N=128
+
+Number of non-absorbing states: 569543 of 597012 (95.4%)
+
+Building sparse matrix... [n=597012, nnz=2737851, compact] [11.0 MB]
+Creating vector for diagonals... [dist=5815, compact] [1.2 MB]
+Allocating iteration vectors... [3 x 4.6 MB]
+copying data 
+row starts:
+allocated 2388052
+dist_dev:
+allocated 2040
+cols_dev:
+allocated 10951404
+soln_dev:
+allocated 4776096
+soln2_dev:
+allocated 4776096
+d:
+allocated 1194024
+allocated 46520
+allocated 4776096
+done:
+allocated 1
+copied 28232 KB to GPU 
+copied 27 MB to GPU 
+datacpy execution time: 0.236998 seconds
+TOTAL: [25.9 MB]
+
+Uniformisation: q.t = 51.518160 x 1000.000000 = 51518.160000
+Fox-Glynn: left = 49926, right = 53446
+
+Starting GPU iterations...
+mv_stbu execution time: 0.119075 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 1.40 seconds (average 0.000114, setup 1.29)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.668 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "premium" ]
+Model constants: N=128
+
+Number of non-absorbing states: 569543 of 597012 (95.4%)
+
+Building sparse matrix... [n=597012, nnz=2737851, compact] [11.0 MB]
+Creating vector for diagonals... [dist=5815, compact] [1.2 MB]
+Allocating iteration vectors... [3 x 4.6 MB]
+copying data 
+row starts:
+allocated 2388052
+dist_dev:
+allocated 2040
+cols_dev:
+allocated 10951404
+soln_dev:
+allocated 4776096
+soln2_dev:
+allocated 4776096
+d:
+allocated 1194024
+allocated 46520
+allocated 4776096
+done:
+allocated 1
+copied 56465 KB to GPU 
+copied 55 MB to GPU 
+datacpy execution time: 0.004708 seconds
+TOTAL: [25.9 MB]
+
+Uniformisation: q.t = 51.518160 x 500.000000 = 25759.080000
+Fox-Glynn: left = 24633, right = 27123
+
+Starting GPU iterations...
+mv_stbu execution time: 0.055520 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 1.33 seconds (average 0.000110, setup 1.27)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.34 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "premium" ]
+Model constants: N=128
+
+Number of non-absorbing states: 569543 of 597012 (95.4%)
+
+Building sparse matrix... [n=597012, nnz=2737851, compact] [11.0 MB]
+Creating vector for diagonals... [dist=5815, compact] [1.2 MB]
+Allocating iteration vectors... [3 x 4.6 MB]
+copying data 
+row starts:
+allocated 2388052
+dist_dev:
+allocated 2040
+cols_dev:
+allocated 10951404
+soln_dev:
+allocated 4776096
+soln2_dev:
+allocated 4776096
+d:
+allocated 1194024
+allocated 46520
+allocated 4776096
+done:
+allocated 1
+copied 84698 KB to GPU 
+copied 82 MB to GPU 
+datacpy execution time: 0.004729 seconds
+TOTAL: [25.9 MB]
+
+Uniformisation: q.t = 51.518160 x 100.000000 = 5151.816000
+Fox-Glynn: left = 4646, right = 5762
+
+Starting GPU iterations...
+mv_stbu execution time: 0.013792 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 1.29 seconds (average 0.000130, setup 1.28)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.3 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "premium" ]
+Model constants: N=128
+
+Number of non-absorbing states: 569543 of 597012 (95.4%)
+
+Building sparse matrix... [n=597012, nnz=2737851, compact] [11.0 MB]
+Creating vector for diagonals... [dist=5815, compact] [1.2 MB]
+Allocating iteration vectors... [3 x 4.6 MB]
+copying data 
+row starts:
+allocated 2388052
+dist_dev:
+allocated 2040
+cols_dev:
+allocated 10951404
+soln_dev:
+allocated 4776096
+soln2_dev:
+allocated 4776096
+d:
+allocated 1194024
+allocated 46520
+allocated 4776096
+done:
+allocated 1
+copied 112930 KB to GPU 
+copied 110 MB to GPU 
+datacpy execution time: 0.004664 seconds
+TOTAL: [25.9 MB]
+
+Uniformisation: q.t = 51.518160 x 50.000000 = 2575.908000
+Fox-Glynn: left = 2217, right = 3008
+
+Starting GPU iterations...
+mv_stbu execution time: 0.009398 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 1.28 seconds (average 0.000160, setup 1.27)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.286 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "premium" ]
+Model constants: N=128
+
+Number of non-absorbing states: 569543 of 597012 (95.4%)
+
+Building sparse matrix... [n=597012, nnz=2737851, compact] [11.0 MB]
+Creating vector for diagonals... [dist=5815, compact] [1.2 MB]
+Allocating iteration vectors... [3 x 4.6 MB]
+copying data 
+row starts:
+allocated 2388052
+dist_dev:
+allocated 2040
+cols_dev:
+allocated 10951404
+soln_dev:
+allocated 4776096
+soln2_dev:
+allocated 4776096
+d:
+allocated 1194024
+allocated 46520
+allocated 4776096
+done:
+allocated 1
+copied 141163 KB to GPU 
+copied 137 MB to GPU 
+datacpy execution time: 0.004632 seconds
+TOTAL: [25.9 MB]
+
+Uniformisation: q.t = 51.518160 x 2.000000 = 103.036320
+Fox-Glynn: left = 0, right = 161
+
+Starting GPU iterations...
+mv_stbu execution time: 0.001513 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 1.27 seconds (average 0.000000, setup 1.27)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.282 seconds.
+
+Result: 1.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:10:33 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=256 benchmarks/ctmcs/cluster/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
+
+Parsing properties file "benchmarks/ctmcs/cluster/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "premium" ]
+(2) P=? [ F<=500 "premium" ]
+(3) P=? [ F<=100 "premium" ]
+(4) P=? [ F<=50 "premium" ]
+(5) P=? [ F<=2 "premium" ]
+
+Model constants: N=256
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 517 iterations in 0.26 seconds (average 0.000493, setup 0.00)
+
+Time for model construction: 0.36 seconds.
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight 
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n 
+
+States:      2373652 (1 initial)
+Transitions: 11583520
+
+Rate matrix: 37272 nodes (262 terminal), 11583520 minterms, vars: 27r/27c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "premium" ]
+Model constants: N=256
+
+Number of non-absorbing states: 2269575 of 2373652 (95.6%)
+
+Building sparse matrix... [n=2373652, nnz=10931579, compact] [44.0 MB]
+Creating vector for diagonals... [dist=12237, compact] [4.6 MB]
+Allocating iteration vectors... [3 x 18.1 MB]
+copying data 
+row starts:
+allocated 9494612
+dist_dev:
+allocated 4088
+cols_dev:
+allocated 43726316
+soln_dev:
+allocated 18989216
+soln2_dev:
+allocated 18989216
+d:
+allocated 4747304
+allocated 97896
+allocated 18989216
+done:
+allocated 1
+copied 112341 KB to GPU 
+copied 109 MB to GPU 
+datacpy execution time: 0.305447 seconds
+TOTAL: [102.9 MB]
+
+Uniformisation: q.t = 52.040400 x 1000.000000 = 52040.400000
+Fox-Glynn: left = 50440, right = 53978
+
+Starting GPU iterations...
+mv_stbu execution time: 0.369070 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 9.33 seconds (average 0.000361, setup 8.97)
+
+Value in the initial state: 1.0
+
+Time for model checking: 9.778 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "premium" ]
+Model constants: N=256
+
+Number of non-absorbing states: 2269575 of 2373652 (95.6%)
+
+Building sparse matrix... [n=2373652, nnz=10931579, compact] [44.0 MB]
+Creating vector for diagonals... [dist=12237, compact] [4.6 MB]
+Allocating iteration vectors... [3 x 18.1 MB]
+copying data 
+row starts:
+allocated 9494612
+dist_dev:
+allocated 4088
+cols_dev:
+allocated 43726316
+soln_dev:
+allocated 18989216
+soln2_dev:
+allocated 18989216
+d:
+allocated 4747304
+allocated 97896
+allocated 18989216
+done:
+allocated 1
+copied 224683 KB to GPU 
+copied 219 MB to GPU 
+datacpy execution time: 0.016478 seconds
+TOTAL: [102.9 MB]
+
+Uniformisation: q.t = 52.040400 x 500.000000 = 26020.200000
+Fox-Glynn: left = 24888, right = 27391
+
+Starting GPU iterations...
+mv_stbu execution time: 0.202917 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 9.18 seconds (average 0.000392, setup 8.98)
+
+Value in the initial state: 1.0
+
+Time for model checking: 9.241 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "premium" ]
+Model constants: N=256
+
+Number of non-absorbing states: 2269575 of 2373652 (95.6%)
+
+Building sparse matrix... [n=2373652, nnz=10931579, compact] [44.0 MB]
+Creating vector for diagonals... [dist=12237, compact] [4.6 MB]
+Allocating iteration vectors... [3 x 18.1 MB]
+copying data 
+row starts:
+allocated 9494612
+dist_dev:
+allocated 4088
+cols_dev:
+allocated 43726316
+soln_dev:
+allocated 18989216
+soln2_dev:
+allocated 18989216
+d:
+allocated 4747304
+allocated 97896
+allocated 18989216
+done:
+allocated 1
+copied 337024 KB to GPU 
+copied 329 MB to GPU 
+datacpy execution time: 0.026385 seconds
+TOTAL: [102.9 MB]
+
+Uniformisation: q.t = 52.040400 x 100.000000 = 5204.040000
+Fox-Glynn: left = 4696, right = 5818
+
+Starting GPU iterations...
+mv_stbu execution time: 0.049517 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 9.04 seconds (average 0.000480, setup 8.99)
+
+Value in the initial state: 1.0
+
+Time for model checking: 9.104 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "premium" ]
+Model constants: N=256
+
+Number of non-absorbing states: 2269575 of 2373652 (95.6%)
+
+Building sparse matrix... [n=2373652, nnz=10931579, compact] [44.0 MB]
+Creating vector for diagonals... [dist=12237, compact] [4.6 MB]
+Allocating iteration vectors... [3 x 18.1 MB]
+copying data 
+row starts:
+allocated 9494612
+dist_dev:
+allocated 4088
+cols_dev:
+allocated 43726316
+soln_dev:
+allocated 18989216
+soln2_dev:
+allocated 18989216
+d:
+allocated 4747304
+allocated 97896
+allocated 18989216
+done:
+allocated 1
+copied 449366 KB to GPU 
+copied 438 MB to GPU 
+datacpy execution time: 0.016152 seconds
+TOTAL: [102.9 MB]
+
+Uniformisation: q.t = 52.040400 x 50.000000 = 2602.020000
+Fox-Glynn: left = 2242, right = 3037
+
+Starting GPU iterations...
+mv_stbu execution time: 0.032664 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 8.97 seconds (average 0.000540, setup 8.94)
+
+Value in the initial state: 1.0
+
+Time for model checking: 9.017 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "premium" ]
+Model constants: N=256
+
+Number of non-absorbing states: 2269575 of 2373652 (95.6%)
+
+Building sparse matrix... [n=2373652, nnz=10931579, compact] [44.0 MB]
+Creating vector for diagonals... [dist=12237, compact] [4.6 MB]
+Allocating iteration vectors... [3 x 18.1 MB]
+copying data 
+row starts:
+allocated 9494612
+dist_dev:
+allocated 4088
+cols_dev:
+allocated 43726316
+soln_dev:
+allocated 18989216
+soln2_dev:
+allocated 18989216
+d:
+allocated 4747304
+allocated 97896
+allocated 18989216
+done:
+allocated 1
+copied 561708 KB to GPU 
+copied 548 MB to GPU 
+datacpy execution time: 0.016375 seconds
+TOTAL: [102.9 MB]
+
+Uniformisation: q.t = 52.040400 x 2.000000 = 104.080800
+Fox-Glynn: left = 0, right = 162
+
+Starting GPU iterations...
+mv_stbu execution time: 0.009051 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 8.94 seconds (average 0.002000, setup 8.94)
+
+Value in the initial state: 1.0
+
+Time for model checking: 8.994 seconds.
+
+Result: 1.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:11:20 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/cluster/cluster.sm -const N=512 benchmarks/ctmcs/cluster/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/cluster/cluster.sm"...
+
+Parsing properties file "benchmarks/ctmcs/cluster/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "premium" ]
+(2) P=? [ F<=500 "premium" ]
+(3) P=? [ F<=100 "premium" ]
+(4) P=? [ F<=50 "premium" ]
+(5) P=? [ F<=2 "premium" ]
+
+Model constants: N=512
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 1029 iterations in 1.03 seconds (average 0.001000, setup 0.00)
+
+Time for model construction: 1.342 seconds.
+
+Type:        CTMC
+Modules:     Left Right Repairman Line ToLeft ToRight 
+Variables:   left_n left right_n right r line line_n toleft toleft_n toright toright_n 
+
+States:      9465876 (1 initial)
+Transitions: 46235680
+
+Rate matrix: 82567 nodes (590 terminal), 46235680 minterms, vars: 29r/29c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "premium" ]
+Model constants: N=512
+
+Number of non-absorbing states: 9061127 of 9465876 (95.7%)
+
+Building sparse matrix... [n=9465876, nnz=43686651] [509.0 MB]
+Creating vector for diagonals... [dist=25121, compact] [18.2 MB]
+Allocating iteration vectors... [3 x 72.2 MB]
+copying data 
+row starts:
+allocated 37863508
+non_zeros:
+allocated 349493208
+cols_dev:
+allocated 174746604
+soln_dev:
+allocated 75727008
+soln2_dev:
+allocated 75727008
+d:
+allocated 18931752
+allocated 200968
+allocated 75727008
+done:
+allocated 1
+copied 789469 KB to GPU 
+copied 770 MB to GPU 
+datacpy execution time: 0.526406 seconds
+TOTAL: [743.9 MB]
+
+Uniformisation: q.t = 53.084880 x 1000.000000 = 53084.880000
+Fox-Glynn: left = 51468, right = 55041
+
+Starting GPU iterations...
+mv_stbu execution time: 2.151981 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 66.74 seconds (average 0.002113, setup 64.62)
+
+Value in the initial state: 1.0
+
+Time for model checking: 67.9 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "premium" ]
+Model constants: N=512
+
+Number of non-absorbing states: 9061127 of 9465876 (95.7%)
+
+Building sparse matrix... [n=9465876, nnz=43686651] [509.0 MB]
+Creating vector for diagonals... [dist=25121, compact] [18.2 MB]
+Allocating iteration vectors... [3 x 72.2 MB]
+copying data 
+row starts:
+allocated 37863508
+non_zeros:
+allocated 349493208
+cols_dev:
+allocated 174746604
+soln_dev:
+allocated 75727008
+soln2_dev:
+allocated 75727008
+d:
+allocated 18931752
+allocated 200968
+allocated 75727008
+done:
+allocated 1
+copied 1578939 KB to GPU 
+copied 1541 MB to GPU 
+datacpy execution time: 0.279050 seconds
+TOTAL: [743.9 MB]
+
+Uniformisation: q.t = 53.084880 x 500.000000 = 26542.440000
+Fox-Glynn: left = 25399, right = 27926
+
+Starting GPU iterations...
+mv_stbu execution time: 1.125738 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 65.50 seconds (average 0.002182, setup 64.41)
+
+Value in the initial state: 1.0
+
+Time for model checking: 66.144 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "premium" ]
+Model constants: N=512
+
+Number of non-absorbing states: 9061127 of 9465876 (95.7%)
+
+Building sparse matrix... [n=9465876, nnz=43686651] [509.0 MB]
+Creating vector for diagonals... [dist=25121, compact] [18.2 MB]
+Allocating iteration vectors... [3 x 72.2 MB]
+copying data 
+row starts:
+allocated 37863508
+non_zeros:
+allocated 349493208
+cols_dev:
+allocated 174746604
+soln_dev:
+allocated 75727008
+soln2_dev:
+allocated 75727008
+d:
+allocated 18931752
+allocated 200968
+allocated 75727008
+done:
+allocated 1
+copied -1825894 KB to GPU 
+copied -1783 MB to GPU 
+datacpy execution time: 0.270268 seconds
+TOTAL: [743.9 MB]
+
+Uniformisation: q.t = 53.084880 x 100.000000 = 5308.488000
+Fox-Glynn: left = 4795, right = 5928
+
+Starting GPU iterations...
+mv_stbu execution time: 0.273227 seconds
+freeing #
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000076bd31c7e468, pid=10672, tid=0x000076bd55a58640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10672
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10672.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 64.62 seconds (average 0.002370, setup 64.38)
+
+Value in the initial state: 1.0
+
+Time for model checking: 65.236 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "premium" ]
+Model constants: N=512
+
+Number of non-absorbing states: 9061127 of 9465876 (95.7%)
+
+Building sparse matrix... [n=9465876, nnz=43686651] [509.0 MB]
+Creating vector for diagonals... [dist=25121, compact] [18.2 MB]
+Allocating iteration vectors... [3 x 72.2 MB]
+copying data 
+row starts:
+allocated 37863508
+non_zeros:
+allocated 349493208
+cols_dev:
+allocated 174746604
+soln_dev:
+allocated 75727008
+soln2_dev:
+allocated 75727008
+d:
+allocated 18931752
+allocated 200968
+allocated 75727008
+done:
+allocated 1
+copied -1036424 KB to GPU 
+copied -1012 MB to GPU 
+datacpy execution time: 0.271634 seconds
+TOTAL: [743.9 MB]
+
+Uniformisation: q.t = 53.084880 x 50.000000 = 2654.244000
+Fox-Glynn: left = 2291, right = 3093
+
+Starting GPU iterations...
+mv_stbu execution time: 0.167870 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 64.75 seconds (average 0.002720, setup 64.61)
+
+Value in the initial state: 1.0
+
+Time for model checking: 65.355 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "premium" ]
+Model constants: N=512
+
+Number of non-absorbing states: 9061127 of 9465876 (95.7%)
+
+Building sparse matrix... [n=9465876, nnz=43686651] [509.0 MB]
+Creating vector for diagonals... [dist=25121, compact] [18.2 MB]
+Allocating iteration vectors... [3 x 72.2 MB]
+copying data 
+row starts:
+allocated 37863508
+non_zeros:
+allocated 349493208
+cols_dev:
+allocated 174746604
+soln_dev:
+allocated 75727008
+soln2_dev:
+allocated 75727008
+d:
+allocated 18931752
+allocated 200968
+allocated 75727008
+done:
+allocated 1
+copied -246955 KB to GPU 
+copied -241 MB to GPU 
+datacpy execution time: 0.271299 seconds
+TOTAL: [743.9 MB]
+
+Uniformisation: q.t = 53.084880 x 2.000000 = 106.169760
+Fox-Glynn: left = 0, right = 165
+
+Starting GPU iterations...
+mv_stbu execution time: 0.055751 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 64.68 seconds (average 0.012500, setup 64.66)
+
+Value in the initial state: 1.0
+
+Time for model checking: 65.293 seconds.
 
 Result: 1.0 (value in the initial state)

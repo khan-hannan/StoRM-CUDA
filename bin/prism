@@ -3,7 +3,7 @@
 # Startup script for PRISM (Linux/Solaris)
 
 # PRISM home directory
-PRISM_DIR=/home/khan/Paper/gpuprism/prism-4.0.2-src_gpu
+PRISM_DIR=/root/StoRM-CUDA
 
 # Command to launch Java
 if [ "$PRISM_JAVA" = "" ]; then

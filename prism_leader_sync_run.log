@@ -1,0 +1,3725 @@
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:21 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync3_2.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync3_2.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 5 iterations in 0.00 seconds (average 0.000200, setup 0.00)
+
+Time for model construction: 0.012 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 
+
+States:      26 (1 initial)
+Transitions: 33
+
+Transition matrix: 408 nodes (3 terminal), 33 minterms, vars: 16r/16c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000125, setup 0.00)
+
+yes = 1, no = 0, maybe = 25
+
+Building sparse matrix... [n=26, nnz=32, compact] [0.2 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.2 KB]
+TOTAL: [0.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 52
+allocated 16
+row starts:
+allocated 108
+dist_dev:
+allocated 24
+cols_dev:
+allocated 128
+soln_dev:
+allocated 208
+soln2_dev:
+allocated 208
+copied 0 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.165524 seconds
+mv_pbu execution time: 0.005488 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.01 seconds (average 0.000011, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.171 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 25
+
+Building sparse matrix... [n=26, nnz=32, compact] [0.2 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.2 KB]
+TOTAL: [0.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 52
+allocated 16
+row starts:
+allocated 108
+dist_dev:
+allocated 24
+cols_dev:
+allocated 128
+soln_dev:
+allocated 208
+soln2_dev:
+allocated 208
+copied 1 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000126 seconds
+mv_pbu execution time: 0.002277 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.00 seconds (average 0.000004, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.003 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 25
+
+Building sparse matrix... [n=26, nnz=32, compact] [0.2 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.2 KB]
+TOTAL: [0.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 52
+allocated 16
+row starts:
+allocated 108
+dist_dev:
+allocated 24
+cols_dev:
+allocated 128
+soln_dev:
+allocated 208
+soln2_dev:
+allocated 208
+copied 2 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000427 seconds
+mv_pbu execution time: 0.000614 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 0.9999999999999964
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.9999999999999964 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 25
+
+Building sparse matrix... [n=26, nnz=32, compact] [0.2 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.2 KB]
+TOTAL: [0.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 52
+allocated 16
+row starts:
+allocated 108
+dist_dev:
+allocated 24
+cols_dev:
+allocated 128
+soln_dev:
+allocated 208
+soln2_dev:
+allocated 208
+copied 2 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000385 seconds
+mv_pbu execution time: 0.000351 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.9999999403953552
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.9999999403953552 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 25
+
+Building sparse matrix... [n=26, nnz=32, compact] [0.2 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.2 KB]
+TOTAL: [0.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 52
+allocated 16
+row starts:
+allocated 108
+dist_dev:
+allocated 24
+cols_dev:
+allocated 128
+soln_dev:
+allocated 208
+soln2_dev:
+allocated 208
+copied 3 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000119 seconds
+mv_pbu execution time: 0.000025 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000500, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:23 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync3_3.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync3_3.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 5 iterations in 0.00 seconds (average 0.000400, setup 0.00)
+
+Time for model construction: 0.015 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 
+
+States:      69 (1 initial)
+Transitions: 95
+
+Transition matrix: 1123 nodes (3 terminal), 95 minterms, vars: 22r/22c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000125, setup 0.00)
+
+yes = 1, no = 0, maybe = 68
+
+Building sparse matrix... [n=69, nnz=94, compact] [0.5 KB]
+Creating vector for yes... [dist=2, compact] [0.2 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.7 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 138
+allocated 16
+row starts:
+allocated 280
+dist_dev:
+allocated 24
+cols_dev:
+allocated 376
+soln_dev:
+allocated 552
+soln2_dev:
+allocated 552
+copied 1 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.175095 seconds
+mv_pbu execution time: 0.007064 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.01 seconds (average 0.000012, setup 0.00)
+
+Value in the initial state: 0.9999999999999991
+
+Time for model checking: 0.185 seconds.
+
+Result: 0.9999999999999991 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000125, setup 0.00)
+
+yes = 1, no = 0, maybe = 68
+
+Building sparse matrix... [n=69, nnz=94, compact] [0.5 KB]
+Creating vector for yes... [dist=2, compact] [0.2 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.7 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 138
+allocated 16
+row starts:
+allocated 280
+dist_dev:
+allocated 24
+cols_dev:
+allocated 376
+soln_dev:
+allocated 552
+soln2_dev:
+allocated 552
+copied 3 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000136 seconds
+mv_pbu execution time: 0.003077 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.00 seconds (average 0.000006, setup 0.00)
+
+Value in the initial state: 0.9999999999999991
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.9999999999999991 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 68
+
+Building sparse matrix... [n=69, nnz=94, compact] [0.5 KB]
+Creating vector for yes... [dist=2, compact] [0.2 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.7 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 138
+allocated 16
+row starts:
+allocated 280
+dist_dev:
+allocated 24
+cols_dev:
+allocated 376
+soln_dev:
+allocated 552
+soln2_dev:
+allocated 552
+copied 5 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000172 seconds
+mv_pbu execution time: 0.000627 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 0.9999999999999991
+
+Time for model checking: 0.002 seconds.
+
+Result: 0.9999999999999991 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 68
+
+Building sparse matrix... [n=69, nnz=94, compact] [0.5 KB]
+Creating vector for yes... [dist=2, compact] [0.2 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.7 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 138
+allocated 16
+row starts:
+allocated 280
+dist_dev:
+allocated 24
+cols_dev:
+allocated 376
+soln_dev:
+allocated 552
+soln2_dev:
+allocated 552
+copied 7 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000166 seconds
+mv_pbu execution time: 0.000325 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.9999999999964586
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.9999999999964586 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+yes = 1, no = 0, maybe = 68
+
+Building sparse matrix... [n=69, nnz=94, compact] [0.5 KB]
+Creating vector for yes... [dist=2, compact] [0.2 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.7 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 138
+allocated 16
+row starts:
+allocated 280
+dist_dev:
+allocated 24
+cols_dev:
+allocated 376
+soln_dev:
+allocated 552
+soln2_dev:
+allocated 552
+copied 9 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000131 seconds
+mv_pbu execution time: 0.000026 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.0 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:24 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync3_4.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync3_4.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 5 iterations in 0.00 seconds (average 0.000600, setup 0.00)
+
+Time for model construction: 0.015 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 
+
+States:      147 (1 initial)
+Transitions: 210
+
+Transition matrix: 1885 nodes (3 terminal), 210 minterms, vars: 22r/22c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000250, setup 0.00)
+
+yes = 1, no = 0, maybe = 146
+
+Building sparse matrix... [n=147, nnz=209, compact] [1.0 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 294
+allocated 16
+row starts:
+allocated 592
+dist_dev:
+allocated 24
+cols_dev:
+allocated 836
+soln_dev:
+allocated 1176
+soln2_dev:
+allocated 1176
+copied 4 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.176101 seconds
+mv_pbu execution time: 0.009468 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.02 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.189 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000125, setup 0.00)
+
+yes = 1, no = 0, maybe = 146
+
+Building sparse matrix... [n=147, nnz=209, compact] [1.0 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 294
+allocated 16
+row starts:
+allocated 592
+dist_dev:
+allocated 24
+cols_dev:
+allocated 836
+soln_dev:
+allocated 1176
+soln2_dev:
+allocated 1176
+copied 8 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000130 seconds
+mv_pbu execution time: 0.004241 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.01 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.006 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000125, setup 0.00)
+
+yes = 1, no = 0, maybe = 146
+
+Building sparse matrix... [n=147, nnz=209, compact] [1.0 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 294
+allocated 16
+row starts:
+allocated 592
+dist_dev:
+allocated 24
+cols_dev:
+allocated 836
+soln_dev:
+allocated 1176
+soln2_dev:
+allocated 1176
+copied 12 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000128 seconds
+mv_pbu execution time: 0.000863 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.002 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000125, setup 0.00)
+
+yes = 1, no = 0, maybe = 146
+
+Building sparse matrix... [n=147, nnz=209, compact] [1.0 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 294
+allocated 16
+row starts:
+allocated 592
+dist_dev:
+allocated 24
+cols_dev:
+allocated 836
+soln_dev:
+allocated 1176
+soln2_dev:
+allocated 1176
+copied 16 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000125 seconds
+mv_pbu execution time: 0.000439 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.9999999999999964
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.9999999999999964 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 8 iterations in 0.00 seconds (average 0.000125, setup 0.00)
+
+yes = 1, no = 0, maybe = 146
+
+Building sparse matrix... [n=147, nnz=209, compact] [1.0 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 294
+allocated 16
+row starts:
+allocated 592
+dist_dev:
+allocated 24
+cols_dev:
+allocated 836
+soln_dev:
+allocated 1176
+soln2_dev:
+allocated 1176
+copied 20 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000127 seconds
+mv_pbu execution time: 0.000036 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:26 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync4_2.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync4_2.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 6 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Time for model construction: 0.014 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 
+
+States:      61 (1 initial)
+Transitions: 76
+
+Transition matrix: 1048 nodes (3 terminal), 76 minterms, vars: 22r/22c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000200, setup 0.00)
+
+yes = 1, no = 0, maybe = 60
+
+Building sparse matrix... [n=61, nnz=75, compact] [0.4 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 122
+allocated 16
+row starts:
+allocated 248
+dist_dev:
+allocated 24
+cols_dev:
+allocated 300
+soln_dev:
+allocated 488
+soln2_dev:
+allocated 488
+copied 1 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.177551 seconds
+mv_pbu execution time: 0.006619 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.02 seconds (average 0.000017, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.185 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000100, setup 0.00)
+
+yes = 1, no = 0, maybe = 60
+
+Building sparse matrix... [n=61, nnz=75, compact] [0.4 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 122
+allocated 16
+row starts:
+allocated 248
+dist_dev:
+allocated 24
+cols_dev:
+allocated 300
+soln_dev:
+allocated 488
+soln2_dev:
+allocated 488
+copied 3 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.001137 seconds
+mv_pbu execution time: 0.004824 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.01 seconds (average 0.000012, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.004 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000200, setup 0.00)
+
+yes = 1, no = 0, maybe = 60
+
+Building sparse matrix... [n=61, nnz=75, compact] [0.4 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 122
+allocated 16
+row starts:
+allocated 248
+dist_dev:
+allocated 24
+cols_dev:
+allocated 300
+soln_dev:
+allocated 488
+soln2_dev:
+allocated 488
+copied 4 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000126 seconds
+mv_pbu execution time: 0.000587 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 0.9999980926513672
+
+Time for model checking: 0.002 seconds.
+
+Result: 0.9999980926513672 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000100, setup 0.00)
+
+yes = 1, no = 0, maybe = 60
+
+Building sparse matrix... [n=61, nnz=75, compact] [0.4 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 122
+allocated 16
+row starts:
+allocated 248
+dist_dev:
+allocated 24
+cols_dev:
+allocated 300
+soln_dev:
+allocated 488
+soln2_dev:
+allocated 488
+copied 6 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000126 seconds
+mv_pbu execution time: 0.000299 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.998046875
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.998046875 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000100, setup 0.00)
+
+yes = 1, no = 0, maybe = 60
+
+Building sparse matrix... [n=61, nnz=75, compact] [0.4 KB]
+Creating vector for yes... [dist=2, compact] [0.1 KB]
+Allocating iteration vectors... [2 x 0.5 KB]
+TOTAL: [1.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 122
+allocated 16
+row starts:
+allocated 248
+dist_dev:
+allocated 24
+cols_dev:
+allocated 300
+soln_dev:
+allocated 488
+soln2_dev:
+allocated 488
+copied 8 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000122 seconds
+mv_pbu execution time: 0.000026 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.001 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:27 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync4_3.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync4_3.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 6 iterations in 0.01 seconds (average 0.001167, setup 0.00)
+
+Time for model construction: 0.023 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 
+
+States:      274 (1 initial)
+Transitions: 354
+
+Transition matrix: 4875 nodes (3 terminal), 354 minterms, vars: 30r/30c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000400, setup 0.00)
+
+yes = 1, no = 0, maybe = 273
+
+Building sparse matrix... [n=274, nnz=353, compact] [1.7 KB]
+Creating vector for yes... [dist=2, compact] [0.6 KB]
+Allocating iteration vectors... [2 x 2.1 KB]
+TOTAL: [6.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 548
+allocated 16
+row starts:
+allocated 1100
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1412
+soln_dev:
+allocated 2192
+soln2_dev:
+allocated 2192
+copied 7 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.183276 seconds
+mv_pbu execution time: 0.010706 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.02 seconds (average 0.000019, setup 0.00)
+
+Value in the initial state: 0.9999999999999999
+
+Time for model checking: 0.202 seconds.
+
+Result: 0.9999999999999999 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000300, setup 0.00)
+
+yes = 1, no = 0, maybe = 273
+
+Building sparse matrix... [n=274, nnz=353, compact] [1.7 KB]
+Creating vector for yes... [dist=2, compact] [0.6 KB]
+Allocating iteration vectors... [2 x 2.1 KB]
+TOTAL: [6.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 548
+allocated 16
+row starts:
+allocated 1100
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1412
+soln_dev:
+allocated 2192
+soln2_dev:
+allocated 2192
+copied 14 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000137 seconds
+mv_pbu execution time: 0.004971 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.01 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 0.9999999999999999
+
+Time for model checking: 0.008 seconds.
+
+Result: 0.9999999999999999 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 10 iterations in 0.00 seconds (average 0.000300, setup 0.00)
+
+yes = 1, no = 0, maybe = 273
+
+Building sparse matrix... [n=274, nnz=353, compact] [1.7 KB]
+Creating vector for yes... [dist=2, compact] [0.6 KB]
+Allocating iteration vectors... [2 x 2.1 KB]
+TOTAL: [6.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 548
+allocated 16
+row starts:
+allocated 1100
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1412
+soln_dev:
+allocated 2192
+soln2_dev:
+allocated 2192
+copied 21 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000127 seconds
+mv_pbu execution time: 0.000995 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.999999999992742
+
+Time for model checking: 0.005 seconds.
+
+Result: 0.999999999992742 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 10 iterations in 0.01 seconds (average 0.000500, setup 0.00)
+
+yes = 1, no = 0, maybe = 273
+
+Building sparse matrix... [n=274, nnz=353, compact] [1.7 KB]
+Creating vector for yes... [dist=2, compact] [0.6 KB]
+Allocating iteration vectors... [2 x 2.1 KB]
+TOTAL: [6.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 548
+allocated 16
+row starts:
+allocated 1100
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1412
+soln_dev:
+allocated 2192
+soln2_dev:
+allocated 2192
+copied 29 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000128 seconds
+mv_pbu execution time: 0.000505 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.999994708138338
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.999994708138338 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 10 iterations in 0.01 seconds (average 0.000500, setup 0.00)
+
+yes = 1, no = 0, maybe = 273
+
+Building sparse matrix... [n=274, nnz=353, compact] [1.7 KB]
+Creating vector for yes... [dist=2, compact] [0.6 KB]
+Allocating iteration vectors... [2 x 2.1 KB]
+TOTAL: [6.5 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 548
+allocated 16
+row starts:
+allocated 1100
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1412
+soln_dev:
+allocated 2192
+soln2_dev:
+allocated 2192
+copied 36 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000131 seconds
+mv_pbu execution time: 0.000037 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000500, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:28 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync4_4.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync4_4.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 6 iterations in 0.01 seconds (average 0.001667, setup 0.00)
+
+Time for model construction: 0.036 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 
+
+States:      812 (1 initial)
+Transitions: 1067
+
+Transition matrix: 12160 nodes (3 terminal), 1067 minterms, vars: 30r/30c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 10 iterations in 0.01 seconds (average 0.001100, setup 0.00)
+
+yes = 1, no = 0, maybe = 811
+
+Building sparse matrix... [n=812, nnz=1066, compact] [7.4 KB]
+Creating vector for yes... [dist=2, compact] [1.6 KB]
+Allocating iteration vectors... [2 x 6.3 KB]
+TOTAL: [21.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 1624
+allocated 16
+row starts:
+allocated 3252
+dist_dev:
+allocated 24
+cols_dev:
+allocated 4264
+soln_dev:
+allocated 6496
+soln2_dev:
+allocated 6496
+copied 21 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.175652 seconds
+mv_pbu execution time: 0.021561 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.03 seconds (average 0.000027, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.213 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 10 iterations in 0.01 seconds (average 0.000700, setup 0.00)
+
+yes = 1, no = 0, maybe = 811
+
+Building sparse matrix... [n=812, nnz=1066, compact] [7.4 KB]
+Creating vector for yes... [dist=2, compact] [1.6 KB]
+Allocating iteration vectors... [2 x 6.3 KB]
+TOTAL: [21.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 1624
+allocated 16
+row starts:
+allocated 3252
+dist_dev:
+allocated 24
+cols_dev:
+allocated 4264
+soln_dev:
+allocated 6496
+soln2_dev:
+allocated 6496
+copied 43 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000151 seconds
+mv_pbu execution time: 0.010299 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.01 seconds (average 0.000022, setup 0.00)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.019 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 10 iterations in 0.01 seconds (average 0.000700, setup 0.00)
+
+yes = 1, no = 0, maybe = 811
+
+Building sparse matrix... [n=812, nnz=1066, compact] [7.4 KB]
+Creating vector for yes... [dist=2, compact] [1.6 KB]
+Allocating iteration vectors... [2 x 6.3 KB]
+TOTAL: [21.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 1624
+allocated 16
+row starts:
+allocated 3252
+dist_dev:
+allocated 24
+cols_dev:
+allocated 4264
+soln_dev:
+allocated 6496
+soln2_dev:
+allocated 6496
+copied 64 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000134 seconds
+mv_pbu execution time: 0.002095 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.9999999999999999
+
+Time for model checking: 0.01 seconds.
+
+Result: 0.9999999999999999 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 10 iterations in 0.01 seconds (average 0.000900, setup 0.00)
+
+yes = 1, no = 0, maybe = 811
+
+Building sparse matrix... [n=812, nnz=1066, compact] [7.4 KB]
+Creating vector for yes... [dist=2, compact] [1.6 K#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000076645baa1468, pid=9715, tid=0x000076647f894640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.9715
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid9715.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+B]
+Allocating iteration vectors... [2 x 6.3 KB]
+TOTAL: [21.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 1624
+allocated 16
+row starts:
+allocated 3252
+dist_dev:
+allocated 24
+cols_dev:
+allocated 4264
+soln_dev:
+allocated 6496
+soln2_dev:
+allocated 6496
+copied 86 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000145 seconds
+mv_pbu execution time: 0.001055 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000040, setup 0.00)
+
+Value in the initial state: 0.9999999444888488
+
+Time for model checking: 0.009 seconds.
+
+Result: 0.9999999444888488 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 10 iterations in 0.01 seconds (average 0.000500, setup 0.00)
+
+yes = 1, no = 0, maybe = 811
+
+Building sparse matrix... [n=812, nnz=1066, compact] [7.4 KB]
+Creating vector for yes... [dist=2, compact] [1.6 KB]
+Allocating iteration vectors... [2 x 6.3 KB]
+TOTAL: [21.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 1624
+allocated 16
+row starts:
+allocated 3252
+dist_dev:
+allocated 24
+cols_dev:
+allocated 4264
+soln_dev:
+allocated 6496
+soln2_dev:
+allocated 6496
+copied 108 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000129 seconds
+mv_pbu execution time: 0.000061 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.008 seconds.
+
+Result: 0.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:29 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync5_2.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync5_2.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 7 iterations in 0.00 seconds (average 0.000571, setup 0.00)
+
+Time for model construction: 0.016 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 
+
+States:      141 (1 initial)
+Transitions: 172
+
+Transition matrix: 2071 nodes (3 terminal), 172 minterms, vars: 27r/27c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 12 iterations in 0.00 seconds (average 0.000167, setup 0.00)
+
+yes = 1, no = 0, maybe = 140
+
+Building sparse matrix... [n=141, nnz=171, compact] [0.8 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 282
+allocated 16
+row starts:
+allocated 568
+dist_dev:
+allocated 24
+cols_dev:
+allocated 684
+soln_dev:
+allocated 1128
+soln2_dev:
+allocated 1128
+copied 3 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.178234 seconds
+mv_pbu execution time: 0.007631 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.02 seconds (average 0.000017, setup 0.00)
+
+Value in the initial state: 0.9999999999999981
+
+Time for model checking: 0.191 seconds.
+
+Result: 0.9999999999999981 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 12 iterations in 0.00 seconds (average 0.000167, setup 0.00)
+
+yes = 1, no = 0, maybe = 140
+
+Building sparse matrix... [n=141, nnz=171, compact] [0.8 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 282
+allocated 16
+row starts:
+allocated 568
+dist_dev:
+allocated 24
+cols_dev:
+allocated 684
+soln_dev:
+allocated 1128
+soln2_dev:
+allocated 1128
+copied 7 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000131 seconds
+mv_pbu execution time: 0.003324 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.00 seconds (average 0.000004, setup 0.00)
+
+Value in the initial state: 0.9999999999999682
+
+Time for model checking: 0.005 seconds.
+
+Result: 0.9999999999999682 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 12 iterations in 0.00 seconds (average 0.000167, setup 0.00)
+
+yes = 1, no = 0, maybe = 140
+
+Building sparse matrix... [n=141, nnz=171, compact] [0.8 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 282
+allocated 16
+row starts:
+allocated 568
+dist_dev:
+allocated 24
+cols_dev:
+allocated 684
+soln_dev:
+allocated 1128
+soln2_dev:
+allocated 1128
+copied 11 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000130 seconds
+mv_pbu execution time: 0.000679 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 0.9975090601528397
+
+Time for model checking: 0.003 seconds.
+
+Result: 0.9975090601528397 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 12 iterations in 0.00 seconds (average 0.000167, setup 0.00)
+
+yes = 1, no = 0, maybe = 140
+
+Building sparse matrix... [n=141, nnz=171, compact]#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000765f11427468, pid=9763, tid=0x0000765f35200640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.9763
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid9763.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+ [0.8 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 282
+allocated 16
+row starts:
+allocated 568
+dist_dev:
+allocated 24
+cols_dev:
+allocated 684
+soln_dev:
+allocated 1128
+soln2_dev:
+allocated 1128
+copied 14 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000128 seconds
+mv_pbu execution time: 0.000349 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.9500906837638468
+
+Time for model checking: 0.002 seconds.
+
+Result: 0.9500906837638468 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 12 iterations in 0.00 seconds (average 0.000250, setup 0.00)
+
+yes = 1, no = 0, maybe = 140
+
+Building sparse matrix... [n=141, nnz=171, compact] [0.8 KB]
+Creating vector for yes... [dist=2, compact] [0.3 KB]
+Allocating iteration vectors... [2 x 1.1 KB]
+TOTAL: [3.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 282
+allocated 16
+row starts:
+allocated 568
+dist_dev:
+allocated 24
+cols_dev:
+allocated 684
+soln_dev:
+allocated 1128
+soln2_dev:
+allocated 1128
+copied 18 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000124 seconds
+mv_pbu execution time: 0.000026 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.002 seconds.
+
+Result: 0.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:30 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync5_3.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync5_3.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 7 iterations in 0.01 seconds (average 0.001714, setup 0.00)
+
+Time for model construction: 0.044 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 
+
+States:      1050 (1 initial)
+Transitions: 1292
+
+Transition matrix: 15347 nodes (3 terminal), 1292 minterms, vars: 37r/37c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 12 iterations in 0.02 seconds (average 0.001417, setup 0.00)
+
+yes = 1, no = 0, maybe = 1049
+
+Building sparse matrix... [n=1050, nnz=1291, compact] [6.1 KB]
+Creating vector for yes... [dist=2, compact] [2.1 KB]
+Allocating iteration vectors... [2 x 8.2 KB]
+TOTAL: [24.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 2100
+allocated 16
+row starts:
+allocated 4204
+dist_dev:
+allocated 24
+cols_dev:
+allocated 5164
+soln_dev:
+allocated 8400
+soln2_dev:
+allocated 8400
+copied 27 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.175921 seconds
+mv_pbu execution time: 0.020944 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.03 seconds (average 0.000023, setup 0.00)
+
+Value in the initial state: 0.9999999999999966
+
+Time for model checking: 0.221 seconds.
+
+Result: 0.9999999999999966 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 12 iterations in 0.01 seconds (average 0.000750, setup 0.00)
+
+yes = 1, no = 0, maybe = 1049
+
+Building sparse matrix... [n=1050, nnz=1291, compact] [6.1 KB]
+Creating vector for yes... [dist=2, compact] [2.1 KB]
+Allocating iteration vectors... [2 x 8.2 KB]
+TOTAL: [24.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 2100
+allocated 16
+row starts:
+allocated 4204
+dist_dev:
+allocated 24
+cols_dev:
+allocated 5164
+soln_dev:
+allocated 8400
+soln2_dev:
+allocated 8400
+copied 55 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000132 seconds
+mv_pbu execution time: 0.009985 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.01 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.9999999999999966
+
+Time for model checking: 0.023 seconds.
+
+Result: 0.9999999999999966 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 12 iterations in 0.01 seconds (average 0.000833, setup 0.00)
+
+yes = 1, no = 0, maybe = 1049
+
+Building sparse matrix... [n=1050, nnz=1291, compact] [6.1 KB]
+Creating vector for yes... [dist=2, compact] [2.1 KB]
+Allocating iteration vectors... [2 x 8.2 KB]
+TOTAL: [24.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 2100
+allocated 16
+row starts:
+allocated 4204
+dist_dev:
+allocated 24
+cols_dev:
+allocated 5164
+soln_dev:
+allocated 8400
+soln2_dev:
+allocated 8400
+copied 82 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000133 seconds
+mv_pbu execution time: 0.002015 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.999999999583368
+
+Time for model checking: 0.014 seconds.
+
+Result: 0.999999999583368 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 12 iterations in 0.01 seconds (average 0.000833, setup 0.00)
+
+yes = 1, no = 0, maybe = 1049
+
+Building sparse matrix... [n=1050, nnz=1291, compact] [6.1 KB]
+Creating vector for yes... [dist=2, compact] [2.1 KB]
+Allocating iteration vectors... [2 x 8.2 KB]
+TOTAL: [24.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 2100
+allocated 16
+row starts:
+allocated 4204
+dist_dev:
+allocated 24
+cols_dev:
+allocated 5164
+soln_dev:
+allocated 8400
+soln2_dev:
+allocated 8400
+copied 110 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000127 seconds
+mv_pbu execution time: 0.001012 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.9999795885335758
+
+Time for model checking: 0.014 seconds.
+
+Result: 0.9999795885335758 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 12 iterations in 0.01 seconds (average 0.000750, setup 0.00)
+
+yes = 1, no = 0, maybe = 1049
+
+Building sparse matrix... [n=1050, nnz=1291, compact] [6.1 KB]
+Creating vector for yes... [dist=2, compact] [2.1 KB]
+Allocating iteration vectors... [2 x 8.2 KB]
+TOTAL: [24.6 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 2100
+allocated 16
+row starts:
+allocated 4204
+dist_dev:
+allocated 24
+cols_dev:
+allocated 5164
+soln_dev:
+allocated 8400
+soln2_dev:
+allocated 8400
+copied 138 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000128 seconds
+mv_pbu execution time: 0.000061 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.011 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:32 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync5_4.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync5_4.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 7 iterations in 0.04 seconds (average 0.005714, setup 0.00)
+
+Time for model construction: 0.132 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 
+
+States:      4244 (1 initial)
+Transitions: 5267
+
+Transition matrix: 52053 nodes (3 terminal), 5267 minterms, vars: 37r/37c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 12 iterations in 0.05 seconds (average 0.004333, setup 0.00)
+
+yes = 1, no = 0, maybe = 4243
+
+Building sparse matrix... [n=4244, nnz=5266, compact] [37.2 KB]
+Creating vector for yes... [dist=2, compact] [8.3 KB]
+Allocating iteration vectors... [2 x 33.2 KB]
+TOTAL: [111.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 8488
+allocated 16
+row starts:
+allocated 16980
+dist_dev:
+allocated 24
+cols_dev:
+allocated 21064
+soln_dev:
+allocated 33952
+soln2_dev:
+allocated 33952
+copied 111 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.175929 seconds
+mv_pbu execution time: 0.070946 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.07 seconds (average 0.000057, setup 0.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.317 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 12 iterations in 0.03 seconds (average 0.002750, setup 0.00)
+
+yes = 1, no = 0, maybe = 4243
+
+Building sparse matrix... [n=4244, nnz=5266, compact] [37.2 KB]
+Creating vector for yes... [dist=2, compact] [8.3 KB]
+Allocating iteration vectors... [2 x 33.2 KB]
+TOTAL: [111.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 8488
+allocated 16
+row starts:
+allocated 16980
+dist_dev:
+allocated 24
+cols_dev:
+allocated 21064
+soln_dev:
+allocated 33952
+soln2_dev:
+allocated 33952
+copied 223 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000164 seconds
+mv_pbu execution time: 0.035012 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.04 seconds (average 0.000068, setup 0.01)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.075 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 12 iterations in 0.03 seconds (average 0.002583, setup 0.00)
+
+yes = 1, no = 0, maybe = 4243
+
+Building sparse matrix... [n=4244, nnz=5266, compact] [37.2 KB]
+Creating vector for yes... [dist=2, compact] [8.3 KB]
+Allocating iteration vectors... [2 x 33.2 KB]
+TOTAL: [111.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 8488
+allocated 16
+row starts:
+allocated 16980
+dist_dev:
+allocated 24
+cols_dev:
+allocated 21064
+soln_dev:
+allocated 33952
+soln2_dev:
+allocated 33952
+copied 335 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000150 seconds
+mv_pbu execution time: 0.007071 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.01 seconds (average 0.000070, setup 0.01)
+
+Value in the initial state: 0.9999999999999993
+
+Time for model checking: 0.045 seconds.
+
+Result: 0.9999999999999993 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 12 iterations in 0.03 seconds (average 0.002833, setup 0.00)
+
+yes = 1, no = 0, maybe = 4243
+
+Building sparse matrix... [n=4244, nnz=5266, compact] [37.2#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007dfdeb7a4468, pid=9859, tid=0x00007dfe0f7b6640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.9859
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid9859.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+ KB]
+Creating vector for yes... [dist=2, compact] [8.3 KB]
+Allocating iteration vectors... [2 x 33.2 KB]
+TOTAL: [111.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 8488
+allocated 16
+row starts:
+allocated 16980
+dist_dev:
+allocated 24
+cols_dev:
+allocated 21064
+soln_dev:
+allocated 33952
+soln2_dev:
+allocated 33952
+copied 447 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000152 seconds
+mv_pbu execution time: 0.003037 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.01 seconds (average 0.000060, setup 0.01)
+
+Value in the initial state: 0.9999999537646866
+
+Time for model checking: 0.042 seconds.
+
+Result: 0.9999999537646866 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 12 iterations in 0.03 seconds (average 0.002500, setup 0.00)
+
+yes = 1, no = 0, maybe = 4243
+
+Building sparse matrix... [n=4244, nnz=5266, compact] [37.2 KB]
+Creating vector for yes... [dist=2, compact] [8.3 KB]
+Allocating iteration vectors... [2 x 33.2 KB]
+TOTAL: [111.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 8488
+allocated 16
+row starts:
+allocated 16980
+dist_dev:
+allocated 24
+cols_dev:
+allocated 21064
+soln_dev:
+allocated 33952
+soln2_dev:
+allocated 33952
+copied 558 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000150 seconds
+mv_pbu execution time: 0.000145 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.01 seconds (average 0.000500, setup 0.01)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.038 seconds.
+
+Result: 0.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:33 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync6_2.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync6_2.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 8 iterations in 0.01 seconds (average 0.000625, setup 0.00)
+
+Time for model construction: 0.021 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 process6 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 s6 u6 v6 p6 
+
+States:      335 (1 initial)
+Transitions: 398
+
+Transition matrix: 3707 nodes (3 terminal), 398 minterms, vars: 33r/33c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 14 iterations in 0.00 seconds (average 0.000286, setup 0.00)
+
+yes = 1, no = 0, maybe = 334
+
+Building sparse matrix... [n=335, nnz=397, compact] [1.9 KB]
+Creating vector for yes... [dist=2, compact] [0.7 KB]
+Allocating iteration vectors... [2 x 2.6 KB]
+TOTAL: [7.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 670
+allocated 16
+row starts:
+allocated 1344
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1588
+soln_dev:
+allocated 2680
+soln2_dev:
+allocated 2680
+copied 8 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.164473 seconds
+mv_pbu execution time: 0.008322 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.01 seconds (average 0.000010, setup 0.00)
+
+Value in the initial state: 0.9999999999998441
+
+Time for model checking: 0.18 seconds.
+
+Result: 0.9999999999998441 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 14 iterations in 0.00 seconds (average 0.000214, setup 0.00)
+
+yes = 1, no = 0, maybe = 334
+
+Building sparse matrix... [n=335, nnz=397, compact] [1.9 KB]
+Creating vector for yes... [dist=2, compact] [0.7 KB]
+Allocating iteration vectors... [2 x 2.6 KB]
+TOTAL: [7.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 670
+allocated 16
+row starts:
+allocated 1344
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1588
+soln_dev:
+allocated 2680
+soln2_dev:
+allocated 2680
+copied 17 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000131 seconds
+mv_pbu execution time: 0.003688 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.00 seconds (average 0.000008, setup 0.00)
+
+Value in the initial state: 0.9999996042150784
+
+Time for model checking: 0.007 seconds.
+
+Result: 0.9999996042150784 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 14 iterations in 0.00 seconds (average 0.000286, setup 0.00)
+
+yes = 1, no = 0, maybe = 334
+
+Building sparse matrix... [n=335, nnz=397, compact] [1.9 KB]
+Creating vector for yes... [dist=2, compact] [0.7 KB]
+Allocating iteration vectors... [2 x 2.6 KB]
+TOTAL: [7.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 670
+allocated 16
+row starts:
+allocated 1344
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1588
+soln_dev:
+allocated 2680
+soln2_dev:
+allocated 2680
+copied 26 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000125 seconds
+mv_pbu execution time: 0.001791 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.9453579259997664
+
+Time for model checking: 0.005 seconds.
+
+Result: 0.9453579259997664 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 14 iterations in 0.00 seconds (average 0.000214, setup 0.00)
+
+yes = 1, no = 0, maybe = 334
+
+Building sparse matrix... [n=335, nnz=397, compact] [1.9 KB]
+Creating vector for yes... [dist=2, compact] [0.7 KB]
+Allocating iteration vectors... [2 x 2.6 KB]
+TOTAL: [7.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 670
+allocated 16
+row starts:
+allocated 1344
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1588
+soln_dev:
+allocated 2680
+soln2_dev:
+allocated 2680
+copied 35 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000127 seconds
+mv_pbu execution time: 0.000392 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.00 seconds (average 0.000020, setup 0.00)
+
+Value in the initial state: 0.7662435583770275
+
+Time for model checking: 0.004 seconds.
+
+Result: 0.7662435583770275 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 14 iterations in 0.00 seconds (average 0.000143, setup 0.00)
+
+yes = 1, no = 0, maybe = 334
+
+Building sparse matrix... [n=335, nnz=397, compact] [1.9 KB]
+Creating vector for yes... [dist=2, compact] [0.7 KB]
+Allocating iteration vectors... [2 x 2.6 KB]
+TOTAL: [7.8 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 670
+allocated 16
+row starts:
+allocated 1344
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1588
+soln_dev:
+allocated 2680
+soln2_dev:
+allocated 2680
+copied 43 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000123 seconds
+mv_pbu execution time: 0.000036 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.00 seconds (average 0.000500, setup 0.00)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.003 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:34 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync6_3.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync6_3.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 8 iterations in 0.05 seconds (average 0.005750, setup 0.00)
+
+Time for model construction: 0.123 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 process6 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 s6 u6 v6 p6 
+
+States:      3759 (1 initial)
+Transitions: 4487
+
+Transition matrix: 40876 nodes (3 terminal), 4487 minterms, vars: 45r/45c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 14 iterations in 0.06 seconds (average 0.004071, setup 0.00)
+
+yes = 1, no = 0, maybe = 3758
+
+Building sparse matrix... [n=3759, nnz=4486, compact] [32.2 KB]
+Creating vector for yes... [dist=2, compact] [7.4 KB]
+Allocating iteration vectors... [2 x 29.4 KB]
+TOTAL: [98.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7518
+allocated 16
+row starts:
+allocated 15040
+dist_dev:
+allocated 24
+cols_dev:
+allocated 17944
+soln_dev:
+allocated 30072
+soln2_dev:
+allocated 30072
+copied 98 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.176307 seconds
+mv_pbu execution time: 0.055518 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.06 seconds (average 0.000051, setup 0.01)
+
+Value in the initial state: 0.9999999999999826
+
+Time for model checking: 0.309 seconds.
+
+Result: 0.9999999999999826 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 14 iterations in 0.04 seconds (average 0.002500, setup 0.00)
+
+yes = 1, no = 0, maybe = 3758
+
+Building sparse matrix... [n=3759, nnz=4486, compact] [32.2 KB]
+Creating vector for yes... [dist=2, compact] [7.4 KB]
+Allocating iteration vectors... [2 x 29.4 KB]
+TOTAL: [98.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7518
+allocated 16
+row starts:
+allocated 15040
+dist_dev:
+allocated 24
+cols_dev:
+allocated 17944
+soln_dev:
+allocated 30072
+soln2_dev:
+allocated 30072
+copied 196 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000165 seconds
+mv_pbu execution time: 0.027315 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.03 seconds (average 0.000054, setup 0.01)
+
+Value in the initial state: 0.9999999999999826
+
+Time for model checking: 0.069 seconds.
+
+Result: 0.9999999999999826 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 14 iterations in 0.03 seconds (average 0.002286, setup 0.00)
+
+yes = 1, no = 0, maybe = 3758
+
+Building sparse matrix... [n=3759, nnz=4486, compact] [32.2 KB]
+Creating vector for yes... [dist=2, compact] [7.4 KB]
+Allocating iteration vectors... [2 x 29.4 KB]
+TOTAL: [98.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7518
+allocated 16
+row starts:
+allocated 15040
+dist_dev:
+allocated 24
+cols_dev:
+allocated 17944
+soln_dev:
+allocated 30072
+soln2_dev:
+allocated 30072
+copied 294 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000154 seconds
+mv_pbu execution time: 0.005146 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.01 seconds (average 0.000050, setup 0.01)
+
+Value in the initial state: 0.9999997909248329
+
+Time for model checking: 0.046 seconds.
+
+Result: 0.9999997909248329 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 14 iterations in 0.03 seconds (average 0.002357, setup 0.00)
+
+yes = 1, no = 0, maybe = 3758
+
+Building sparse matrix... [n=3759, nnz=4486, compact] [32.2 KB]
+Creating vector for yes... [dist=2, compact] [7.4 KB]
+Allocating iteration vectors... [2 x 29.4 KB]
+TOTAL: [98.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7518
+allocated 16
+row starts:
+allocated 15040
+dist_dev:
+allocated 24
+cols_dev:
+allocated 17944
+soln_dev:
+allocated 30072
+soln2_dev:
+allocated 30072
+copied 393 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000151 seconds
+mv_pbu execution time: 0.002589 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.01 seconds (average 0.000060, setup 0.01)
+
+Value in the initial state: 0.9995427526291614
+
+Time for model checking: 0.044 seconds.
+
+Result: 0.9995427526291614 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 14 iterations in 0.04 seconds (average 0.002643, setup 0.00)
+
+yes = 1, no = 0, maybe = 3758
+
+Building sparse matrix... [n=3759, nnz=4486, compact] [32.2 KB]
+Creating vector for yes... [dist=2, compact] [7.4 KB]
+Allocating iteration vectors... [2 x 29.4 KB]
+TOTAL: [98.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 7518
+allocated 16
+row starts:
+allocated 15040
+dist_dev:
+allocated 24
+cols_dev:
+allocated 17944
+soln_dev:
+allocated 30072
+soln2_dev:
+allocated 30072
+copied 491 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.000157 seconds
+mv_pbu execution time: 0.000129 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.01 seconds (average 0.000000, setup 0.01)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.039 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:36 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync6_4.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync6_4.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 8 iterations in 0.29 seconds (average 0.035875, setup 0.00)
+
+Time for model construction: 1.219 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 process6 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 s6 u6 v6 p6 
+
+States:      20884 (1 initial)
+Transitions: 24979
+
+Transition matrix: 188049 nodes (3 terminal), 24979 minterms, vars: 45r/45c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 14 iterations in 0.47 seconds (average 0.033286, setup 0.00)
+
+yes = 1, no = 0, maybe = 20883
+
+Building sparse matrix... [n=20884, nnz=24978, compact] [179.2 KB]
+Creating vector for yes... [dist=2, compact] [40.8 KB]
+Allocating iteration vectors... [2 x 163.2 KB]
+TOTAL: [546.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 41768
+allocated 16
+row starts:
+allocated 83540
+dist_dev:
+allocated 24
+cols_dev:
+allocated 99912
+soln_dev:
+allocated 167072
+soln2_dev:
+allocated 167072
+copied 546 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.212997 seconds
+mv_pbu execution time: 0.230544 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.23 seconds (average 0.000161, setup 0.07)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.019 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 14 iterations in 0.46 seconds (average 0.033071, setup 0.00)
+
+yes = 1, no = 0, maybe = 20883
+
+Building sparse matrix... [n=20884, nnz=24978, compact] [179.2 KB]
+Creating vector for yes... [dist=2, compact] [40.8 KB]
+Allocating iteration vectors... [2 x 163.2 KB]
+TOTAL: [546.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 41768
+allocated 16
+row starts:
+allocated 83540
+dist_dev:
+allocated 24
+cols_dev:
+allocated 99912
+soln_dev:
+allocated 167072
+soln2_dev:
+allocated 167072
+copied 1092 KB to GPU 
+copied 1 MB to GPU 
+datacpy_pbu execution time: 0.000378 seconds
+mv_pbu execution time: 0.107723 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.17 seconds (average 0.000216, setup 0.06)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.643 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 14 iterations in 0.48 seconds (average 0.034214, setup 0.00)
+
+yes = 1, no = 0, maybe = 20883
+
+Building sparse matrix... [n=20884, nnz=24978, compact] [179.2 KB]
+Creating vector for yes... [dist=2, compact] [40.8 KB]
+Allocating iteration vectors... [2 x 163.2 KB]
+TOTAL: [546.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 41768
+allocated 16
+row starts:
+allocated 83540
+dist_dev:
+allocated 24
+cols_dev:
+allocated 99912
+soln_dev:
+allocated 167072
+soln2_dev:
+allocated 167072
+copied 1638 KB to GPU 
+copied 1 MB to GPU 
+datacpy_pbu execution time: 0.000370 seconds
+mv_pbu execution time: 0.021581 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.07 seconds (average 0.000210, setup 0.05)
+
+Value in the initial state: 0.9999999999913576
+
+Time for model checking: 0.568 seconds.
+
+Result: 0.9999999999913576 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 14 iterations in 0.45 seconds (average 0.032143, setup 0.00)
+
+yes = 1, no = 0, maybe = 20883
+
+Buil#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000072e6ca427468, pid=10003, tid=0x000072e6ee1f9640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10003
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10003.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+ding sparse matrix... [n=20884, nnz=24978, compact] [179.2 KB]
+Creating vector for yes... [dist=2, compact] [40.8 KB]
+Allocating iteration vectors... [2 x 163.2 KB]
+TOTAL: [546.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 41768
+allocated 16
+row starts:
+allocated 83540
+dist_dev:
+allocated 24
+cols_dev:
+allocated 99912
+soln_dev:
+allocated 167072
+soln2_dev:
+allocated 167072
+copied 2185 KB to GPU 
+copied 2 MB to GPU 
+datacpy_pbu execution time: 0.000372 seconds
+mv_pbu execution time: 0.010830 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.07 seconds (average 0.000240, setup 0.06)
+
+Value in the initial state: 0.9999970579034413
+
+Time for model checking: 0.541 seconds.
+
+Result: 0.9999970579034413 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 14 iterations in 0.46 seconds (average 0.033071, setup 0.00)
+
+yes = 1, no = 0, maybe = 20883
+
+Building sparse matrix... [n=20884, nnz=24978, compact] [179.2 KB]
+Creating vector for yes... [dist=2, compact] [40.8 KB]
+Allocating iteration vectors... [2 x 163.2 KB]
+TOTAL: [546.3 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 41768
+allocated 16
+row starts:
+allocated 83540
+dist_dev:
+allocated 24
+cols_dev:
+allocated 99912
+soln_dev:
+allocated 167072
+soln2_dev:
+allocated 167072
+copied 2731 KB to GPU 
+copied 2 MB to GPU 
+datacpy_pbu execution time: 0.000384 seconds
+mv_pbu execution time: 0.000507 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.06 seconds (average 0.000500, setup 0.06)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.53 seconds.
+
+Result: 0.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:55:41 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync6_5.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync6_5.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 8 iterations in 3.51 seconds (average 0.438875, setup 0.00)
+
+Time for model construction: 22.953 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 process6 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 s6 u6 v6 p6 
+
+States:      78784 (1 initial)
+Transitions: 94408
+
+Transition matrix: 837485 nodes (3 terminal), 94408 minterms, vars: 57r/57c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 14 iterations in 2.78 seconds (average 0.198429, setup 0.00)
+
+yes = 1, no = 0, maybe = 78783
+
+Building sparse matrix... [n=78784, nnz=94407, compact] [676.5 KB]
+Creating vector for yes... [dist=2, compact] [153.9 KB]
+Allocating iteration vectors... [2 x 615.5 KB]
+TOTAL: [2.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 157568
+allocated 16
+row starts:
+allocated 315140
+dist_dev:
+allocated 24
+cols_dev:
+allocated 377628
+soln_dev:
+allocated 630272
+soln2_dev:
+allocated 630272
+copied 2061 KB to GPU 
+copied 2 MB to GPU 
+datacpy_pbu execution time: 0.283295 seconds
+mv_pbu execution time: 0.875902 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.96 seconds (average 0.000616, setup 0.35)
+
+Value in the initial state: 0.9999999999996507
+
+Time for model checking: 4.512 seconds.
+
+Result: 0.9999999999996507 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 14 iterations in 2.52 seconds (average 0.179857, setup 0.00)
+
+yes = 1, no = 0, maybe = 78783
+
+Building sparse matrix... [n=78784, nnz=94407, compact] [676.5 KB]
+Creating vector for yes... [dist=2, compact] [153.9 KB]
+Allocating iteration vectors... [2 x 615.5 KB]
+TOTAL: [2.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 157568
+allocated 16
+row starts:
+allocated 315140
+dist_dev:
+allocated 24
+cols_dev:
+allocated 377628
+soln_dev:
+allocated 630272
+soln2_dev:
+allocated 630272
+copied 4122 KB to GPU 
+copied 4 MB to GPU 
+datacpy_pbu execution time: 0.000776 seconds
+mv_pbu execution time: 0.446703 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.79 seconds (average 0.000896, setup 0.34)
+
+Value in the initial state: 0.9999999999996507
+
+Time for model checking: 3.49 seconds.
+
+Result: 0.9999999999996507 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 14 iterations in 2.53 seconds (average 0.180571, setup 0.00)
+
+yes = 1, no = 0, maybe = 78783
+
+Building sparse matrix... [n=78784, nnz=94407, compact] [676.5 KB]
+Creating vector for yes... [dist=2, compact] [153.9 KB]
+Allocating iteration vectors... [2 x 615.5 KB]
+TOTAL: [2.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 157568
+allocated 16
+row starts:
+allocated 315140
+dist_dev:
+allocated 24
+cols_dev:
+allocated 377628
+soln_dev:
+allocated 630272
+soln2_dev:
+allocated 630272
+copied 6184 KB to GPU 
+copied 6 MB to GPU 
+datacpy_pbu execution time: 0.000750 seconds
+mv_pbu execution time: 0.097481 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.44 seconds (average 0.000980, setup 0.34)
+
+Value in the initial state: 0.9999999999996503
+
+Time for model checking: 3.109 seconds.
+
+Result: 0.9999999999996503 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 14 iterations in 2.52 seconds (average 0.179643, setup 0.00)
+
+yes = 1, no = 0, maybe = 78783
+
+Building sparse matrix... [n=78784, nnz=94407, compact] [676.5 KB]
+Creating vector for yes... [dist=2, compact] [153.9 KB]
+Allocating iteration vectors... [2 x 615.5 KB]
+TOTAL: [2.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 157568
+allocated 16
+row starts:
+allocated 315140
+dist_dev:
+allocated 24
+cols_dev:
+allocated 377628
+soln_dev:
+allocated 630272
+soln2_dev:
+allocated 630272
+copied 8245 KB to GPU 
+copied 8 MB to GPU 
+datacpy_pbu execution time: 0.000756 seconds
+mv_pbu execution time: 0.048809 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.39 seconds (average 0.000960, setup 0.34)
+
+Value in the initial state: 0.9999999524668294
+
+Time for model checking: 3.07 seconds.
+
+Result: 0.9999999524668294 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 14 iterations in 2.55 seconds (average 0.181929, setup 0.00)
+
+yes = 1, no = 0, maybe = 78783
+
+Building sparse matrix... [n=78784, nnz=94407, compact] [676.5 KB]
+Creating vector for yes... [dist=2, compact] [153.9 KB]
+Allocating iteration vectors... [2 x 615.5 KB]
+TOTAL: [2.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 157568
+allocated 16
+row starts:
+allocated 315140
+dist_dev:
+allocated 24
+cols_dev:
+allocated 377628
+soln_dev:
+allocated 630272
+soln2_dev:
+allocated 630272
+copied 10307 KB to GPU 
+copied 10 MB to GPU 
+datacpy_pbu execution time: 0.000842 seconds
+mv_pbu execution time: 0.002145 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.34 seconds (average 0.001000, setup 0.34)
+
+Value in the initial state: 0.0
+
+Time for model checking: 2.965 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:56:22 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync6_6.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync6_6.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+
+Reachability: 8 iterations in 13.33 seconds (average 1.666000, setup 0.00)
+
+Time for model construction: 207.54 seconds.
+
+Type:        DTMC
+Modules:     counter process1 process2 process3 process4 process5 process6 
+Variables:   c s1 u1 v1 p1 s2 u2 v2 p2 s3 u3 v3 p3 s4 u4 v4 p4 s5 u5 v5 p5 s6 u6 v6 p6 
+
+States:      234210 (1 initial)
+Transitions: 280865
+
+Transition matrix: 2280437 nodes (3 terminal), 280865 minterms, vars: 57r/57c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "elected" ]
+
+Prob0: 14 iterations in 21.82 seconds (average 1.558786, setup 0.00)
+
+yes = 1, no = 0, maybe = 234209
+
+Building sparse matrix... [n=234210, nnz=280864, compact] [2.0 MB]
+Creating vector for yes... [dist=2, compact] [457.5 KB]
+Allocating iteration vectors... [2 x 1.8 MB]
+TOTAL: [6.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 468420
+allocated 16
+row starts:
+allocated 936844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1123456
+soln_dev:
+allocated 1873680
+soln2_dev:
+allocated 1873680
+copied 6129 KB to GPU 
+copied 5 MB to GPU 
+datacpy_pbu execution time: 0.258498 seconds
+mv_pbu execution time: 3.402331 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 3.59 seconds (average 0.002423, setup 1.17)
+
+Value in the initial state: 0.9999999999997026
+
+Time for model checking: 27.01 seconds.
+
+Result: 0.9999999999997026 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "elected" ]
+
+Prob0: 14 iterations in 17.41 seconds (average 1.243857, setup 0.00)
+
+yes = 1, no = 0, maybe = 234209
+
+Building sparse matrix... [n=234210, nnz=280864, compact] [2.0 MB]
+Creating vector for yes... [dist=2, compact] [457.5 KB]
+Allocating iteration vectors... [2 x 1.8 MB]
+TOTAL: [6.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 468420
+allocated 16
+row starts:
+allocated 936844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1123456
+soln_dev:
+allocated 1873680
+soln2_dev:
+allocated 1873680
+copied 12258 KB to GPU 
+copied 11 MB to GPU 
+datacpy_pbu execution time: 0.035313 seconds
+mv_pbu execution time: 1.718082 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 2.85 seconds (average 0.003440, setup 1.13)
+
+Value in the initial state: 0.9999999999997026
+
+Time for model checking: 20.642 seconds.
+
+Result: 0.9999999999997026 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "elected" ]
+
+Prob0: 14 iterations in 10.32 seconds (average 0.737357, setup 0.00)
+
+yes = 1, no = 0, maybe = 234209
+
+Building sparse matrix... [n=234210, nnz=280864, compact] [2.0 MB]
+Creating vector for yes... [dist=2, compact] [457.5 KB]
+Allocating iteration vectors... [2 x 1.8 MB]
+TOTAL: [6.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 468420
+allocated 16
+row starts:
+allocated 936844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1123456
+soln_dev:
+allocated 1873680
+soln2_dev:
+allocated 1873680
+copied 18387 KB to GPU 
+copied 17 MB to GPU 
+datacpy_pbu execution time: 0.001780 seconds
+mv_pbu execution time: 0.349604 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 1.55 seconds (average 0.003500, setup 1.20)
+
+Value in the initial state: 0.9999999999997026
+
+Time for model checking: 12.191 seconds.
+
+Result: 0.9999999999997026 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "elected" ]
+
+Prob0: 14 iterati#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007d06f1d9b468, pid=10099, tid=0x00007d0715d67640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10099
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10099.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+ons in 10.53 seconds (average 0.752143, setup 0.00)
+
+yes = 1, no = 0, maybe = 234209
+
+Building sparse matrix... [n=234210, nnz=280864, compact] [2.0 MB]
+Creating vector for yes... [dist=2, compact] [457.5 KB]
+Allocating iteration vectors... [2 x 1.8 MB]
+TOTAL: [6.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 468420
+allocated 16
+row starts:
+allocated 936844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1123456
+soln_dev:
+allocated 1873680
+soln2_dev:
+allocated 1873680
+copied 24516 KB to GPU 
+copied 23 MB to GPU 
+datacpy_pbu execution time: 0.001646 seconds
+mv_pbu execution time: 0.181585 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 1.37 seconds (average 0.003580, setup 1.19)
+
+Value in the initial state: 0.9999999985186764
+
+Time for model checking: 12.611 seconds.
+
+Result: 0.9999999985186764 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "elected" ]
+
+Prob0: 14 iterations in 9.42 seconds (average 0.672643, setup 0.00)
+
+yes = 1, no = 0, maybe = 234209
+
+Building sparse matrix... [n=234210, nnz=280864, compact] [2.0 MB]
+Creating vector for yes... [dist=2, compact] [457.5 KB]
+Allocating iteration vectors... [2 x 1.8 MB]
+TOTAL: [6.0 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 468420
+allocated 16
+row starts:
+allocated 936844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 1123456
+soln_dev:
+allocated 1873680
+soln2_dev:
+allocated 1873680
+copied 30645 KB to GPU 
+copied 29 MB to GPU 
+datacpy_pbu execution time: 0.001629 seconds
+mv_pbu execution time: 0.007721 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 1.21 seconds (average 0.004500, setup 1.20)
+
+Value in the initial state: 0.0
+
+Time for model checking: 10.783 seconds.
+
+Result: 0.0 (value in the initial state)
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007c16bc87cf78, pid=10147, tid=0x00007c16dc877640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x2cf78]  Cudd_Ref+0x8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10147
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10147.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:01:13 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync6_8.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync6_8.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000757ff66b2f78, pid=10237, tid=0x000075801a679640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x2cf78]  Cudd_Ref+0x8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.10237
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid10237.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:07:05 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/leader_sync/leader_sync6_8.pm benchmarks/dtmcs/leader_sync/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/leader_sync/leader_sync6_8.pm"...
+
+Parsing properties file "benchmarks/dtmcs/leader_sync/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "elected" ]
+(2) P=? [ F<=500 "elected" ]
+(3) P=? [ F<=100 "elected" ]
+(4) P=? [ F<=50 "elected" ]
+(5) P=? [ F<=2 "elected" ]
+
+-------------------------------------------
+
+Building model...
+
+Computing reachable states...

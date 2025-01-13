@@ -1,0 +1,66 @@
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:56:16 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/poll/poll3.sm benchmarks/ctmcs/poll/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/poll/poll3.sm"...
+
+Error: File "benchmarks/ctmcs/poll/poll3.sm" not found.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:56:17 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/poll/poll4.sm benchmarks/ctmcs/poll/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/poll/poll4.sm"...
+
+Error: File "benchmarks/ctmcs/poll/poll4.sm" not found.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:56:17 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/poll/poll5.sm benchmarks/ctmcs/poll/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/poll/poll5.sm"...
+
+Error: File "benchmarks/ctmcs/poll/poll5.sm" not found.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:56:17 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/poll/poll10.sm benchmarks/ctmcs/poll/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/poll/poll10.sm"...
+
+Error: File "benchmarks/ctmcs/poll/poll10.sm" not found.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:56:18 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/poll/poll11.sm benchmarks/ctmcs/poll/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/poll/poll11.sm"...
+
+Error: File "benchmarks/ctmcs/poll/poll11.sm" not found.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 20:56:18 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/ctmcs/poll/poll12.sm benchmarks/ctmcs/poll/px.pctl -gpu
+
+Parsing model file "benchmarks/ctmcs/poll/poll12.sm"...
+
+Error: File "benchmarks/ctmcs/poll/poll12.sm" not found.

@@ -1,0 +1,1779 @@
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:38 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/egl/egl.pm -const 'N=5,L=2' benchmarks/dtmcs/egl/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/egl/egl.pm"...
+
+Parsing properties file "benchmarks/dtmcs/egl/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "knowB" ]
+(2) P=? [ F<=500 "knowB" ]
+(3) P=? [ F<=100 "knowB" ]
+(4) P=? [ F<=50 "knowB" ]
+(5) P=? [ F<=2 "knowB" ]
+
+Model constants: N=5,L=2
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "partyA" is never satisfied.
+
+Warning: Guard for command 7 of module "partyA" is never satisfied.
+
+Warning: Guard for command 8 of module "partyA" is never satisfied.
+
+Warning: Guard for command 9 of module "partyA" is never satisfied.
+
+Warning: Guard for command 10 of module "partyA" is never satisfied.
+
+Warning: Guard for command 11 of module "partyA" is never satisfied.
+
+Warning: Guard for command 12 of module "partyA" is never satisfied.
+
+Warning: Guard for command 13 of module "partyA" is never satisfied.
+
+Warning: Guard for command 14 of module "partyA" is never satisfied.
+
+Warning: Guard for command 15 of module "partyA" is never satisfied.
+
+Warning: Guard for command 16 of module "partyA" is never satisfied.
+
+Warning: Guard for command 17 of module "partyA" is never satisfied.
+
+Warning: Guard for command 18 of module "partyA" is never satisfied.
+
+Warning: Guard for command 19 of module "partyA" is never satisfied.
+
+Warning: Guard for command 20 of module "partyA" is never satisfied.
+
+Warning: Guard for command 26 of module "partyA" is never satisfied.
+
+Warning: Guard for command 27 of module "partyA" is never satisfied.
+
+Warning: Guard for command 28 of module "partyA" is never satisfied.
+
+Warning: Guard for command 29 of module "partyA" is never satisfied.
+
+Warning: Guard for command 30 of module "partyA" is never satisfied.
+
+Warning: Guard for command 31 of module "partyA" is never satisfied.
+
+Warning: Guard for command 32 of module "partyA" is never satisfied.
+
+Warning: Guard for command 33 of module "partyA" is never satisfied.
+
+Warning: Guard for command 34 of module "partyA" is never satisfied.
+
+Warning: Guard for command 35 of module "partyA" is never satisfied.
+
+Warning: Guard for command 36 of module "partyA" is never satisfied.
+
+Warning: Guard for command 37 of module "partyA" is never satisfied.
+
+Warning: Guard for command 38 of module "partyA" is never satisfied.
+
+Warning: Guard for command 39 of module "partyA" is never satisfied.
+
+Warning: Guard for command 40 of module "partyA" is never satisfied.
+
+Warning: Guard for command 46 of module "partyA" is never satisfied.
+
+Warning: Guard for command 47 of module "partyA" is never satisfied.
+
+Warning: Guard for command 48 of module "partyA" is never satisfied.
+
+Warning: Guard for command 49 of module "partyA" is never satisfied.
+
+Warning: Guard for command 50 of module "partyA" is never satisfied.
+
+Warning: Guard for command 51 of module "partyA" is never satisfied.
+
+Warning: Guard for command 52 of module "partyA" is never satisfied.
+
+Warning: Guard for command 53 of module "partyA" is never satisfied.
+
+Warning: Guard for command 54 of module "partyA" is never satisfied.
+
+Warning: Guard for command 55 of module "partyA" is never satisfied.
+
+Warning: Guard for command 56 of module "partyA" is never satisfied.
+
+Warning: Guard for command 57 of module "partyA" is never satisfied.
+
+Warning: Guard for command 58 of module "partyA" is never satisfied.
+
+Warning: Guard for command 59 of module "partyA" is never satisfied.
+
+Warning: Guard for command 60 of module "partyA" is never satisfied.
+
+Warning: Guard for command 6 of module "partyB" is never satisfied.
+
+Warning: Guard for command 7 of module "partyB" is never satisfied.
+
+Warning: Guard for command 8 of module "partyB" is never satisfied.
+
+Warning: Guard for command 9 of module "partyB" is never satisfied.
+
+Warning: Guard for command 10 of module "partyB" is never satisfied.
+
+Warning: Guard for command 11 of module "partyB" is never satisfied.
+
+Warning: Guard for command 12 of module "partyB" is never satisfied.
+
+Warning: Guard for command 13 of module "partyB" is never satisfied.
+
+Warning: Guard for command 14 of module "partyB" is never satisfied.
+
+Warning: Guard for command 15 of module "partyB" is never satisfied.
+
+Warning: Guard for command 16 of module "partyB" is never satisfied.
+
+Warning: Guard for command 17 of module "partyB" is never satisfied.
+
+Warning: Guard for command 18 of module "partyB" is never satisfied.
+
+Warning: Guard for command 19 of module "partyB" is never satisfied.
+
+Warning: Guard for command 20 of module "partyB" is never satisfied.
+
+Warning: Guard for command 26 of module "partyB" is never satisfied.
+
+Warning: Guard for command 27 of module "partyB" is never satisfied.
+
+Warning: Guard for command 28 of module "partyB" is never satisfied.
+
+Warning: Guard for command 29 of module "partyB" is never satisfied.
+
+Warning: Guard for command 30 of module "partyB" is never satisfied.
+
+Warning: Guard for command 31 of module "partyB" is never satisfied.
+
+Warning: Guard for command 32 of module "partyB" is never satisfied.
+
+Warning: Guard for command 33 of module "partyB" is never satisfied.
+
+Warning: Guard for command 34 of module "partyB" is never satisfied.
+
+Warning: Guard for command 35 of module "partyB" is never satisfied.
+
+Warning: Guard for command 36 of module "partyB" is never satisfied.
+
+Warning: Guard for command 37 of module "partyB" is never satisfied.
+
+Warning: Guard for command 38 of module "partyB" is never satisfied.
+
+Warning: Guard for command 39 of module "partyB" is never satisfied.
+
+Warning: Guard for command 40 of module "partyB" is never satisfied.
+
+Warning: Guard for command 46 of module "partyB" is never satisfied.
+
+Warning: Guard for command 47 of module "partyB" is never satisfied.
+
+Warning: Guard for command 48 of module "partyB" is never satisfied.
+
+Warning: Guard for command 49 of module "partyB" is never satisfied.
+
+Warning: Guard for command 50 of module "partyB" is never satisfied.
+
+Warning: Guard for command 51 of module "partyB" is never satisfied.
+
+Warning: Guard for command 52 of module "partyB" is never satisfied.
+
+Warning: Guard for command 53 of module "partyB" is never satisfied.
+
+Warning: Guard for command 54 of module "partyB" is never satisfied.
+
+Warning: Guard for command 55 of module "partyB" is never satisfied.
+
+Warning: Guard for command 56 of module "partyB" is never satisfied.
+
+Warning: Guard for command 57 of module "partyB" is never satisfied.
+
+Warning: Guard for command 58 of module "partyB" is never satisfied.
+
+Warning: Guard for command 59 of module "partyB" is never satisfied.
+
+Warning: Guard for command 60 of module "partyB" is never satisfied.
+
+Computing reachable states...
+
+Reachability: 51 iterations in 0.03 seconds (average 0.000490, setup 0.00)
+
+Time for model construction: 0.092 seconds.
+
+Type:        DTMC
+Modules:     counter partyA partyB 
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39 
+
+States:      33790 (1 initial)
+Transitions: 34813
+
+Transition matrix: 8232 nodes (3 terminal), 34813 minterms, vars: 168r/168c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "knowB" ]
+Model constants: N=5,L=2
+
+Prob0: 33 iterations in 0.06 seconds (average 0.001788, setup 0.00)
+
+yes = 17631, no = 0, maybe = 16159
+
+Building sparse matrix... [n=33790, nnz=17182, compact] [100.1 KB]
+Creating vector for yes... [dist=2, compact] [66.0 KB]
+Allocating iteration vectors... [2 x 264.0 KB]
+TOTAL: [694.1 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 67580
+allocated 16
+row starts:
+allocated 135164
+dist_dev:
+allocated 24
+cols_dev:
+allocated 68728
+soln_dev:
+allocated 270320
+soln2_dev:
+allocated 270320
+copied 793 KB to GPU 
+copied 0 MB to GPU 
+datacpy_pbu execution time: 0.262176 seconds
+mv_pbu execution time: 0.011520 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.10 seconds (average 0.000022, setup 0.08)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.419 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "knowB" ]
+Model constants: N=5,L=2
+
+Prob0: 33 iterations in 0.03 seconds (average 0.001000, setup 0.00)
+
+yes = 17631, no = 0, maybe = 16159
+
+Building sparse matrix... [n=33790, nnz=17182, compact] [100.1 KB]
+Creating vector for yes... [dist=2, compact] [66.0 KB]
+Allocating iteration vectors... [2 x 264.0 KB]
+TOTAL: [694.1 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 67580
+allocated 16
+row starts:
+allocated 135164
+dist_dev:
+allocated 24
+cols_dev:
+allocated 68728
+soln_dev:
+allocated 270320
+soln2_dev:
+allocated 270320
+copied 1586 KB to GPU 
+copied 1 MB to GPU 
+datacpy_pbu execution time: 0.000343 seconds
+mv_pbu execution time: 0.005327 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.09 seconds (average 0.000010, setup 0.08)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.13 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "knowB" ]
+Model constants: N=5,L=2
+
+Prob0: 33 iterations in 0.03 seconds (average 0.000939, setup 0.00)
+
+yes = 17631, no = 0, maybe = 16159
+
+Building sparse matrix... [n=33790, nnz=17182, compact] [100.1 KB]
+Creating vector for yes... [dist=2, compact] [66.0 KB]
+Allocating iteration vectors... [2 x 264.0 KB]
+TOTAL: [694.1 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 67580
+allocated 16
+row starts:
+allocated 135164
+dist_dev:
+allocated 24
+cols_dev:
+allocated 68728
+soln_dev:
+allocated 270320
+soln2_dev:
+allocated 270320
+copied 2379 KB to GPU 
+copied 2 MB to GPU 
+datacpy_pbu execution time: 0.000275 seconds
+mv_pbu execution time: 0.001163 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.08 seconds (average 0.000020, setup 0.08)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.1 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "knowB" ]
+Model constants: N=5,L=2
+
+Prob0: 33 iterations in 0.02 seconds (average 0.000485, setup 0.00)
+
+yes = 17631, no = 0, maybe = 16159
+
+Building sparse matrix... [n=33790, nnz=17182, compact] [100.1 KB]
+Creating vector for yes... [dist=2, compact] [66.0 KB]
+Allocating iteration vectors... [2 x 264.0 KB]
+TOTAL: [694.1 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 67580
+allocated 16
+row starts:
+allocated 135164
+dist_dev:
+allocated 24
+cols_dev:
+allocated 68728
+soln_dev:
+allocated 270320
+soln2_dev:
+allocated 270320
+copied 3172 KB to GPU 
+copied 3 MB to GPU 
+datacpy_pbu execution time: 0.000277 seconds
+mv_pbu execution time: 0.000636 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.08 seconds (average 0.000020, setup 0.08)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.098 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "knowB" ]
+Model constants: N=5,L=2
+
+Prob0: 33 iterations in 0.02 seconds (average 0.000485, setup 0.00)
+
+yes = 17631, no = 0, maybe = 16159
+
+Building sparse matrix... [n=33790, nnz=17182, compact] [100.1 KB]
+Creating vector for yes... [dist=2, compact] [66.0 KB]
+Allocating iteration vectors... [2 x 264.0 KB]
+TOTAL: [694.1 KB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 67580
+allocated 16
+row starts:
+allocated 135164
+dist_dev:
+allocated 24
+cols_dev:
+allocated 68728
+soln_dev:
+allocated 270320
+soln2_dev:
+allocated 270320
+copied 3965 KB to GPU 
+copied 3 MB to GPU 
+datacpy_pbu execution time: 0.000269 seconds
+mv_pbu execution time: 0.000139 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.08 seconds (average 0.000500, setup 0.08)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.098 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:39 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/egl/egl.pm -const 'N=5,L=4' benchmarks/dtmcs/egl/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/egl/egl.pm"...
+
+Parsing properties file "benchmarks/dtmcs/egl/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "knowB" ]
+(2) P=? [ F<=500 "knowB" ]
+(3) P=? [ F<=100 "knowB" ]
+(4) P=? [ F<=50 "knowB" ]
+(5) P=? [ F<=2 "knowB" ]
+
+Model constants: N=5,L=4
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "partyA" is never satisfied.
+
+Warning: Guard for command 7 of module "partyA" is never satisfied.
+
+Warning: Guard for command 8 of module "partyA" is never satisfied.
+
+Warning: Guard for command 9 of module "partyA" is never satisfied.
+
+Warning: Guard for command 10 of module "partyA" is never satisfied.
+
+Warning: Guard for command 11 of module "partyA" is never satisfied.
+
+Warning: Guard for command 12 of module "partyA" is never satisfied.
+
+Warning: Guard for command 13 of module "partyA" is never satisfied.
+
+Warning: Guard for command 14 of module "partyA" is never satisfied.
+
+Warning: Guard for command 15 of module "partyA" is never satisfied.
+
+Warning: Guard for command 16 of module "partyA" is never satisfied.
+
+Warning: Guard for command 17 of module "partyA" is never satisfied.
+
+Warning: Guard for command 18 of module "partyA" is never satisfied.
+
+Warning: Guard for command 19 of module "partyA" is never satisfied.
+
+Warning: Guard for command 20 of module "partyA" is never satisfied.
+
+Warning: Guard for command 26 of module "partyA" is never satisfied.
+
+Warning: Guard for command 27 of module "partyA" is never satisfied.
+
+Warning: Guard for command 28 of module "partyA" is never satisfied.
+
+Warning: Guard for command 29 of module "partyA" is never satisfied.
+
+Warning: Guard for command 30 of module "partyA" is never satisfied.
+
+Warning: Guard for command 31 of module "partyA" is never satisfied.
+
+Warning: Guard for command 32 of module "partyA" is never satisfied.
+
+Warning: Guard for command 33 of module "partyA" is never satisfied.
+
+Warning: Guard for command 34 of module "partyA" is never satisfied.
+
+Warning: Guard for command 35 of module "partyA" is never satisfied.
+
+Warning: Guard for command 36 of module "partyA" is never satisfied.
+
+Warning: Guard for command 37 of module "partyA" is never satisfied.
+
+Warning: Guard for command 38 of module "partyA" is never satisfied.
+
+Warning: Guard for command 39 of module "partyA" is never satisfied.
+
+Warning: Guard for command 40 of module "partyA" is never satisfied.
+
+Warning: Guard for command 46 of module "partyA" is never satisfied.
+
+Warning: Guard for command 47 of module "partyA" is never satisfied.
+
+Warning: Guard for command 48 of module "partyA" is never satisfied.
+
+Warning: Guard for command 49 of module "partyA" is never satisfied.
+
+Warning: Guard for command 50 of module "partyA" is never satisfied.
+
+Warning: Guard for command 51 of module "partyA" is never satisfied.
+
+Warning: Guard for command 52 of module "partyA" is never satisfied.
+
+Warning: Guard for command 53 of module "partyA" is never satisfied.
+
+Warning: Guard for command 54 of module "partyA" is never satisfied.
+
+Warning: Guard for command 55 of module "partyA" is never satisfied.
+
+Warning: Guard for command 56 of module "partyA" is never satisfied.
+
+Warning: Guard for command 57 of module "partyA" is never satisfied.
+
+Warning: Guard for command 58 of module "partyA" is never satisfied.
+
+Warning: Guard for command 59 of module "partyA" is never satisfied.
+
+Warning: Guard for command 60 of module "partyA" is never satisfied.
+
+Warning: Guard for command 6 of module "partyB" is never satisfied.
+
+Warning: Guard for command 7 of module "partyB" is never satisfied.
+
+Warning: Guard for command 8 of module "partyB" is never satisfied.
+
+Warning: Guard for command 9 of module "partyB" is never satisfied.
+
+Warning: Guard for command 10 of module "partyB" is never satisfied.
+
+Warning: Guard for command 11 of module "partyB" is never satisfied.
+
+Warning: Guard for command 12 of module "partyB" is never satisfied.
+
+Warning: Guard for command 13 of module "partyB" is never satisfied.
+
+Warning: Guard for command 14 of module "partyB" is never satisfied.
+
+Warning: Guard for command 15 of module "partyB" is never satisfied.
+
+Warning: Guard for command 16 of module "partyB" is never satisfied.
+
+Warning: Guard for command 17 of module "partyB" is never satisfied.
+
+Warning: Guard for command 18 of module "partyB" is never satisfied.
+
+Warning: Guard for command 19 of module "partyB" is never satisfied.
+
+Warning: Guard for command 20 of module "partyB" is never satisfied.
+
+Warning: Guard for command 26 of module "partyB" is never satisfied.
+
+Warning: Guard for command 27 of module "partyB" is never satisfied.
+
+Warning: Guard for command 28 of module "partyB" is never satisfied.
+
+Warning: Guard for command 29 of module "partyB" is never satisfied.
+
+Warning: Guard for command 30 of module "partyB" is never satisfied.
+
+Warning: Guard for command 31 of module "partyB" is never satisfied.
+
+Warning: Guard for command 32 of module "partyB" is never satisfied.
+
+Warning: Guard for command 33 of module "partyB" is never satisfied.
+
+Warning: Guard for command 34 of module "partyB" is never satisfied.
+
+Warning: Guard for command 35 of module "partyB" is never satisfied.
+
+Warning: Guard for command 36 of module "partyB" is never satisfied.
+
+Warning: Guard for command 37 of module "partyB" is never satisfied.
+
+Warning: Guard for command 38 of module "partyB" is never satisfied.
+
+Warning: Guard for command 39 of module "partyB" is never satisfied.
+
+Warning: Guard for command 40 of module "partyB" is never satisfied.
+
+Warning: Guard for command 46 of module "partyB" is never satisfied.
+
+Warning: Guard for command 47 of module "partyB" is never satisfied.
+
+Warning: Guard for command 48 of module "partyB" is never satisfied.
+
+Warning: Guard for command 49 of module "partyB" is never satisfied.
+
+Warning: Guard for command 50 of module "partyB" is never satisfied.
+
+Warning: Guard for command 51 of module "partyB" is never satisfied.
+
+Warning: Guard for command 52 of module "partyB" is never satisfied.
+
+Warning: Guard for command 53 of module "partyB" is never satisfied.
+
+Warning: Guard for command 54 of module "partyB" is never satisfied.
+
+Warning: Guard for command 55 of module "partyB" is never satisfied.
+
+Warning: Guard for command 56 of module "partyB" is never satisfied.
+
+Warning: Guard for command 57 of module "partyB" is never satisfied.
+
+Warning: Guard for command 58 of module "partyB" is never satisfied.
+
+Warning: Guard for command 59 of module "partyB" is never satisfied.
+
+Warning: Guard for command 60 of module "partyB" is never satisfied.
+
+Computing reachable states...
+
+Reachability: 91 iterations in 0.09 seconds (average 0.001022, setup 0.00)
+
+Time for model construction: 0.199 seconds.
+
+Type:        DTMC
+Modules:     counter partyA partyB 
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39 
+
+States:      74750 (1 initial)
+Transitions: 75773
+
+Transition matrix: 20820 nodes (3 terminal), 75773 minterms, vars: 249r/249c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "knowB" ]
+Model constants: N=5,L=4
+
+Prob0: 73 iterations in 0.19 seconds (average 0.002548, setup 0.00)
+
+yes = 37471, no = 0, maybe = 37279
+
+Building sparse matrix... [n=74750, nnz=38302, compact] [222.6 KB]
+Creating vector for yes... [dist=2, compact] [146.0 KB]
+Allocating iteration vectors... [2 x 584.0 KB]
+TOTAL: [1.5 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 149500
+allocated 16
+row starts:
+allocated 299004
+dist_dev:
+allocated 24
+cols_dev:
+allocated 153208
+soln_dev:
+allocated 598000
+soln2_dev:
+allocated 598000
+copied 1755 KB to GPU 
+copied 1 MB to GPU 
+datacpy_pbu execution time: 0.175166 seconds
+mv_pbu execution time: 0.011721 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.30 seconds (average 0.000022, setup 0.28)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.693 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "knowB" ]
+Model constants: N=5,L=4
+
+Prob0: 73 iterations in 0.12 seconds (average 0.001644, setup 0.00)
+
+yes = 37471, no = 0, maybe = 37279
+
+Building sparse matrix... [n=74750, nnz=38302, compact] [222.6 KB]
+Creating vector for yes... [dist=2, compact] [146.0 KB]
+Allocating iteration vectors... [2 x 584.0 KB]
+TOTAL: [1.5 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 149500
+allocated 16
+row starts:
+allocated 299004
+dist_dev:
+allocated 24
+cols_dev:
+allocated 153208
+soln_dev:
+allocated 598000
+soln2_dev:
+allocated 598000
+copied 3511 KB to GPU 
+copied 3 MB to GPU 
+datacpy_pbu execution time: 0.000554 seconds
+mv_pbu execution time: 0.005521 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.28 seconds (average 0.000012, setup 0.28)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.435 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "knowB" ]
+Model constants: N=5,L=4
+
+Prob0: 73 iterations in 0.11 seconds (average 0.001452, setup 0.00)
+
+yes = 37471, no = 0, maybe = 37279
+
+Building sparse matrix... [n=74750, nnz=38302, compact] [222.6 KB]
+Creating vector for yes... [dist=2, compact] [146.0 KB]
+Allocating iteration vectors... [2 x 584.0 KB]
+TOTAL: [1.5 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 149500
+allocated 16
+row starts:
+allocated 299004
+dist_dev:
+allocated 24
+cols_dev:
+allocated 153208
+soln_dev:
+allocated 598000
+soln2_dev:
+allocated 598000
+copied 5266 KB to GPU 
+copied 5 MB to GPU 
+datacpy_pbu execution time: 0.000711 seconds
+mv_pbu execution time: 0.001282 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.28 seconds (average 0.000030, setup 0.28)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.386 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "knowB" ]
+Model constants: N=5,L=4
+
+Prob0: 73 iterations in 0.10 seconds (average 0.001301, setup 0.00)
+
+yes = 37471, no = 0, maybe = 37279
+
+Building sparse matrix... [n=74750, nnz=38302, compact] [222.6 KB]
+Creating vector for yes... [dist=2, compact] [146.0 KB]
+Allocating iteration vectors... [2 x 584.0 KB]
+TOTAL: [1.5 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 149500
+allocated 16
+row starts:
+allocated 299004
+dist_dev:
+allocated 24
+cols_dev:
+allocated 153208
+soln_dev:
+allocated 598000
+soln2_dev:
+allocated 598000
+copied 7022 KB to GPU 
+copied 6 MB to GPU 
+datacpy_pbu execution time: 0.000499 seconds
+mv_pbu execution time: 0.000764 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.28 seconds (average 0.000020, setup 0.28)
+
+Value in the initial state: 0.9375
+
+Time for model checking: 0.381 seconds.
+
+Result: 0.9375 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "knowB" ]
+Model constants: N=5,L=4
+
+Prob0: 73 iterations in 0.09 seconds (average 0.001247, setup 0.00)
+
+yes = 37471, no = 0, maybe = 37279
+
+Building sparse matrix... [n=74750, nnz=38302, compact] [222.6 KB]
+Creating vector for yes... [dist=2, compact] [146.0 KB]
+Allocating iteration vectors... [2 x 584.0 KB]
+TOTAL: [1.5 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 149500
+allocated 16
+row starts:
+allocated 299004
+dist_dev:
+allocated 24
+cols_dev:
+allocated 153208
+soln_dev:
+allocated 598000
+soln2_dev:
+allocated 598000
+copied 8778 KB to GPU 
+copied 8 MB to GPU 
+datacpy_pbu execution time: 0.000483 seconds
+mv_pbu execution time: 0.000269 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.28 seconds (average 0.000000, setup 0.28)
+
+Value in the initial#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007cbb1a862468, pid=8995, tid=0x00007cbb3e645640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8995
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8995.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+ state: 0.0
+
+Time for model checking: 0.371 seconds.
+
+Result: 0.0 (value in the initial state)
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:42 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/egl/egl.pm -const 'N=5,L=6' benchmarks/dtmcs/egl/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/egl/egl.pm"...
+
+Parsing properties file "benchmarks/dtmcs/egl/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "knowB" ]
+(2) P=? [ F<=500 "knowB" ]
+(3) P=? [ F<=100 "knowB" ]
+(4) P=? [ F<=50 "knowB" ]
+(5) P=? [ F<=2 "knowB" ]
+
+Model constants: N=5,L=6
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "partyA" is never satisfied.
+
+Warning: Guard for command 7 of module "partyA" is never satisfied.
+
+Warning: Guard for command 8 of module "partyA" is never satisfied.
+
+Warning: Guard for command 9 of module "partyA" is never satisfied.
+
+Warning: Guard for command 10 of module "partyA" is never satisfied.
+
+Warning: Guard for command 11 of module "partyA" is never satisfied.
+
+Warning: Guard for command 12 of module "partyA" is never satisfied.
+
+Warning: Guard for command 13 of module "partyA" is never satisfied.
+
+Warning: Guard for command 14 of module "partyA" is never satisfied.
+
+Warning: Guard for command 15 of module "partyA" is never satisfied.
+
+Warning: Guard for command 16 of module "partyA" is never satisfied.
+
+Warning: Guard for command 17 of module "partyA" is never satisfied.
+
+Warning: Guard for command 18 of module "partyA" is never satisfied.
+
+Warning: Guard for command 19 of module "partyA" is never satisfied.
+
+Warning: Guard for command 20 of module "partyA" is never satisfied.
+
+Warning: Guard for command 26 of module "partyA" is never satisfied.
+
+Warning: Guard for command 27 of module "partyA" is never satisfied.
+
+Warning: Guard for command 28 of module "partyA" is never satisfied.
+
+Warning: Guard for command 29 of module "partyA" is never satisfied.
+
+Warning: Guard for command 30 of module "partyA" is never satisfied.
+
+Warning: Guard for command 31 of module "partyA" is never satisfied.
+
+Warning: Guard for command 32 of module "partyA" is never satisfied.
+
+Warning: Guard for command 33 of module "partyA" is never satisfied.
+
+Warning: Guard for command 34 of module "partyA" is never satisfied.
+
+Warning: Guard for command 35 of module "partyA" is never satisfied.
+
+Warning: Guard for command 36 of module "partyA" is never satisfied.
+
+Warning: Guard for command 37 of module "partyA" is never satisfied.
+
+Warning: Guard for command 38 of module "partyA" is never satisfied.
+
+Warning: Guard for command 39 of module "partyA" is never satisfied.
+
+Warning: Guard for command 40 of module "partyA" is never satisfied.
+
+Warning: Guard for command 46 of module "partyA" is never satisfied.
+
+Warning: Guard for command 47 of module "partyA" is never satisfied.
+
+Warning: Guard for command 48 of module "partyA" is never satisfied.
+
+Warning: Guard for command 49 of module "partyA" is never satisfied.
+
+Warning: Guard for command 50 of module "partyA" is never satisfied.
+
+Warning: Guard for command 51 of module "partyA" is never satisfied.
+
+Warning: Guard for command 52 of module "partyA" is never satisfied.
+
+Warning: Guard for command 53 of module "partyA" is never satisfied.
+
+Warning: Guard for command 54 of module "partyA" is never satisfied.
+
+Warning: Guard for command 55 of module "partyA" is never satisfied.
+
+Warning: Guard for command 56 of module "partyA" is never satisfied.
+
+Warning: Guard for command 57 of module "partyA" is never satisfied.
+
+Warning: Guard for command 58 of module "partyA" is never satisfied.
+
+Warning: Guard for command 59 of module "partyA" is never satisfied.
+
+Warning: Guard for command 60 of module "partyA" is never satisfied.
+
+Warning: Guard for command 6 of module "partyB" is never satisfied.
+
+Warning: Guard for command 7 of module "partyB" is never satisfied.
+
+Warning: Guard for command 8 of module "partyB" is never satisfied.
+
+Warning: Guard for command 9 of module "partyB" is never satisfied.
+
+Warning: Guard for command 10 of module "partyB" is never satisfied.
+
+Warning: Guard for command 11 of module "partyB" is never satisfied.
+
+Warning: Guard for command 12 of module "partyB" is never satisfied.
+
+Warning: Guard for command 13 of module "partyB" is never satisfied.
+
+Warning: Guard for command 14 of module "partyB" is never satisfied.
+
+Warning: Guard for command 15 of module "partyB" is never satisfied.
+
+Warning: Guard for command 16 of module "partyB" is never satisfied.
+
+Warning: Guard for command 17 of module "partyB" is never satisfied.
+
+Warning: Guard for command 18 of module "partyB" is never satisfied.
+
+Warning: Guard for command 19 of module "partyB" is never satisfied.
+
+Warning: Guard for command 20 of module "partyB" is never satisfied.
+
+Warning: Guard for command 26 of module "partyB" is never satisfied.
+
+Warning: Guard for command 27 of module "partyB" is never satisfied.
+
+Warning: Guard for command 28 of module "partyB" is never satisfied.
+
+Warning: Guard for command 29 of module "partyB" is never satisfied.
+
+Warning: Guard for command 30 of module "partyB" is never satisfied.
+
+Warning: Guard for command 31 of module "partyB" is never satisfied.
+
+Warning: Guard for command 32 of module "partyB" is never satisfied.
+
+Warning: Guard for command 33 of module "partyB" is never satisfied.
+
+Warning: Guard for command 34 of module "partyB" is never satisfied.
+
+Warning: Guard for command 35 of module "partyB" is never satisfied.
+
+Warning: Guard for command 36 of module "partyB" is never satisfied.
+
+Warning: Guard for command 37 of module "partyB" is never satisfied.
+
+Warning: Guard for command 38 of module "partyB" is never satisfied.
+
+Warning: Guard for command 39 of module "partyB" is never satisfied.
+
+Warning: Guard for command 40 of module "partyB" is never satisfied.
+
+Warning: Guard for command 46 of module "partyB" is never satisfied.
+
+Warning: Guard for command 47 of module "partyB" is never satisfied.
+
+Warning: Guard for command 48 of module "partyB" is never satisfied.
+
+Warning: Guard for command 49 of module "partyB" is never satisfied.
+
+Warning: Guard for command 50 of module "partyB" is never satisfied.
+
+Warning: Guard for command 51 of module "partyB" is never satisfied.
+
+Warning: Guard for command 52 of module "partyB" is never satisfied.
+
+Warning: Guard for command 53 of module "partyB" is never satisfied.
+
+Warning: Guard for command 54 of module "partyB" is never satisfied.
+
+Warning: Guard for command 55 of module "partyB" is never satisfied.
+
+Warning: Guard for command 56 of module "partyB" is never satisfied.
+
+Warning: Guard for command 57 of module "partyB" is never satisfied.
+
+Warning: Guard for command 58 of module "partyB" is never satisfied.
+
+Warning: Guard for command 59 of module "partyB" is never satisfied.
+
+Warning: Guard for command 60 of module "partyB" is never satisfied.
+
+Computing reachable states...
+
+Reachability: 131 iterations in 0.20 seconds (average 0.001527, setup 0.00)
+
+Time for model construction: 0.328 seconds.
+
+Type:        DTMC
+Modules:     counter partyA partyB 
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39 
+
+States:      115710 (1 initial)
+Transitions: 116733
+
+Transition matrix: 29765 nodes (3 terminal), 116733 minterms, vars: 250r/250c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "knowB" ]
+Model constants: N=5,L=6
+
+Prob0: 113 iterations in 0.34 seconds (average 0.002982, setup 0.00)
+
+yes = 57311, no = 0, maybe = 58399
+
+Building sparse matrix... [n=115710, nnz=59422, compact] [345.1 KB]
+Creating vector for yes... [dist=2, compact] [226.0 KB]
+Allocating iteration vectors... [2 x 904.0 KB]
+TOTAL: [2.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 231420
+allocated 16
+row starts:
+allocated 462844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 237688
+soln_dev:
+allocated 925680
+soln2_dev:
+allocated 925680
+copied 2718 KB to GPU 
+copied 2 MB to GPU 
+datacpy_pbu execution time: 0.217627 seconds
+mv_pbu execution time: 0.011781 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.45 seconds (average 0.000021, setup 0.43)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.073 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "knowB" ]
+Model constants: N=5,L=6
+
+Prob0: 113 iterations in 0.28 seconds (average 0.002442, setup 0.00)
+
+yes = 57311, no = 0, maybe = 58399
+
+Building sparse matrix... [n=115710, nnz=59422, compact] [345.1 KB]
+Creating vector for yes... [dist=2, compact] [226.0 KB]
+Allocating iteration vectors... [2 x 904.0 KB]
+TOTAL: [2.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 231420
+allocated 16
+row starts:
+allocated 462844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 237688
+soln_dev:
+allocated 925680
+soln2_dev:
+allocated 925680
+copied 5436 KB to GPU 
+copied 5 MB to GPU 
+datacpy_pbu execution time: 0.000925 seconds
+mv_pbu execution time: 0.005557 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.43 seconds (average 0.000012, setup 0.43)
+
+Value in the initial state: 1.0
+
+Time for model checking: 0.775 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "knowB" ]
+Model constants: N=5,L=6
+
+Prob0: 113 iterations in 0.25 seconds (average 0.002204, setup 0.00)
+
+yes = 57311, no = 0, maybe = 58399
+
+Building sparse matrix... [n=115710, nnz=59422, compact] [345.1 KB]
+Creating vector for yes... [dist=2, compact] [226.0 KB]
+Allocating iteration vectors... [2 x 904.0 KB]
+TOTAL: [2.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 231420
+allocated 16
+row starts:
+allocated 462844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 237688
+soln_dev:
+allocated 925680
+soln2_dev:
+allocated 925680
+copied 8154 KB to GPU 
+copied 7 MB to GPU 
+datacpy_pbu execution time: 0.000881 seconds
+mv_pbu execution time: 0.001320 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.43 seconds (average 0.000010, setup 0.43)
+
+Value in the initial state: 0.96875
+
+Time for model checking: 0.713 seconds.
+
+Result: 0.96875 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "knowB" ]
+Model constants: N=5,L=6
+
+Prob0: 113 iterations in 0.23 seconds (average 0.002018, setup 0.00)
+
+yes = 57311, no = 0, maybe = 58399
+
+Building sparse matrix... [n=115710, nnz=59422, compact] [345.1 KB]
+Creating vector for yes... [dist=2, compact] [226.0 KB]
+Allocating iteration vectors... [2 x 904.0 KB]
+TOTAL: [2.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 231420
+allocated 16
+row starts:
+allocated 462844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 237688
+soln_dev:
+allocated 925680
+soln2_dev:
+allocated 925680
+copied 10872 KB to GPU 
+copied 10 MB to GPU 
+datacpy_pbu execution time: 0.000821 seconds
+mv_pbu execution time: 0.000789 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.43 seconds (average 0.000040, setup 0.43)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.661 seconds.
+
+Result: 0.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "knowB" ]
+Model constants: N=5,L=6
+
+Prob0: 113 iterations in 0.22 seconds (average 0.001982, setup 0.00)
+
+yes = 57311, no = 0, maybe = 58399
+
+Building sparse matrix... [n=115710, nnz=59422, compact] [345.1 KB]
+Creating vector for yes... [dist=2, compact] [226.0 KB]
+Allocating iteration vectors... [2 x 904.0 KB]
+TOTAL: [2.3 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 231420
+allocated 16
+row starts:
+allocated 462844
+dist_dev:
+allocated 24
+cols_dev:
+allocated 237688
+soln_dev:
+allocated 925680
+soln2_dev:
+allocated 925680
+copied 13590 KB to GPU 
+copied 13 MB to GPU 
+datacpy_pbu execution time: 0.000809 seconds
+mv_pbu execution time: 0.000286 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.43 seconds (average 0.000500, setup 0.43)
+
+Value in the initial state: 0.0
+
+Time for model checking: 0.654 seconds.
+
+Result: 0.0 (value in the initial state)
+
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:47 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/egl/egl.pm -const 'N=5,L=8' benchmarks/dtmcs/egl/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/egl/egl.pm"...
+
+Parsing properties file "benchmarks/dtmcs/egl/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "knowB" ]
+(2) P=? [ F<=500 "knowB" ]
+(3) P=? [ F<=100 "knowB" ]
+(4) P=? [ F<=50 "knowB" ]
+(5) P=? [ F<=2 "knowB" ]
+
+Model constants: N=5,L=8
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "partyA" is never satisfied.
+
+Warning: Guard for command 7 of module "partyA" is never satisfied.
+
+Warning: Guard for command 8 of module "partyA" is never satisfied.
+
+Warning: Guard for command 9 of module "partyA" is never satisfied.
+
+Warning: Guard for command 10 of module "partyA" is never satisfied.
+
+Warning: Guard for command 11 of module "partyA" is never satisfied.
+
+Warning: Guard for command 12 of module "partyA" is never satisfied.
+
+Warning: Guard for command 13 of module "partyA" is never satisfied.
+
+Warning: Guard for command 14 of module "partyA" is never satisfied.
+
+Warning: Guard for command 15 of module "partyA" is never satisfied.
+
+Warning: Guard for command 16 of module "partyA" is never satisfied.
+
+Warning: Guard for command 17 of module "partyA" is never satisfied.
+
+Warning: Guard for command 18 of module "partyA" is never satisfied.
+
+Warning: Guard for command 19 of module "partyA" is never satisfied.
+
+Warning: Guard for command 20 of module "partyA" is never satisfied.
+
+Warning: Guard for command 26 of module "partyA" is never satisfied.
+
+Warning: Guard for command 27 of module "partyA" is never satisfied.
+
+Warning: Guard for command 28 of module "partyA" is never satisfied.
+
+Warning: Guard for command 29 of module "partyA" is never satisfied.
+
+Warning: Guard for command 30 of module "partyA" is never satisfied.
+
+Warning: Guard for command 31 of module "partyA" is never satisfied.
+
+Warning: Guard for command 32 of module "partyA" is never satisfied.
+
+Warning: Guard for command 33 of module "partyA" is never satisfied.
+
+Warning: Guard for command 34 of module "partyA" is never satisfied.
+
+Warning: Guard for command 35 of module "partyA" is never satisfied.
+
+Warning: Guard for command 36 of module "partyA" is never satisfied.
+
+Warning: Guard for command 37 of module "partyA" is never satisfied.
+
+Warning: Guard for command 38 of module "partyA" is never satisfied.
+
+Warning: Guard for command 39 of module "partyA" is never satisfied.
+
+Warning: Guard for command 40 of module "partyA" is never satisfied.
+
+Warning: Guard for command 46 of module "partyA" is never satisfied.
+
+Warning: Guard for command 47 of module "partyA" is never satisfied.
+
+Warning: Guard for command 48 of module "partyA" is never satisfied.
+
+Warning: Guard for command 49 of module "partyA" is never satisfied.
+
+Warning: Guard for command 50 of module "partyA" is never satisfied.
+
+Warning: Guard for command 51 of module "partyA" is never satisfied.
+
+Warning: Guard for command 52 of module "partyA" is never satisfied.
+
+Warning: Guard for command 53 of module "partyA" is never satisfied.
+
+Warning: Guard for command 54 of module "partyA" is never satisfied.
+
+Warning: Guard for command 55 of module "partyA" is never satisfied.
+
+Warning: Guard for command 56 of module "partyA" is never satisfied.
+
+Warning: Guard for command 57 of module "partyA" is never satisfied.
+
+Warning: Guard for command 58 of module "partyA" is never satisfied.
+
+Warning: Guard for command 59 of module "partyA" is never satisfied.
+
+Warning: Guard for command 60 of module "partyA" is never satisfied.
+
+Warning: Guard for command 6 of module "partyB" is never satisfied.
+
+Warning: Guard for command 7 of module "partyB" is never satisfied.
+
+Warning: Guard for command 8 of module "partyB" is never satisfied.
+
+Warning: Guard for command 9 of module "partyB" is never satisfied.
+
+Warning: Guard for command 10 of module "partyB" is never satisfied.
+
+Warning: Guard for command 11 of module "partyB" is never satisfied.
+
+Warning: Guard for command 12 of module "partyB" is never satisfied.
+
+Warning: Guard for command 13 of module "partyB" is never satisfied.
+
+Warning: Guard for command 14 of module "partyB" is never satisfied.
+
+Warning: Guard for command 15 of module "partyB" is never satisfied.
+
+Warning: Guard for command 16 of module "partyB" is never satisfied.
+
+Warning: Guard for command 17 of module "partyB" is never satisfied.
+
+Warning: Guard for command 18 of module "partyB" is never satisfied.
+
+Warning: Guard for command 19 of module "partyB" is never satisfied.
+
+Warning: Guard for command 20 of module "partyB" is never satisfied.
+
+Warning: Guard for command 26 of module "partyB" is never satisfied.
+
+Warning: Guard for command 27 of module "partyB" is never satisfied.
+
+Warning: Guard for command 28 of module "partyB" is never satisfied.
+
+Warning: Guard for command 29 of module "partyB" is never satisfied.
+
+Warning: Guard for command 30 of module "partyB" is never satisfied.
+
+Warning: Guard for command 31 of module "partyB" is never satisfied.
+
+Warning: Guard for command 32 of module "partyB" is never satisfied.
+
+Warning: Guard for command 33 of module "partyB" is never satisfied.
+
+Warning: Guard for command 34 of module "partyB" is never satisfied.
+
+Warning: Guard for command 35 of module "partyB" is never satisfied.
+
+Warning: Guard for command 36 of module "partyB" is never satisfied.
+
+Warning: Guard for command 37 of module "partyB" is never satisfied.
+
+Warning: Guard for command 38 of module "partyB" is never satisfied.
+
+Warning: Guard for command 39 of module "partyB" is never satisfied.
+
+Warning: Guard for command 40 of module "partyB" is never satisfied.
+
+Warning: Guard for command 46 of module "partyB" is never satisfied.
+
+Warning: Guard for command 47 of module "partyB" is never satisfied.
+
+Warning: Guard for command 48 of module "partyB" is never satisfied.
+
+Warning: Guard for command 49 of module "partyB" is never satisfied.
+
+Warning: Guard for command 50 of module "partyB" is never satisfied.
+
+Warning: Guard for command 51 of module "partyB" is never satisfied.
+
+Warning: Guard for command 52 of module "partyB" is never satisfied.
+
+Warning: Guard for command 53 of module "partyB" is never satisfied.
+
+Warning: Guard for command 54 of module "partyB" is never satisfied.
+
+Warning: Guard for command 55 of module "partyB" is never satisfied.
+
+Warning: Guard for command 56 of module "partyB" is never satisfied.
+
+Warning: Guard for command 57 of module "partyB" is never satisfied.
+
+Warning: Guard for command 58 of module "partyB" is never satisfied.
+
+Warning: Guard for command 59 of module "partyB" is never satisfied.
+
+Warning: Guard for command 60 of module "partyB" is never satisfied.
+
+Computing reachable states...
+
+Reachability: 171 iterations in 0.39 seconds (average 0.002304, setup 0.00)
+
+Time for model construction: 0.567 seconds.
+
+Type:        DTMC
+Modules:     counter partyA partyB 
+Variables:   b n phase party b0 b20 b1 b21 b2 b22 b3 b23 b4 b24 b5 b25 b6 b26 b7 b27 b8 b28 b9 b29 b10 b30 b11 b31 b12 b32 b13 b33 b14 b34 b15 b35 b16 b36 b17 b37 b18 b38 b19 b39 a0 a20 a1 a21 a2 a22 a3 a23 a4 a24 a5 a25 a6 a26 a7 a27 a8 a28 a9 a29 a10 a30 a11 a31 a12 a32 a13 a33 a14 a34 a15 a35 a16 a36 a17 a37 a18 a38 a19 a39 
+
+States:      156670 (1 initial)
+Transitions: 157693
+
+Transition matrix: 50528 nodes (3 terminal), 157693 minterms, vars: 330r/330c
+
+-------------------------------------------
+
+Model checking: "N1000": P=? [ F<=1000 "knowB" ]
+Model constants: N=5,L=8
+
+Prob0: 153 iterations in 0.70 seconds (average 0.004608, setup 0.00)
+
+yes = 77151, no = 0, maybe = 79519
+
+Building sparse matrix... [n=156670, nnz=80542, compact] [467.6 KB]
+Creating vector for yes... [dist=2, compact] [306.0 KB]
+Allocating iteration vectors... [2 x 1.2 MB]
+TOTAL: [3.1 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 313340
+allocated 16
+row starts:
+allocated 626684
+dist_dev:
+allocated 24
+cols_dev:
+allocated 322168
+soln_dev:
+allocated 1253360
+soln2_dev:
+allocated 1253360
+copied 3680 KB to GPU 
+copied 3 MB to GPU 
+datacpy_pbu execution time: 0.216953 seconds
+mv_pbu execution time: 0.011834 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 1000 iterations in 0.82 seconds (average 0.000019, setup 0.80)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.854 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N500": P=? [ F<=500 "knowB" ]
+Model constants: N=5,L=8
+
+Prob0: 153 iterations in 0.63 seconds (average 0.004131, setup 0.00)
+
+yes = 77151, no = 0, maybe = 79519
+
+Building sparse matrix... [n=156670, nnz=80542, compact] [467.6 KB]
+Creating vector for yes... [dist=2, compact] [306.0 KB]
+Allocating iteration vectors... [2 x 1.2 MB]
+TOTAL: [3.1 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 313340
+allocated 16
+row starts:
+allocated 626684
+dist_dev:
+allocated 24
+cols_dev:
+allocated 322168
+soln_dev:
+allocated 1253360
+soln2_dev:
+allocated 1253360
+copied 7361 KB to GPU 
+copied 7 MB to GPU 
+datacpy_pbu execution time: 0.001058 seconds
+mv_pbu execution time: 0.005560 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 500 iterations in 0.80 seconds (average 0.000012, setup 0.80)
+
+Value in the initial state: 1.0
+
+Time for model checking: 1.534 seconds.
+
+Result: 1.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N100": P=? [ F<=100 "knowB" ]
+Model constants: N=5,L=8
+
+Prob0: 153 iterations in 0.66 seconds (average 0.004288, setup 0.00)
+
+yes = 77151, no = 0, maybe = 79519
+
+Building sparse matrix... [n=156670, nnz=80542, compact] [467.6 KB]
+Creating vector for yes... [dist=2, compact] [306.0 KB]
+Allocating iteration vectors... [2 x 1.2 MB]
+TOTAL: [3.1 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 313340
+allocated 16
+row starts:
+allocated 626684
+dist_dev:
+allocated 24
+cols_dev:
+allocated 322168
+soln_dev:
+allocated 1253360
+soln2_dev:
+allocated 1253360
+copied 11041 KB to GPU 
+copied 10 MB to GPU 
+datacpy_pbu execution time: 0.001092 seconds
+mv_pbu execution time: 0.001398 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 100 iterations in 0.80 seconds (average 0.000030, setup 0.80)
+
+Value in the initial state: 0.96875
+
+Time for model checking: 1.554 seconds.
+
+Result: 0.96875 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N50": P=? [ F<=50 "knowB" ]
+Model constants: N=5,L=8
+
+Prob0: 153 iterations in 0.65 seconds (average 0.004235, setup 0.00)
+
+yes = 77151, no = 0, maybe = 79519
+
+Building sparse matrix... [n=156670, nnz=80542, compact] [467.6 KB]
+Creating vector for yes... [dist=2, compact] [306.0 KB]
+Allocating iteration vectors... [2 x 1.2 MB]
+TOTAL: [3.1 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 313340
+allocated 16
+row starts:
+allocated 626684
+dist_dev:
+allocated 24
+cols_dev:
+allocated 322168
+soln_dev:
+allocated 1253360
+soln2_dev:
+allocated 1253360
+copied 14722 KB to GPU 
+copied 14 MB to GPU 
+datacpy_pbu execution time: 0.001064 seconds
+mv_pbu execution time: 0.000874 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 50 iterations in 0.80 seconds (average 0.000040, setup 0.80)
+
+Value in the initial state: 0.0
+
+Time for model checking: 1.549 seconds.
+
+Result: 0.0 (value in the initial state)
+
+-------------------------------------------
+
+Model checking: "N2": P=? [ F<=2 "knowB" ]
+Model constants: N=5,L=8
+
+Prob0: 153 iterations in 0.65 seconds (average 0.004229, setup 0.00)
+
+yes = 77151, no = 0, maybe = 79519
+
+Building sparse matrix... [n=156670, nnz=80542, compact] [467.6 KB]
+Creating vector for yes... [dist=2, compact] [306.0 KB]
+Allocating iteration vectors... [2 x 1.2 MB]
+TOTAL: [3.1 MB]
+
+ Starting GPU iterations...
+copying data 
+y:
+allocated 313340
+allocated 16
+row starts:
+allocated 626684
+dist_dev:
+allocated 24
+cols_dev:
+allocated 322168
+soln_dev:
+allocated 1253360
+soln2_dev:
+allocated 1253360
+copied 18403 KB to GPU 
+copied 17 MB to GPU 
+datacpy_pbu execution time: 0.001180 seconds
+mv_pbu execution time: 0.000377 seconds
+freeing memory 
+GPU memory freed
+
+Iterative method: 2 iterations in 0.80 seconds (average 0.000500, setup 0.80)
+
+Value in the initial state: 0.0
+
+Time for model checking: 1.55 seconds.
+
+Result: 0.0 (value in the initial state)
+

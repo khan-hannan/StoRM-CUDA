@@ -1,0 +1,2048 @@
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:29 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=3,CrowdSize=5' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=3,CrowdSize=5
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 8 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 29 iterations in 0.01 seconds (average 0.000276, setup 0.00)
+
+Time for model construction: 0.045 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      1198 (1 initial)
+Transitions: 1982
+
+Transition matrix: 2380 nodes (6 terminal), 1982 minterms, vars: 57r/57c
+
+Error: Model contains 56 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+1113:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1114:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1115:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1116:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1117:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1118:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1119:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1120:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1121:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1122:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:29 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=3,CrowdSize=10' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=3,CrowdSize=10
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 9 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 29 iterations in 0.01 seconds (average 0.000414, setup 0.00)
+
+Time for model construction: 0.057 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      6563 (1 initial)
+Transitions: 14857
+
+Transition matrix: 5242 nodes (7 terminal), 14857 minterms, vars: 57r/57c
+
+Error: Model contains 286 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+6198:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+6199:(false,true,0,false,false,20,false,false,false,false,false,fa#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000071a1599a4468, pid=8272, tid=0x000071a17899b640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8272
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8272.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+lse,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0)
+6200:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0)
+6201:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0)
+6202:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0)
+6203:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0)
+6204:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0)
+6205:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0)
+6206:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0)
+6207:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:30 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=3,CrowdSize=15' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=3,CrowdSize=15
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 10 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 29 iterations in 0.02 seconds (average 0.000655, setup 0.00)
+
+Time for model construction: 0.068 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      19228 (1 initial)
+Transitions: 55132
+
+Transition matrix: 9101 nodes (7 terminal), 55132 minterms, vars: 57r/57c
+
+Error: Model contains 816 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+18258:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+18259:(false,true,0,false,false,20,false,false,false,false,false#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000073083aca4468, pid=8317, tid=0x000073085ec99640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8317
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8317.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0)
+18260:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0)
+18261:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0)
+18262:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0)
+18263:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0)
+18264:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0)
+18265:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0)
+18266:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0)
+18267:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:30 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=3,CrowdSize=20' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=3,CrowdSize=20
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 11 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 29 iterations in 0.03 seconds (average 0.000931, setup 0.00)
+
+Time for model construction: 0.085 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      42318 (1 initial)
+Transitions: 146807
+
+Transition matrix: 14082 nodes (7 terminal), 146807 minterms, vars: 57r/57c
+
+Error: Model contains 1771 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+40293:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+40294:(false,true,0,false,false,20,false,false,false,false,f#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000786d9bca4468, pid=8362, tid=0x0000786dbfc75640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8362
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8362.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+alse,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1)
+40295:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2)
+40296:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3)
+40297:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0)
+40298:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1)
+40299:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2)
+40300:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0)
+40301:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,1)
+40302:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:31 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=4,CrowdSize=5' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=4,CrowdSize=5
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 8 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 38 iterations in 0.01 seconds (average 0.000342, setup 0.00)
+
+Time for model construction: 0.074 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      3515 (1 initial)
+Transitions: 5909
+
+Transition matrix: 3825 nodes (6 terminal), 5909 minterms, vars: 78r/78c
+
+Error: Model contains 126 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+3304:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3305:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3306:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3307:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3308:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3309:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3310:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3311:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3312:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+3313:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:31 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=4,CrowdSize=10' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=4,CrowdSize=10
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 9 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 38 iterations in 0.03 seconds (average 0.000842, setup 0.00)
+
+Time for model construction: 0.121 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      30070 (1 initial)
+Transitions: 69109
+
+Transition matrix: 9025 nodes (7 terminal), 69109 minterms, vars: 78r/78c
+
+Error: Model contains 1001 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+28704:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+28705:(false,true,0,false,false,20,false,false,false,false,fals#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000073efeb87e468, pid=8452, tid=0x000073f00f649640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8452
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8452.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+e,false,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0)
+28706:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0)
+28707:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0)
+28708:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0)
+28709:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0)
+28710:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0)
+28711:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0)
+28712:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0)
+28713:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:32 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=4,CrowdSize=15' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=4,CrowdSize=15
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 10 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 38 iterations in 0.04 seconds (average 0.001000, setup 0.00)
+
+Time for model construction: 0.118 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      119800 (1 initial)
+Transitions: 348484
+
+Transition matrix: 16177 nodes (7 terminal), 348484 minterms, vars: 78r/78c
+
+Error: Model contains 3876 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+114954:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+114955:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0)
+114956:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0)
+114957:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0)
+114958:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0)
+114959:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0)
+114960:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0)
+114961:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0)
+114962:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0)
+114963:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:32 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=4,CrowdSize=20' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=4,CrowdSize=20
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 11 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 38 iterations in 0.06 seconds (average 0.001500, setup 0.00)
+
+Time for model construction: 0.148 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      333455 (1 initial)
+Transitions: 1172909
+
+Transition matrix: 25500 nodes (7 terminal), 1172909 minterms, vars: 78r/78c
+
+Error: Model contains 10626 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+320804:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+320805:(false,true,0,false,false,20,false,false,false,f#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x0000704963a60468, pid=8542, tid=0x0000704987735640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8542
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8542.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+alse,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1)
+320806:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2)
+320807:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3)
+320808:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4)
+320809:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0)
+320810:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1)
+320811:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2)
+320812:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3)
+320813:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:33 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=5,CrowdSize=5' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=5,CrowdSize=5
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 8 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 47 iterations in 0.02 seconds (average 0.000426, setup 0.00)
+
+Time for model construction: 0.091 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      8653 (1 initial)
+Transitions: 14701
+
+Transition matrix: 4741 nodes (6 terminal), 14701 minterms, vars: 78r/78c
+
+Error: Model contains 252 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+8190:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8191:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8192:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8193:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8194:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8195:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8196:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8197:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8198:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+8199:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:34 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=5,CrowdSize=10' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=5,CrowdSize=10
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 9 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 47 iterations in 0.05 seconds (average 0.001021, setup 0.00)
+
+Time for model construction: 0.13 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      111294 (1 initial)
+Transitions: 258441
+
+Transition matrix: 11516 nodes (7 terminal), 258441 minterms, vars: 78r/78c
+
+Error: Model contains 3003 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+106925:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+106926:(false,true,0,false,false,20,false,false,false,false#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007332eae46468, pid=8632, tid=0x000073330eb2b640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8632
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8632.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+,false,false,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0)
+106927:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0)
+106928:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0)
+106929:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0)
+106930:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0)
+106931:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0)
+106932:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0)
+106933:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0)
+106934:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:34 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=5,CrowdSize=15' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=5,CrowdSize=15
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 10 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 47 iterations in 0.06 seconds (average 0.001340, setup 0.00)
+
+Time for model construction: 0.141 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      592060 (1 initial)
+Transitions: 1739356
+
+Transition matrix: 20881 nodes (7 terminal), 1739356 minterms, vars: 78r/78c
+
+Error: Model contains 15504 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+571710:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+571711:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0)
+571712:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0)
+571713:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0)
+571714:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0)
+571715:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0)
+571716:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0)
+571717:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0)
+571718:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0)
+571719:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:35 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=5,CrowdSize=20' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=5,CrowdSize=20
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 11 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 47 iterations in 0.09 seconds (average 0.001809, setup 0.00)
+
+Time for model construction: 0.196 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      2061951 (1 initial)
+Transitions: 7321821
+
+Transition matrix: 33091 nodes (7 terminal), 7321821 minterms, vars: 78r/78c
+
+Error: Model contains 53130 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+1996170:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+1996171:(false,true,0,false,false,20,false,false,fals#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000075d720c41468, pid=8722, tid=0x000075d740a0e640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8722
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8722.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+e,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1)
+1996172:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2)
+1996173:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3)
+1996174:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4)
+1996175:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5)
+1996176:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0)
+1996177:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1)
+1996178:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2)
+1996179:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:36 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=6,CrowdSize=5' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=6,CrowdSize=5
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 8 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 56 iterations in 0.03 seconds (average 0.000571, setup 0.00)
+
+Time for model construction: 0.095 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      18817 (1 initial)
+Transitions: 32215
+
+Transition matrix: 5648 nodes (6 terminal), 32215 minterms, vars: 78r/78c
+
+Error: Model contains 462 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+17892:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17893:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17894:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17895:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17896:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17897:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17898:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17899:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17900:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+17901:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:36 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=6,CrowdSize=10' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=6,CrowdSize=10
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 9 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 56 iterations in 0.06 seconds (average 0.001089, setup 0.00)
+
+Time for model construction: 0.151 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      352535 (1 initial)
+Transitions: 825007
+
+Transition matrix: 13998 nodes (7 terminal), 825007 minterms, vars: 78r/78c
+
+Error: Model contains 8008 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+340158:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+340159:(false,true,0,false,false,20,false,false,false,fals#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007d4c2a66e468, pid=8812, tid=0x00007d4c4e683640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_432) (build 1.8.0_432-8u432-ga~us1-0ubuntu2~22.04-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.432-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libdd.so+0x1e468]  Cudd_DebugCheck+0xaa8
+#
+# Core dump written. Default location: /root/StoRM-CUDA/core or core.8812
+#
+# An error report file with more information is saved as:
+# /root/StoRM-CUDA/hs_err_pid8812.log
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+e,false,false,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0)
+340160:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0)
+340161:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0)
+340162:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0)
+340163:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0)
+340164:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0)
+340165:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0)
+340166:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0)
+340167:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:37 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=6,CrowdSize=15' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=6,CrowdSize=15
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 11 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 10 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 56 iterations in 0.09 seconds (average 0.001607, setup 0.00)
+
+Time for model construction: 0.193 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      2464168 (1 initial)
+Transitions: 7293664
+
+Transition matrix: 25576 nodes (7 terminal), 7293664 minterms, vars: 78r/78c
+
+Error: Model contains 54264 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+2389554:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+2389555:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0)
+2389556:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0)
+2389557:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0)
+2389558:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0)
+2389559:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0)
+2389560:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0)
+2389561:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0)
+2389562:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0)
+2389563:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,0,0,0,0,0)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
+PRISM
+=====
+
+Version: 4.0.2
+Date: Mon Jan 13 19:54:37 GMT 2025
+Hostname: 58867d1590a7
+Command line: prism benchmarks/dtmcs/crowds/crowds.pm -const 'TotalRuns=6,CrowdSize=20' benchmarks/dtmcs/crowds/px.pctl -gpu
+
+Parsing model file "benchmarks/dtmcs/crowds/crowds.pm"...
+
+Parsing properties file "benchmarks/dtmcs/crowds/px.pctl"...
+
+5 properties:
+(1) P=? [ F<=1000 "deadlock" ]
+(2) P=? [ F<=500 "deadlock" ]
+(3) P=? [ F<=100 "deadlock" ]
+(4) P=? [ F<=50 "deadlock" ]
+(5) P=? [ F<=2 "deadlock" ]
+
+Model constants: TotalRuns=6,CrowdSize=20
+
+-------------------------------------------
+
+Building model...
+
+Warning: Guard for command 6 of module "crowds" is never satisfied.
+
+Warning: Guard for command 7 of module "crowds" is never satisfied.
+
+Warning: Guard for command 8 of module "crowds" is never satisfied.
+
+Warning: Guard for command 9 of module "crowds" is never satisfied.
+
+Warning: Guard for command 10 of module "crowds" is never satisfied.
+
+Warning: Guard for command 2 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 3 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 4 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 5 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 11 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 12 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 13 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 14 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 15 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 16 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 17 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 18 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 19 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 20 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 21 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 22 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 23 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 24 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 25 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 26 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 27 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 28 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 29 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 30 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 31 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 32 of module "crowds" overlaps with previous commands.
+
+Warning: Guard for command 33 of module "crowds" overlaps with previous commands.
+
+Computing reachable states...
+
+Reachability: 56 iterations in 0.16 seconds (average 0.002911, setup 0.00)
+
+Time for model construction: 0.269 seconds.
+
+Type:        DTMC
+Modules:     crowds 
+Variables:   launch new runCount start run lastSeen good bad recordLast badObserve deliver done observe0 observe1 observe2 observe3 observe4 observe5 observe6 observe7 observe8 observe9 observe10 observe11 observe12 observe13 observe14 observe15 observe16 observe17 observe18 observe19 
+
+States:      10633591 (1 initial)
+Transitions: 38030961
+
+Transition matrix: 40673 nodes (7 terminal), 38030961 minterms, vars: 78r/78c
+
+Error: Model contains 230230 deadlock states.
+The first 10 deadlock states are displayed below. To view them all use the -v switch.
+10337580:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+10337581:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1)
+10337582:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2)
+10337583:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3)
+10337584:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4)
+10337585:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5)
+10337586:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6)
+10337587:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0)
+10337588:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1)
+10337589:(false,true,0,false,false,20,false,false,false,false,false,false,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2)
+
+Tip: Use the -fixdl switch to automatically add self-loops in deadlock states.
